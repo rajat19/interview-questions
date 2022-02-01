@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {% assign posts = site.posts %}
+
+
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    
+      {% for category in site.categories %}
+        <h2 class="post-list-heading"> Category - {{ category[0] }} </h2>
+        <div class="box home-box">
+        {% for post in category[1] reversed %}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h3>{{ post.title | escape }}</h3>
+          </a>
+        {% endfor %}
+        </div>
+      {% endfor %}
+
+    <!-- <div class="box home-box">
+      <div class="post-list">
+        {%- for post in posts reversed -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h3>{{ post.title | escape }}</h3>
+          </a>
+        {%- endfor -%}
+      </div>
+    </div> -->
+
+  {%- endif -%}
+
+</div>

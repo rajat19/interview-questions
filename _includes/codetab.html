@@ -1,0 +1,22 @@
+{% assign langs = include.langs | default: site.enabled_languages | split: " " %}
+
+<div class="code-tab">
+    {% for lang in site.lang_map %}
+    {% if langs contains lang.ext %}
+    <button class="code-tablinks" onclick="openCode(event, '{{ include.btnClass }}{{ lang.name }}')" type="button">
+        <img src="{{ site.github.url }}/assets/img/lang/{{ lang.ext }}.svg" height="20" width="20">
+        <span> {{ lang.name }} </span>
+    </button>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% for lang in site.lang_map %}
+{% if langs contains lang.ext %}
+{% capture the_snippet_content %}{% include code/{{page.slug}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
+{% capture lang_file_name %}lang/{{lang.name | downcase}}.html{% endcapture %}
+<div id="{{ include.btnClass }}{{ lang.name }}" class="code-tabcontent">
+    {% include {{lang_file_name}} content=the_snippet_content %}
+</div>
+{% endif %}
+{% endfor %}

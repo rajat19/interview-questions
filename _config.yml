@@ -1,0 +1,37 @@
+title: Jekyll Dark Coder Template
+iconURL: assets/img/among_us.svg
+
+markdown: kramdown
+
+# for a clean URL
+permalink: :slug
+
+social:
+  twitter: evilj0ker19
+  github: rajat19/jekyll-dark-coder-template
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+enabled_languages: java py cs c cpp go js php
+
+lang_map:
+  - name: C
+    ext: c
+  - name: CPP
+    ext: cpp
+  - name: CSharp
+    ext: cs
+  - name: Golang
+    ext: go
+  - name: Java
+    ext: java
+  - name: Javascript
+    ext: js
+  - name: PHP
+    ext: php
+  - name: Python
+    ext: py
+  - name: Ruby
+    ext: rb
