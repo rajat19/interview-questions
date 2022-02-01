@@ -2,7 +2,6 @@
 layout: post
 author: Rajat Srivastava
 title: Hello World
-folder: hello-world
 category: sample
 ---
 

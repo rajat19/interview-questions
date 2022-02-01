@@ -1,4 +1,4 @@
-title: Jekyll Dark Coder Template
+title: Interview Questions
 iconURL: assets/img/among_us.svg
 
 markdown: kramdown
@@ -8,7 +8,7 @@ permalink: :slug
 
 social:
   twitter: evilj0ker19
-  github: rajat19/jekyll-dark-coder-template
+  github: rajat19/interview-questions
 
 plugins:
   - jekyll-feed

@@ -1,4 +1,4 @@
-{% assign langs = include.langs | default: site.enabled_languages | split: " " %}
+{% assign langs = page.langs | default: site.enabled_languages | split: " " %}
 
 <div class="code-tab">
     {% for lang in site.lang_map %}
