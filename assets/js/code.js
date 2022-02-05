@@ -26,3 +26,12 @@ function openCode(evt, codeName) {
   document.getElementById(codeName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+$(function() {
+  $(".post-link").on("click",function(e) {
+    e.preventDefault();
+    // $("#post-data").hide();
+    $('#post-data').load(this.href);
+    // $("#"+this.id+"div").show();
+  });
+});

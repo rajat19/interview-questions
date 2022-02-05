@@ -1,6 +1,6 @@
 import java.lang.*;
 
-class Solution {
+class MedianSortedArrays {
     private static double findMedian(int[] arr1, int[] arr2) {
         int n1 = arr1.length, n2 = arr2.length;
         if (n1 > n2) return findMedian(arr2, arr1);

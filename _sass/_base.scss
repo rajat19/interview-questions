@@ -49,7 +49,9 @@ ul, ol, dl, figure,
 
 // wrapper
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  //max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  min-width: 50%;
+  float: left;
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit / 2;
