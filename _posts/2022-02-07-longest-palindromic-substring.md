@@ -6,7 +6,7 @@ category: medium
 tags: string dp
 langs: java go py
 leetcode: https://leetcode.com/problems/longest-palindromic-substring/
-tc: O(n^2)
+tc: O(n<sup>2</sup>)
 sc: O(1)
 
 ---

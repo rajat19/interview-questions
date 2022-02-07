@@ -1,10 +1,16 @@
+@import "highlight-dark";
+
 .home-box {
     padding:0;
     overflow:hidden;
+    display: block;
+    .xxx {
+        display: block;
+    }
     .post-link {
         color: inherit;
-        display:block;
-        padding: $spacing-unit;
+        display:flex;
+        //padding: $spacing-unit;
         transition: .3s background-color;
         &:not(:last-child) {
             border-bottom:1px solid $header-color;
@@ -14,7 +20,28 @@
             background-color: $header-color;
         }
         h3 {
-            margin:0;
+            margin: $spacing-unit;
+            //margin:0;
+            width: 75%;
         }
     }
 }
+
+.complexity {
+    border-left: 5px solid $brand-color;
+    //border-radius: 10px;
+    background: inherit;
+    padding: 10px 10px;
+    //margin: auto;
+    width: 25%;
+    float: right;
+    align-content: center;
+    display: block;
+    //position: relative;
+}
+
+.complexity span {
+    float: left;
+    clear: left;
+}
+

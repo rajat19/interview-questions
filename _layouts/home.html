@@ -19,7 +19,17 @@ layout: default
         <div class="box home-box">
         {% for post in category[1] reversed %}
           <a class="post-link" href="{{ post.url | relative_url }}">
-            <h3>{{ post.title | escape }}</h3>
+            <h3>{{ post.title | escape }} </h3>
+            {% if post.tc or post.sc %}
+            <span class="complexity">
+              {% if post.tc %}
+              <span class="">Time: {{ post.tc }}</span>
+              {% endif %}
+              {% if post.sc %}
+              <span class="">Space: {{ post.sc }}</span>
+              {% endif %}
+            </span>
+            {% endif %}
           </a>
         {% endfor %}
         </div>
