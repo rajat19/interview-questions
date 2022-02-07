@@ -18,9 +18,3 @@ Your code should pass the following test cases.
 **Output:** 
 
 	(string) "Hello World"
-
-
----
-## Solutions
-
-{% include codetab.html btnClass="solution" %}

@@ -3,8 +3,11 @@ layout: post
 author: Rajat Srivastava
 title: Median of Two Sorted Arrays
 category: hard
-tags: bsearch
+tags: bsearch arrays
 langs: java
+leetcode: https://leetcode.com/problems/median-of-two-sorted-arrays/
+tc: O(log(m+n))
+sc: O(1)
 
 ---
 
@@ -13,6 +16,7 @@ when n is the number of elements in the first array, and m is the number of elem
 
 ---
 ## Test Cases
+
 **Input:**
     
     (int array) arr1 = {-5, 3, 6, 12, 15}
@@ -49,7 +53,7 @@ when n is the number of elements in the first array, and m is the number of elem
         (10 + 12) / 2 = 11.
 
 ---
-## Solutions
+## How to Solve
 
 1. Let assume that there are two arrays A and B with array A having the minimum number of elements.
    If this is not the case than swap A and B to make A having small size.
@@ -100,5 +104,3 @@ when n is the number of elements in the first array, and m is the number of elem
    ans is max(leftA,leftB)+min(rightA,rightB)/2; // max of left part is nearest to median and min of right part is nearest to medain
    else
    ans is max(leftA,leftB);
-
-{% include codetab.html btnClass="solution" %}

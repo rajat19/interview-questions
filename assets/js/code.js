@@ -1,11 +1,11 @@
 function openCode(evt, codeName) {
   // is already active tab -> toggle it
   
-  // if (evt.currentTarget.classList.contains("active")) {
-  //   evt.currentTarget.classList.remove("active");
-  //   document.getElementById(codeName).style.display = "none";
-  //   return;
-  // }
+  if (evt.currentTarget.classList.contains("active")) {
+    evt.currentTarget.classList.remove("active");
+    document.getElementById(codeName).style.display = "none";
+    return;
+  }
 
   // Declare all variables
   var i, tabcontent, tablinks;
