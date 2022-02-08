@@ -8,6 +8,7 @@ langs: java
 leetcode: https://leetcode.com/problems/first-missing-positive/
 tc: O(n)
 sc: O(1)
+leetid: 41
 
 ---
 

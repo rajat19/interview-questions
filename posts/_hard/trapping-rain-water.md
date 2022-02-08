@@ -8,6 +8,7 @@ langs: java go
 leetcode: https://leetcode.com/problems/trapping-rain-water/
 tc: O(n)
 sc: O(1)
+leetid: 42
 
 ---
 

@@ -35,3 +35,13 @@ lang_map:
     ext: py
   - name: Ruby
     ext: rb
+
+collections_dir: posts
+
+collections:
+  hard:
+    output: true
+    sort_by: leetid
+  medium:
+    output: true
+    sort_by: leetid
