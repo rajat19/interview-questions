@@ -17,8 +17,6 @@ Given an unsorted integer array `nums`, return the smallest missing positive int
 ---
 ## Test Cases
 
-Example 1:
-
 **Input:**
 
       (int[]) nums = [1,2,0]

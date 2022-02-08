@@ -25,8 +25,6 @@ Such palindromes have even number of letters (such as "abba") and its center are
 ---
 ## Test Cases
 
-Example 1:
-
 **Input:**
 
     (String) s = "babad"
