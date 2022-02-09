@@ -10,31 +10,22 @@ You can contribute in many ways:
 ----------------------
 
 ### Report Errors in Solutions
-```
 Report errors on the `issues page`. If you are reporting an issue, please include:
 
 * Question for which issue came
 * Language in which the code is not working
-```
 
 ### Fix Solutions
-```
 All the solutions available in the website at time of their creation are correct. 
 But questions' language might change later and their solution might need to be updated/corrected.
 Look through the GitHub issues for some wrong solutions. Anything tagged with "bug"
 is open to whoever wants to implement it.
-```
 
 ### Add Solutions
-```
-At the time of writing, Google foobar only supported Java and Python. If any new language is added in near future, you can add the solution in that language as well. 
-Remember to update codetab.html as well
-```
+Add your solution in any language. Please add the language in `langs` front matter for your post
 
 ### Add Foobar Questions
-```
-You can add any foobar question you faced. Check [Sample](_drafts/sample.md) on how to add a foobar question with its solutions
-```
+You can add any question you want available on leetcode. Check [Sample](posts/_sample/hello-world.md) on how to add a question with its solutions
 
 ## Get Started!
 ------------
@@ -43,7 +34,7 @@ Ready to contribute? Here's how to set up `foobar` for local.
 1. Fork the `foobar` repo on GitHub.
 2. Clone your fork locally::
 ```bash
-    $ git clone git@github.com:rajat19/foobar.git
+    $ git clone git@github.com:rajat19/interview-questions.git
 ```
 3. Create a branch for local development::
 ```bash
@@ -62,18 +53,21 @@ Ready to contribute? Here's how to set up `foobar` for local.
 ## Things to keep in mind!
 ---
 Some things to keep in mind while adding questions/solutions-
-1. Questions are added in `markdown` files which have .md extensions. These are added in `_posts` folder
-2. Add a question post inside `_posts` folder starting with current date then question name. For ex- `2021-01-01-foobar-got-interesting.md`
-3. You are not necessarily required to add solutions for the foobar question you put. Do not add below line to your post if you do not wish to add any solution
-```md
-{% include codetab.html btnClass="solution" langs="java py"%}
+1. Questions and test cases are added in `markdown` files which have .md extensions. These are added in [posts](posts) folder under their difficulty tab
+Have the following front matter for your post
+```markdown
+---
+layout: post
+author: <AUTHOR_NAME>
+title: <QUESTION_NAME>
+tags: <QUESTION_TYPE>
+langs: <SUPPORTED_LANGUAGES>
+leetcode: <LEETCODE_LINK>
+tc: <TIME_COMPLEXITY>
+sc: <SPACE_COMPLEXITY
+leetid: <LEETCODE_ID>
+---
 ```
-4. The solutions are added in `_includes/code` folder. Add a folder with question name ex- `foobar-got-interesting`. Add your solutions in this folder only.
-5. By default, the website requires java and python solutions, if you wish to add only one of them, or just know solution in only one of the language, use `langs="java"` or `langs="py"` while using the line
-```md
-{% include codetab.html btnClass="solution" langs="java py"%}
-```
-6. If you have got working solutions in both python/java, don't include the langs part
-```md
-{% include codetab.html btnClass="solution"%}
-```
+2. The solutions are added in [_includes/code](_includes/code) folder. Add a folder with question name ex- `got-interesting`. Add your solutions in this folder only.
+3. By default, the langs required are defined in `enabled_languages` in [_config.yml](_config.yml). 
+Update langs for your solution, only that would be read in `code` folder
