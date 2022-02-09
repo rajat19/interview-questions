@@ -4,7 +4,7 @@ author: Rajat Srivastava
 title: Word Break
 category: medium
 tags: string dp
-langs: java go py
+langs: java
 leetcode: https://leetcode.com/problems/word-break/
 tc: O(n<sup>2</sup>)
 sc: O(n)
