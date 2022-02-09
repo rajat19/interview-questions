@@ -2,10 +2,8 @@
 layout: post
 author: Rajat Srivastava
 title: Median of Two Sorted Arrays
-category: hard
 tags: bsearch arrays
 langs: java
-leetcode: https://leetcode.com/problems/median-of-two-sorted-arrays/
 tc: O(log(m+n))
 sc: O(1)
 leetid: 4

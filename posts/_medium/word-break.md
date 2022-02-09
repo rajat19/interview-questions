@@ -2,10 +2,8 @@
 layout: post
 author: Rajat Srivastava
 title: Word Break
-category: medium
 tags: string dp
 langs: java
-leetcode: https://leetcode.com/problems/word-break/
 tc: O(n<sup>2</sup>)
 sc: O(n)
 leetid: 139
@@ -53,5 +51,3 @@ Note that the same word in the dictionary may be reused multiple times in the se
 **Output:**
 
     (boolean) false
-
----

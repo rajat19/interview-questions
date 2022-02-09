@@ -2,10 +2,8 @@
 layout: post
 author: Rajat Srivastava
 title: Next Permutation
-category: medium
 tags: arrays
 langs: java
-leetcode: https://leetcode.com/problems/next-permutation/
 tc: O(n)
 sc: O(1)
 leetid: 31

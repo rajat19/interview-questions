@@ -2,10 +2,8 @@
 layout: post
 author: Rajat Srivastava
 title: First Missing Positive
-category: hard
 tags: arrays
 langs: java
-leetcode: https://leetcode.com/problems/first-missing-positive/
 tc: O(n)
 sc: O(1)
 leetid: 41

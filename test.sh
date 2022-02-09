@@ -20,7 +20,7 @@ done
 
 if [ "$LANGUAGE" ]
 then
- echo "Running for language $LANGUAGE"
+ echo "Checking solution for $POST in $LANGUAGE language"
  case $LANGUAGE in
  "java")
     cd _includes/code/"$POST" || exit
