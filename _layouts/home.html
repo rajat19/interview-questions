@@ -12,7 +12,7 @@ layout: default
       <a class="post-link" href="{{ post.url | relative_url }}">
         <h3> {{post.leetid}}. {{ post.title | escape }} </h3>
         {% if post.tc or post.sc %}
-        <span class="complexity">
+        <span class="home-complexity">
           {% if post.tc %}
           <span class="">Time: {{ post.tc }}</span>
           {% endif %}

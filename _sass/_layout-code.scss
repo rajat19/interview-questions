@@ -115,3 +115,17 @@ pre code {
 .code-tablinks {
   width: 25%;
 }
+
+.code-content {
+  //:first-child {
+  //  display: block;
+  //}
+}
+
+.code-complexity {
+  background: inherit;
+  padding: 5px 5px;
+  align-content: center;
+  display: block;
+  //position: relative;
+}

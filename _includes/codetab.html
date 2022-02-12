@@ -14,12 +14,25 @@
     {% endfor %}
 </div>
 
-{% for lang in site.lang_map %}
-{% if langs contains lang.ext %}
-{% capture the_snippet_content %}{% include code/{{page.slug}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
-{% capture lang_file_name %}lang/{{lang.name | downcase}}.html{% endcapture %}
-<div id="{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}" class="code-tabcontent">
-    {% include {{lang_file_name}} content=the_snippet_content %}
+<div class="code-content">
+    {% for lang in site.lang_map %}
+    {% if langs contains lang.ext %}
+    {% capture the_snippet_content %}{% include code/{{page.slug}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
+    {% capture lang_file_name %}lang/{{lang.name | downcase}}.html{% endcapture %}
+    <div id="{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}" class="code-tabcontent">
+        {% include {{lang_file_name}} content=the_snippet_content %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% if page.tc or page.sc %}
+<div class="code-complexity">
+  {% if page.tc %}
+  <h6 class="">Time Complexity: {{ page.tc }}</h6>
+  {% endif %}
+  {% if page.sc %}
+  <h6 class="">Space Complexity: {{ page.sc }}</h6>
+  {% endif %}
 </div>
 {% endif %}
-{% endfor %}
