@@ -1,7 +1,8 @@
-{% if site.github.url.length == nil %}
-<script src="/assets/js/jquery.min.js"></script>
-{% else %}
+<span style="display: none">Github url is {{ site.github.url }}</span>
+{% if site.github.url %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+{% else %}
+<script src="{{ site.github.url }}/assets/js/jquery.min.js"></script>
 {% endif %}
 <script src="{{ site.github.url }}/assets/js/code.js"></script>
 <footer class="site-footer h-card">
