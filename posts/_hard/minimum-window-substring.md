@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Minimum Window Substring
 category: hard
-tags: hashtable
+tags: hash-table sliding-window string
 langs: java
 tc: O(n+m)
 sc: O(n+m)

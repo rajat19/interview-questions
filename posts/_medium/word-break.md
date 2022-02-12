@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Word Break
-tags: string dp
+tags: string dynamic-programming
 langs: java
 tc: O(n<sup>2</sup>)
 sc: O(n)

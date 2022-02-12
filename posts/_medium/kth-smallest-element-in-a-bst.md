@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Kth Smallest Element in a BST
-tags: backtracking dynamic-programming string
+tags: binary-search-tree tree
 langs: java py
 tc: O(h+k)
 sc: O(h)

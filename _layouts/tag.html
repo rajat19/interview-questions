@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /tag/
+---
+
+<div class="page-title">
+    <h1>
+        {{ page.title }}
+    </h1>
+</div>
+
+<div>
+    {% for tag in site.tags[] reversed %}
+    <h2><span>{{ tag[1] }}</span></h2>
+    {% endfor %}
+</div>
+

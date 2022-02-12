@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Next Permutation
-tags: arrays
+tags: array two-pointers
 langs: java
 tc: O(n)
 sc: O(1)
