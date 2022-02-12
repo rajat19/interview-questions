@@ -8,7 +8,7 @@ permalink: :slug
 
 social:
   twitter: evilj0ker19
-  github: rajat19/interview-questions
+  github: rajat19
 
 plugins:
   - jekyll-feed
