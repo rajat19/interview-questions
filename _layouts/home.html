@@ -10,7 +10,7 @@ layout: default
     <div class="box home-box">
       {% for post in items %}
       <a class="post-link" href="{{ post.url | relative_url }}">
-        <h3> {{post.leetid}}. {{ post.title | escape }} </h3>
+        <h3> {% if post.leetid %}{{post.leetid}}. {% endif %} {{ post.title | escape }} </h3>
         {% if post.tc or post.sc %}
         <span class="home-complexity">
           {% if post.tc %}

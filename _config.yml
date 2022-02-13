@@ -52,4 +52,4 @@ collections:
     output: true
     sort_by: leetid
   sample:
-    output: true
+    output: false

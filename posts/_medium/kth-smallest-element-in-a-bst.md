@@ -17,7 +17,7 @@ Given the root of a binary search tree, and an integer k, return the k<sup>th</s
 
 **Input:**
 
-![Kth Tree]({{ site.github.url }}/assets/img/code/kthtree2.jpeg)
+![Kth Tree]({{ site.github.url }}/assets/img/code/binarytree.jpeg)
 
     (TreeNode)  root = [5,3,6,2,4,null,null,1]
     (int)       k = 3
