@@ -1,6 +1,6 @@
 <?php
 class Solution {
-    function main() {
-        echo "Hello World!";
+    function helloWorld($s) {
+        echo "Hello ".$s;
     }
 }

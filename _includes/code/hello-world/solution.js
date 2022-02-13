@@ -1,5 +1,3 @@
-class Solution {
-    main() {
-        console.log("Hello World!");
-    }
-}
+const helloWorld = function (s) {
+    console.log("Hello "+s);
+};

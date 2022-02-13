@@ -14,14 +14,14 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-enabled_languages: java py cs c cpp go js php
+enabled_languages: java
 
 lang_map:
   - name: C
     ext: c
-  - name: CPP
+  - name: C++
     ext: cpp
-  - name: CSharp
+  - name: C#
     ext: cs
   - name: Golang
     ext: go
@@ -29,12 +29,18 @@ lang_map:
     ext: java
   - name: Javascript
     ext: js
+  - name: Kotlin
+    ext: kt
   - name: PHP
     ext: php
   - name: Python
     ext: py
   - name: Ruby
     ext: rb
+  - name: Rust
+    ext: rust
+  - name: Scala
+    ext: scala
 
 collections_dir: posts
 
@@ -45,3 +51,5 @@ collections:
   medium:
     output: true
     sort_by: leetid
+  sample:
+    output: true

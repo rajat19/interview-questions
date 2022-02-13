@@ -1,3 +1,3 @@
 class Solution:
-    def main(self):
-        print("Hello World!")
+    def helloWorld(self, s: str):
+        print("Hello ", s)

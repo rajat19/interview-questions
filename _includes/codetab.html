@@ -8,7 +8,13 @@
     {% if langs contains lang.ext %}
     <button class="code-tablinks" onclick="openCode(event, '{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}')" type="button">
         <img src="{{ site.github.url }}/assets/img/lang/{{ lang.ext }}.svg" height="20" width="20">
-        <span> {{ lang.name }} </span>
+        <span>
+            {% if lang.aka %}
+            {{ lang.aka }}
+            {% else %}
+            {{ lang.name }}
+            {% endif %}
+        </span>
     </button>
     {% endif %}
     {% endfor %}
@@ -18,7 +24,7 @@
     {% for lang in site.lang_map %}
     {% if langs contains lang.ext %}
     {% capture the_snippet_content %}{% include code/{{page.slug}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
-    {% capture lang_file_name %}lang/{{lang.name | downcase}}.html{% endcapture %}
+    {% capture lang_file_name %}lang/{{lang.ext}}.html{% endcapture %}
     <div id="{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}" class="code-tabcontent">
         {% include {{lang_file_name}} content=the_snippet_content %}
     </div>
