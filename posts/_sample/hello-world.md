@@ -14,15 +14,13 @@ Print Hello appended by input string
 ---
 
 ## Test Cases
-Your code should pass the following test cases.
 
 **Input:** 
-```text
+```
 (string) s = "World"
 ```
 
-
 **Output:** 
-```text
+```
 (string) "Hello World"
 ```

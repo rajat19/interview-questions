@@ -19,7 +19,6 @@ Print Hello appended by input string
 ---
 
 ## Test Cases
-Your code should pass the following test cases.
 
 **Input:** 
 	

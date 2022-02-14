@@ -20,14 +20,20 @@ done
 
 if [ "$LANGUAGE" ]
 then
- echo "Checking solution for $POST in $LANGUAGE language"
- case $LANGUAGE in
- "java")
-    cd _includes/code/"$POST" || exit
-    javac solution.java
-    java Solution
-    ;;
- *)
-   echo "Unknown language to test"
+	echo "Checking solution for $POST in $LANGUAGE language"
+	cd _includes/code/"$POST" || exit
+	case $LANGUAGE in
+	"java")
+		javac solution.java
+ 		java Solution
+  	;;
+ 	"py")
+ 		python solution.py
+  	;;
+ 	"go")
+ 		go run solution.go
+ 		;;
+ 	*)
+ 		echo "Unknown language to test"
  esac
 fi
