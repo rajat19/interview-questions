@@ -1,0 +1,27 @@
+default: java
+
+map:
+  - name: C
+    ext: c
+  - name: C++
+    ext: cpp
+  - name: C#
+    ext: cs
+  - name: Golang
+    ext: go
+  - name: Java
+    ext: java
+  - name: Javascript
+    ext: js
+  - name: Kotlin
+    ext: kt
+  - name: PHP
+    ext: php
+  - name: Python
+    ext: py
+  - name: Ruby
+    ext: rb
+  - name: Rust
+    ext: rust
+  - name: Scala
+    ext: scala
