@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Rajat Srivastava
-title: Hello World
+title: Longest Substring with at least k repeating characters
 tags: sliding-window string
 langs: java
 tc: O(n)

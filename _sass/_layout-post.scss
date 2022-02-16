@@ -77,4 +77,14 @@ article, .comments, .box {
     background: #223237;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.pill-small {
+    margin: 3px;
+    padding: 5px;
+    background: #223237;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
 }

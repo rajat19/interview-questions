@@ -27,11 +27,23 @@ function openCode(evt, codeName) {
   evt.currentTarget.className += " active";
 }
 
+function showTag(tagValue) {
+  $('#post-data').empty();
+  $('.problem').css('display', 'none');
+  $('.tag-'+tagValue).css('display', 'flex');
+  $('#tag-dropdown option[value='+tagValue+']').attr('selected', 'selected');
+}
+
 $(function() {
   $(".post-link").on("click",function(e) {
     e.preventDefault();
     // $("#post-data").hide();
     $('#post-data').load(this.href);
     // $("#"+this.id+"div").show();
+  });
+
+  $('#tag-dropdown').change(() => {
+    var selected = $('#tag-dropdown').val();
+    showTag(selected);
   });
 });
