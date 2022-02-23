@@ -33,6 +33,9 @@ then
  	"go")
  		go run solution.go
  		;;
+ 	"js")
+ 		node solution.js
+ 		;;
  	*)
  		echo "Unknown language to test"
  esac
