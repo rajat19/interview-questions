@@ -23,7 +23,7 @@
 <div class="code-content">
     {% for lang in site.data.lang.map %}
     {% if langs contains lang.ext %}
-    {% capture the_snippet_content %}{% include code/{{page.slug}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
+    {% capture the_snippet_content %}{% include code/{{page.title | slugify}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
     {% capture lang_file_name %}lang/{{lang.ext}}.html{% endcapture %}
     <div id="{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}" class="code-tabcontent">
         {% include {{lang_file_name}} content=the_snippet_content %}
