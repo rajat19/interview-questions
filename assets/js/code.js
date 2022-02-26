@@ -37,13 +37,13 @@ function showTag(tagValue) {
 $(function() {
   $(".post-link").on("click",function(e) {
     e.preventDefault();
-    // $("#post-data").hide();
+    $('.post-link').removeClass('active');
+    $(this).addClass('active');
     $('#post-data').load(this.href);
-    // $("#"+this.id+"div").show();
   });
 
   $('#tag-dropdown').change(() => {
-    var selected = $('#tag-dropdown').val();
+    const selected = $('#tag-dropdown').val();
     showTag(selected);
   });
 });

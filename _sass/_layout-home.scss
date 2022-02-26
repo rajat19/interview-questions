@@ -16,6 +16,9 @@
             text-decoration: none;
             background-color: $header-color;
         }
+        &.active {
+            background-color: $header-color;
+        }
         h3 {
             margin: $spacing-unit;
             //margin:0;

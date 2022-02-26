@@ -1,7 +1,17 @@
-# interview-questions [WIP]
-Solutions to some famous questions asked in interviews
+# interview-questions
 
-Sample coding question post [hello-world.md](posts/_sample/hello-world.md)
+Website: [interview-questions](https://rajat19.github.io/interview-questions/)
+
+![Screenshot](assets/img/ss.png)
+
+![Screenshot](assets/img/ss2.png)
+
+The repository contains solutions to some famous questions asked in interviews.
+
+Questions are present inside [posts](/posts) folder, while their solutions are available in [code](_includes/code) folder
+
+### Sample coding question post [hello-world.md](/hello-world.md)
+
 ```markdown
 ---
 layout: post
@@ -28,3 +38,8 @@ Print Hello appended by input string
 
 	(string) "Hello World"
 ```
+
+### TODO:
+1. Add solutions in most major languages
+2. Add `main` method in solutions so that we can test them out
+3. Run solutions using [test.sh](/test.sh)
