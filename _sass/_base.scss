@@ -23,7 +23,7 @@ body {
 
 	// display
 	display: flex;
-	min-height: 100vh;
+	height: 100vh;
 	flex-direction: column;
 	overflow-wrap: break-word;
 
@@ -50,7 +50,7 @@ ul, ol, dl, figure,
 // wrapper
 .wrapper {
   //max-width: calc(#{$content-width} - (#{$spacing-unit}));
-  min-width: 50%;
+  min-width: 50vw;
   float: left;
   margin-right: auto;
   margin-left: auto;

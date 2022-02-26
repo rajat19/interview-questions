@@ -24,6 +24,26 @@
     }
 }
 
+.home {
+    .home-tag-list {
+        display: flex;
+        overflow-x: scroll;
+        height: 5vh;
+    }
+
+    .home-post-list {
+        //display: flex;
+        overflow-y: auto;
+        height: 82vh;
+    }
+}
+
+.home-wrapper {
+    width: 50vw;
+    height: 87vh;
+    overflow-y: auto;
+}
+
 .home-complexity {
     border-left: 5px solid $brand-color;
     //border-radius: 10px;

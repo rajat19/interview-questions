@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="wrapper">
+<div class="wrapper home-wrapper">
   <div class="home">
-    <div style="display: flex; overflow-x: scroll">
+    <div class="home-tag-list">
       <select name="tag-dropdown" id="tag-dropdown" class="pill">
         <option value="" disabled selected>-- select a tag --</option>
         {% for tag in site.data.tag %}
@@ -12,6 +12,7 @@ layout: default
         {% endfor %}
       </select>
     </div>
+    <div class="home-post-list">
     {% for collection in site.collections %}
     {% assign items = site[collection.label] | sort: 'leetid' %}
       {% if items.size > 0 %}
@@ -36,7 +37,8 @@ layout: default
       </div>
       {% endif %}
     {% endfor %}
+    </div>
   </div>
 </div>
 
-<div class="wrapper" id="post-data"></div>
+<div class="wrapper home-wrapper" id="post-data"></div>
