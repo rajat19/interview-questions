@@ -23,5 +23,6 @@ collections:
   medium:
     output: true
     sort_by: leetid
-  sample:
-    output: true
+
+header_pages:
+  - hello-world.md

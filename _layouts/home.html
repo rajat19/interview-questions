@@ -2,70 +2,41 @@
 layout: default
 ---
 
-<div class="home">
-  <div style="display: flex; overflow-x: scroll">
-<!--    <label for="tag-list">Tag: </label>-->
-    <select name="tag-dropdown" id="tag-dropdown" class="pill">
-      <option value="" disabled selected>-- select a tag --</option>
-      {% for tag in site.data.tag %}
-      <option value="{{tag}}">{{ tag | replace: "-", " " | capitalize }}</option>
-      {% endfor %}
-    </select>
-  </div>
-  {% for collection in site.collections %}
-  {% assign items = site[collection.label] | sort: 'leetid' %}
-  {% if items.size > 0 %}
-    <h2 class="post-list-heading"> Difficulty - {{ collection.label }} </h2>
-    <div class="box home-box">
-      {% for post in items %}
-      {% capture tag-classes %}{% for tag in post.tags %}tag-{{tag}} {% endfor %}{% endcapture %}
-      <a class="post-link problem {{tag-classes}}" href="{{ post.url | relative_url }}">
-        <h3> {% if post.leetid %}{{post.leetid}}. {% endif %} {{ post.title | escape }} </h3>
-        {% if post.tc or post.sc %}
-        <span class="home-complexity">
-          {% if post.tc %}
-          <span class="">Time: {{ post.tc }}</span>
-          {% endif %}
-          {% if post.sc %}
-          <span class="">Space: {{ post.sc }}</span>
-          {% endif %}
-        </span>
-        {% endif %}
-      </a>
-      {% endfor %}
+<div class="wrapper">
+  <div class="home">
+    <div style="display: flex; overflow-x: scroll">
+      <select name="tag-dropdown" id="tag-dropdown" class="pill">
+        <option value="" disabled selected>-- select a tag --</option>
+        {% for tag in site.data.tag %}
+        <option value="{{tag}}">{{ tag | replace: "-", " " | capitalize }}</option>
+        {% endfor %}
+      </select>
     </div>
-  {% endif %}
-  {% endfor %}
-
-<!--      {% for category in site.categories %}-->
-<!--        <h2 class="post-list-heading"> Category - {{ category[0] }} </h2>-->
-<!--        <div class="box home-box">-->
-<!--        {% for post in category[1] reversed %}-->
-<!--          <a class="post-link" href="{{ post.url | relative_url }}">-->
-<!--            <h3>{{ post.title | escape }} </h3>-->
-<!--            {% if post.tc or post.sc %}-->
-<!--            <span class="complexity">-->
-<!--              {% if post.tc %}-->
-<!--              <span class="">Time: {{ post.tc }}</span>-->
-<!--              {% endif %}-->
-<!--              {% if post.sc %}-->
-<!--              <span class="">Space: {{ post.sc }}</span>-->
-<!--              {% endif %}-->
-<!--            </span>-->
-<!--            {% endif %}-->
-<!--          </a>-->
-<!--        {% endfor %}-->
-<!--        </div>-->
-<!--      {% endfor %}-->
-
-    <!-- <div class="box home-box">
-      <div class="post-list">
-        {%- for post in posts reversed -%}
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            <h3>{{ post.title | escape }}</h3>
-          </a>
-        {%- endfor -%}
+    {% for collection in site.collections %}
+    {% assign items = site[collection.label] | sort: 'leetid' %}
+      {% if items.size > 0 %}
+      <h2 class="post-list-heading"> Difficulty - {{ collection.label }} </h2>
+      <div class="box home-box">
+        {% for post in items %}
+        {% capture tag-classes %}{% for tag in post.tags %}tag-{{tag}} {% endfor %}{% endcapture %}
+        <a class="post-link problem {{tag-classes}}" href="{{ post.url | relative_url }}">
+          <h3> {% if post.leetid %}{{post.leetid}}. {% endif %} {{ post.title | escape }} </h3>
+          {% if post.tc or post.sc %}
+          <span class="home-complexity">
+              {% if post.tc %}
+              <span class="">Time: {{ post.tc }}</span>
+              {% endif %}
+              {% if post.sc %}
+              <span class="">Space: {{ post.sc }}</span>
+              {% endif %}
+            </span>
+          {% endif %}
+        </a>
+        {% endfor %}
       </div>
-    </div> -->
-
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
+
+<div class="wrapper" id="post-data"></div>
