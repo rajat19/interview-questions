@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Burning Tree
-tags: binary-tree breadth-first-search
+tags: binary-tree breadth-first-search queue
 langs: java
 tc: O(n)
 sc: O(2<sup>h</sup>)
