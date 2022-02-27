@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Coin Change
 tags: array dynamic-programming
-langs: java py
+langs: java py cpp c
 tc: O(n*amount)
 sc: O(amount)
 leetid: 322

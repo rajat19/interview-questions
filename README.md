@@ -2,9 +2,9 @@
 
 Website: [interview-questions](https://rajat19.github.io/interview-questions/)
 
-![Screenshot](assets/img/ss.png)
+![Screenshot](assets/img/global/ss.png)
 
-![Screenshot](assets/img/ss2.png)
+![Screenshot](assets/img/global/ss2.png)
 
 The repository contains solutions to some famous questions asked in interviews.
 
