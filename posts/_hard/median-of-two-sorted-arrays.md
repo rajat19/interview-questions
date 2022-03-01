@@ -10,7 +10,7 @@ leetid: 4
 
 ---
 
-Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in O(log n + log m) time complexity, 
+Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in `O(log n + log m)` time complexity, 
 when n is the number of elements in the first array, and m is the number of elements in the second array.
 
 ---
