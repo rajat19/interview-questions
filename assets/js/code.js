@@ -34,6 +34,20 @@ function showTag(tagValue) {
   $('#tag-dropdown option[value='+tagValue+']').attr('selected', 'selected');
 }
 
+function filterForTag() {
+  const selected = $('#tag-dropdown').val();
+  $('.home-box li').show().filter(`:not(.tag-${selected})`).toggle();
+  $('#tag-dropdown option[value='+selected+']').attr('selected', 'selected');
+}
+
+function filterForSearchBox() {
+  const value = $(this).val().toLowerCase();
+  $(".home-box li").filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  });
+  // commonFilter();
+}
+
 $(function() {
   $(".post-link").on("click",function(e) {
     e.preventDefault();
@@ -43,7 +57,11 @@ $(function() {
   });
 
   $('#tag-dropdown').change(() => {
-    const selected = $('#tag-dropdown').val();
-    showTag(selected);
+    filterForTag();
+    // showTag(selected);
+  });
+
+  $('#search-box').on('keyup', function () {
+    filterForSearchBox();
   });
 });

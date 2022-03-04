@@ -25,13 +25,20 @@
             width: 75%;
         }
     }
+    li {
+        border-bottom:1px solid $header-color;
+    }
 }
 
 .home {
-    .home-tag-list {
+    .home-search {
         display: flex;
-        overflow-x: scroll;
         height: 5vh;
+        .post-search {
+            width: 20vw;
+            border-radius: 10px;
+            display: none;
+        }
     }
 
     .home-post-list {
