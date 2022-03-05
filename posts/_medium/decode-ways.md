@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Decode Ways
-tags: dynamic-programming string
+topics: dynamic-programming string
 langs: java py
 tc: O(n)
 sc: O(n)

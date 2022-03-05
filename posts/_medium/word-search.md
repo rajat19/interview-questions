@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Word Search
-tags: array backtracking string
+topics: array backtracking string
 langs: java
 tc: O(nmw)
 sc: O(1)

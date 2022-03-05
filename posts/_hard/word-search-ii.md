@@ -2,11 +2,11 @@
 layout: post
 author: Rajat Srivastava
 title: Word Search II
-tags: array backtracking string trie
+topics: array backtracking string trie
 langs: java
 tc: O(nm)
 sc: O(w)
-leetid: 0
+leetid: 212
 ---
 
 Given an `m x n` board of characters and a list of strings words, return all words on the board.

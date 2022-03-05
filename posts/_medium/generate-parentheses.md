@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Generate Parentheses
-tags: backtracking dynamic-programming string
+topics: backtracking dynamic-programming string
 langs: java
 tc: O(4<sup>n</sup>/n&#8730;n)
 sc: O(4<sup>n</sup>/n&#8730;n)

@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Maximal Rectangle
-tags: string
+topics: string
 langs: java
 tc: O(nm)
 sc: O(m)

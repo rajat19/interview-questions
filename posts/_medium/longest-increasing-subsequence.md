@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Longest Increasing Subsequence
-tags: array binary-search dynamic-programming
+topics: array binary-search dynamic-programming
 langs: java py
 tc: O(nlogn)
 sc: O(n)

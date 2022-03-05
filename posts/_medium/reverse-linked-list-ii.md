@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Reverse Linked List II
-tags: linked-list
+topics: linked-list
 langs: java
 tc: O(n)
 sc: O(1)

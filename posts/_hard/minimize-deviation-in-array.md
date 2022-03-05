@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Minimize Deviation in Array
-tags: array greedy heap
+topics: array greedy heap
 langs: java
 tc: O(n)
 sc: O(n)

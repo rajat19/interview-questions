@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Populating Next Right Pointers in Each Node
-tags: linked-list tree
+topics: linked-list tree
 langs: java go py
 tc: O(h)
 sc: O(1)

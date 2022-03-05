@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Find the Duplicate Number
-tags: array binary-search two-pointers
+topics: array binary-search two-pointers
 langs: java py
 tc: O(n)
 sc: O(1)

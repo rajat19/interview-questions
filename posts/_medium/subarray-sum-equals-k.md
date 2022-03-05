@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Subarray Sum Equals K
-tags: array hash-table
+topics: array hash-table
 langs: java py
 tc: O(n)
 sc: O(n)

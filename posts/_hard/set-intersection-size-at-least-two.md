@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Set Intersection Size At Least Two
-tags: array greedy sorting
+topics: array greedy sorting
 langs: java
 tc: O(nlogn)
 sc: O(1)

@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: First Missing Positive
-tags: array hash-table
+topics: array hash-table
 langs: java
 tc: O(n)
 sc: O(1)

@@ -27,17 +27,17 @@ function openCode(evt, codeName) {
   evt.currentTarget.className += " active";
 }
 
-function showTag(tagValue) {
+function showTopic(topicValue) {
   $('#post-data').empty();
   $('.problem').css('display', 'none');
-  $('.tag-'+tagValue).css('display', 'flex');
-  $('#tag-dropdown option[value='+tagValue+']').attr('selected', 'selected');
+  $('.topic-'+topicValue).css('display', 'flex');
+  $('#topic-dropdown option[value='+topicValue+']').attr('selected', 'selected');
 }
 
-function filterForTag() {
-  const selected = $('#tag-dropdown').val();
-  $('.home-box li').show().filter(`:not(.tag-${selected})`).toggle();
-  $('#tag-dropdown option[value='+selected+']').attr('selected', 'selected');
+function filterForTopic() {
+  const selected = $('#topic-dropdown').val();
+  $('.home-box li').show().filter(`:not(.topic-${selected})`).toggle();
+  $('#topic-dropdown option[value='+selected+']').attr('selected', 'selected');
 }
 
 function filterForSearchBox() {
@@ -56,9 +56,9 @@ $(function() {
     $('#post-data').load(this.href);
   });
 
-  $('#tag-dropdown').change(() => {
-    filterForTag();
-    // showTag(selected);
+  $('#topic-dropdown').change(() => {
+    filterForTopic();
+    // showTopic(selected);
   });
 
   $('#search-box').on('keyup', function () {

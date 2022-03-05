@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Partition Labels
-tags: hash-table greedy string
+topics: hash-table greedy string
 langs: java py
 tc: O(n)
 sc: O(1)

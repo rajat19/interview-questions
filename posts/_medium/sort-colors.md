@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Sort Colors
-tags: array sorting two-pointers
+topics: array sorting two-pointers
 langs: java
 tc: O(n)
 sc: O(1)

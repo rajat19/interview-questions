@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Remove K Digits
-tags: greedy string stack
+topics: greedy string stack
 langs: java py
 tc: O(n+k)
 sc: O(n)

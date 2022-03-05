@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Maximum Width of Binary Tree
-tags: binary-tree depth-first-search tree
+topics: binary-tree depth-first-search tree
 langs: java
 tc: O(h)
 sc: O(1)

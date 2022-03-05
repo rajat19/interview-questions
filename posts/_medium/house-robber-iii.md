@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: House Robber III
-tags: binary-tree depth-first-search dynamic-programming tree
+topics: binary-tree depth-first-search dynamic-programming tree
 langs: java py
 tc: O(n)
 sc: O(1)

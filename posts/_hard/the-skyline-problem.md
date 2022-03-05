@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: The Skyline Problem
-tags: array divide-and-conquer heap
+topics: array divide-and-conquer heap
 langs: java
 tc: O(nlogn)
 sc: O(n)

@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Perfect Squares
-tags: dynamic-programming
+topics: dynamic-programming
 langs: java
 tc: O(n<sup>2</sup>)
 sc: O(n)

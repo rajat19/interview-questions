@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Clone Graph
-tags: depth-first-search graph hash-table 
+topics: depth-first-search graph hash-table 
 langs: java
 tc: O(n)
 sc: O(n)

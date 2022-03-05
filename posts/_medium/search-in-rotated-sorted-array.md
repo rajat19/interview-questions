@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Search in Rotated Sorted Array
-tags: array two-pointers
+topics: array two-pointers
 langs: java go
 tc: O(n)
 sc: O(n)

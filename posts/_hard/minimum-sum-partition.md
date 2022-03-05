@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Minimum sum partition
-tags: array dynamic-programming
+topics: array dynamic-programming
 langs: java
 tc: O(n)
 sc: O(n)

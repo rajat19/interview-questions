@@ -5,10 +5,10 @@ layout: default
 <div class="wrapper home-wrapper">
   <div class="home">
     <div class="home-search">
-      <select name="tag-dropdown" id="tag-dropdown" class="pill">
-        <option value="" disabled selected>-- select a tag --</option>
-        {% for tag in site.data.tag %}
-        <option value="{{tag}}">{{ tag | replace: "-", " " | capitalize }}</option>
+      <select name="topic-dropdown" id="topic-dropdown" class="pill">
+        <option value="" disabled selected>-- select a topic --</option>
+        {% for topic in site.data.topics %}
+        <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
         {% endfor %}
       </select>
       <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
@@ -20,8 +20,9 @@ layout: default
       <h2 class="post-list-heading"> Difficulty - {{ collection.label }} </h2>
       <ul class="box home-box" id="post-list-{{ collection.label }}">
         {% for post in items %}
-        {% capture tag-classes %}{% for tag in post.tags %}tag-{{tag}} {% endfor %}{% endcapture %}
-        <li class="{{tag-classes}}">
+        {% assign topics = post.topics | split: " " %}
+        {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
+        <li class="{{topic-classes}}">
         <a class="post-link problem" href="{{ post.url | relative_url }}">
           <h3> {% if post.leetid %}{{post.leetid}}. {% endif %} {{ post.title | escape }} </h3>
           {% if post.tc or post.sc %}

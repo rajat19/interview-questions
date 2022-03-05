@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Trapping Rain Water
-tags: array stack two-pointers
+topics: array stack two-pointers
 langs: java go
 tc: O(n)
 sc: O(1)

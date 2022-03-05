@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Kth Smallest Element in a Sorted Matrix
-tags: array binary-search
+topics: array binary-search
 langs: java py cpp
 tc: O(n+m)
 sc: O(1)

@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Letter Combinations of a Phone Number
-tags: string
+topics: string
 langs: java
 tc: O(n)
 sc: O(n)

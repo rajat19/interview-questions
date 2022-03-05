@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Binary Tree Maximum Path Sum
-tags: binary-tree depth-first-search dynamic-programming tree
+topics: binary-tree depth-first-search dynamic-programming tree
 langs: java py
 tc: O(h)
 sc: O(1)

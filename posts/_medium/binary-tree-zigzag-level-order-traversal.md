@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Binary Tree Zigzag Level Order Traversal
-tags: binary-tree breadth-first-search tree
+topics: binary-tree breadth-first-search tree
 langs: java
 tc: O(n)
 sc: O(n)

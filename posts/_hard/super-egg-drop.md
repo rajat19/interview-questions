@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Super Egg Drop
-tags: binary-search dynamic-programming
+topics: binary-search dynamic-programming
 langs: java py cpp
 tc: O(KlogN)
 sc: O(NK)

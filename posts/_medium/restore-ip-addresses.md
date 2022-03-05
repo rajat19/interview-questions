@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Restore IP Addresses
-tags: backtracking string
+topics: backtracking string
 langs: java
 tc: O(n<sup>3</sup>)
 sc: O(1)

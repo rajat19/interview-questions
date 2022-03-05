@@ -60,7 +60,7 @@ Have the following front matter for your post
 layout: post
 author: <AUTHOR_NAME>
 title: <QUESTION_NAME>
-tags: <QUESTION_TYPE>
+topics: <QUESTION_TYPE>
 langs: <SUPPORTED_LANGUAGES>
 leetcode: <LEETCODE_LINK>
 tc: <TIME_COMPLEXITY>

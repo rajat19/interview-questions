@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Detect Cycle Undirected Graph
-tags: graph
+topics: graph
 langs: java
 tc: O(V+E)
 sc: O(V)

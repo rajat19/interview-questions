@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Course Schedule II
-tags: depth-first-search graph topological-sort
+topics: depth-first-search graph topological-sort
 langs: java py
 tc: O(V+E)
 sc: O(V+E)

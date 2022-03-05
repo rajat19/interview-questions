@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Where Will the Ball Fall
-tags: array depth-first-search dynamic-programming
+topics: array depth-first-search dynamic-programming
 langs: java
 tc: O(nm)
 sc: O(m)

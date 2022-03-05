@@ -4,8 +4,9 @@
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    {% for tag in page.tags %}
-      <a class="pill post-tag" id="post-tag-{{tag}}" onclick="showTag('{{tag}}')">{{ tag | replace: "-", " " | capitalize }}</a>
+    {% assign topics = page.topics | split: " " %}
+    {% for topic in topics %}
+      <a class="pill post-topic" id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')">{{ topic | replace: "-", " " | capitalize }}</a>
     {% endfor %}
   </header>
 

@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: LRU Cache
-tags: hash-table linked-list
+topics: hash-table linked-list
 langs: java py
 tc: O(1)
 sc: O(n)

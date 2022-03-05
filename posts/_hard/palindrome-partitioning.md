@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Palindrome Partitioning
-tags: backtracking dynamic-programming string
+topics: backtracking dynamic-programming string
 langs: java
 tc: O(n2<sup>n</sup>)
 sc: O(n<sup>2</sup>)

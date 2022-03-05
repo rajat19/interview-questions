@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Hello World
-tags: string
+topics: string
 langs: java py c cpp go js php cs rb rust scala kt
 tc: O(1)
 sc: O(1)

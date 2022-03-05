@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Word Ladder
-tags: hash-table string
+topics: hash-table string
 langs: java
 tc: O(m<sup>2</sup>n)
 sc: O(m<sup>2</sup>n)

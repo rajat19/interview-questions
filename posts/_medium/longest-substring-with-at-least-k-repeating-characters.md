@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Longest Substring with at least k repeating characters
-tags: divide-and-conquer hash-table sliding-window string
+topics: divide-and-conquer hash-table sliding-window string
 langs: java
 tc: O(n)
 sc: O(26)

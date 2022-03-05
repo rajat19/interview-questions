@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Longest Palindromic Substring
-tags: string dynamic-programming
+topics: string dynamic-programming
 langs: java go py
 tc: O(n<sup>2</sup>)
 sc: O(1)

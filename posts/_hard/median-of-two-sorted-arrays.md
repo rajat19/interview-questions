@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Median of Two Sorted Arrays
-tags: array binary-search divide-and-conquer
+topics: array binary-search divide-and-conquer
 langs: java
 tc: O(log(m+n))
 sc: O(1)

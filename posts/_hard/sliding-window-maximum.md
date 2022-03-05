@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Sliding Window Maximum
-tags: array heap queue sliding-window
+topics: array heap queue sliding-window
 langs: java py
 tc: O(n)
 sc: O(k)
