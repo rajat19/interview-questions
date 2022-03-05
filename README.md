@@ -43,3 +43,5 @@ Print Hello appended by input string
 1. Add solutions in most major languages
 2. Add `main` method in solutions so that we can test them out
 3. Run solutions using [test.sh](/test.sh)
+4. Add company tags
+5. Add GFG, Leetcode, Interviewbit etc. links for preparation and testing out code
