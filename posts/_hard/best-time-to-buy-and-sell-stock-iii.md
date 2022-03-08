@@ -7,7 +7,7 @@ langs: java cpp py
 tc: O(n)
 sc: O(1)
 leetid: 123
-company: facebook
+companies: facebook
 ---
 
 You are given an array prices where `prices[i]` is the price of a given stock on the i<sup>th</sup> day.

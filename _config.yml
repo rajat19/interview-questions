@@ -19,11 +19,16 @@ collections_dir: posts
 
 collections:
   hard:
+    title: Leetcode Hard
     output: true
     sort_by: leetid
   medium:
+    title: Leetcode Medium
     output: true
     sort_by: leetid
+#  fb:
+#    title: Facebook Recruiting Practice
+#    output: true
 
 header_pages:
   - hello-world.md

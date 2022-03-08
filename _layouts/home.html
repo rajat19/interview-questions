@@ -17,7 +17,7 @@ layout: default
     {% for collection in site.collections %}
     {% assign items = site[collection.label] | sort: 'leetid' %}
       {% if items.size > 0 %}
-      <h2 class="post-list-heading"> Difficulty - {{ collection.label }} </h2>
+      <h2 class="post-list-heading"> Category - {{ collection.title }} </h2>
       <ul class="box home-box" id="post-list-{{ collection.label }}">
         {% for post in items %}
         {% assign topics = post.topics | split: " " %}

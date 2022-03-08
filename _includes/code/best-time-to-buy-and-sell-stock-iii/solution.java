@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public int maxProfit(int[] prices) {
         int oneBuy = Integer.MIN_VALUE, oneBuyOneSell = 0;
@@ -9,5 +11,11 @@ class Solution {
             twoBuyTwoSell = Math.max(twoBuyTwoSell, twoBuy + prices[i]);
         }
         return Math.max(oneBuyOneSell, twoBuyTwoSell);
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] prices = new int[]{3,3,5,0,0,3,1,4};
+        System.out.println(solution.maxProfit(prices));
     }
 }

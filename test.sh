@@ -28,7 +28,7 @@ then
  		java Solution
   	;;
  	"py")
- 		python solution.py
+ 		python3 solution.py
   	;;
  	"go")
  		go run solution.go
