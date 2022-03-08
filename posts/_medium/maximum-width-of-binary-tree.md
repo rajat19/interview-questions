@@ -21,19 +21,11 @@ It is guaranteed that the answer will in the range of 32-bit signed integer.
 
 ## Test Cases
 
-**Input:** 
+**Example 1:** 
 ```
-(TreeNode) root = [1,3,2,5,3,null,9]
-```
-
-**Output:** 
-```
-(int) 4
-```
-
-**Explanation:**
-```
-The maximum width existing in the third level with the length 4 (5,3,null,9).
+Input: root = [1,3,null,5,3]
+Output: 2
+Explanation: The maximum width existing in the third level with the length 2 (5,3).
     1
    / \
   3   2
@@ -41,21 +33,11 @@ The maximum width existing in the third level with the length 4 (5,3,null,9).
 5   3   9
 ```
 
----
-
-**Input:**
+**Example 2:** 
 ```
-(TreeNode) root = [1,3,2,5]
-```
-
-**Output:**
-```
-(int) 2
-```
-
-**Explanation:**
-```
-The maximum width existing in the second level with the length 4 (3, 2).
+Input: root = [1,3,2,5]
+Output: 2
+Explanation: The maximum width existing in the second level with the length 2 (3,2).
     1
    / \
   3   2

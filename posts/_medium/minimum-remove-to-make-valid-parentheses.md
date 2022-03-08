@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Minimum Remove to Make Valid Parentheses
 topics: stack string
-langs: java
+langs: java py
 tc: O(n)
 sc: O(n)
 leetid: 1249

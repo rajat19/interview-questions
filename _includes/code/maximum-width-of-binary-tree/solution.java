@@ -15,18 +15,28 @@
  */
 class Solution {
     public int widthOfBinaryTree(TreeNode root) {
-        return dfs(root, 0, 1, new ArrayList<Integer>(), new ArrayList<Integer>());
-    }
-
-    public int dfs(TreeNode root, int level, int order, List<Integer> start, List<Integer> end){
-        if(root == null)return 0;
-        if(start.size() == level){
-            start.add(order); end.add(order);
+        Map<TreeNode, Integer> map = new HashMap<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        map.put(root, 1);
+        int maxWidth = 0, start=0, end=0;
+        while(!q.isEmpty()) {
+            int n = q.size();
+            for(int i=0; i<n; i++) {
+                TreeNode node = q.poll();
+                if (i==0) start = map.get(node);
+                if (i==n-1) end = map.get(node);
+                if (node.left != null) {
+                    q.offer(node.left);
+                    map.put(node.left, 2*map.get(node));
+                }
+                if (node.right != null) {
+                    q.offer(node.right);
+                    map.put(node.right, 1 + 2*map.get(node));
+                }
+            }
+            maxWidth = Math.max(maxWidth, end-start+1);
         }
-        else end.set(level, order);
-        int cur = end.get(level) - start.get(level) + 1;
-        int left = dfs(root.left, level + 1, 2*order, start, end);
-        int right = dfs(root.right, level + 1, 2*order + 1, start, end);
-        return Math.max(cur, Math.max(left, right));
+        return maxWidth;
     }
 }
