@@ -1,30 +1,21 @@
 function openCode(evt, codeName) {
-  // is already active tab -> toggle it
-  
   if (evt.currentTarget.classList.contains("active")) {
     evt.currentTarget.classList.remove("active");
-    document.getElementById(codeName).style.display = "none";
+    document.getElementById(codeName).classList.remove('active');
     return;
   }
-
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="code-tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("code-tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  const tabContents = document.getElementsByClassName("code-tab-content");
+  for (let tabContent of tabContents) {
+    tabContent.classList.remove('active');
   }
-
-  // Get all elements with class="code-tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("code-tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  
+  const tabLinks = document.getElementsByClassName("code-tab-link");
+  for(let tabLink of tabLinks) {
+    tabLink.classList.remove('active');
   }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(codeName).style.display = "block";
-  evt.currentTarget.className += " active";
+  
+  document.getElementById(codeName).classList.add('active');
+  evt.currentTarget.classList.add('active');
 }
 
 function showTopic(topicValue) {
