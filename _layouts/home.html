@@ -23,10 +23,10 @@ layout: default
         {% assign topics = post.topics | split: " " %}
         {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
         <li class="{{topic-classes}}">
-        <a class="post-link problem" href="{{ post.url | relative_url }}">
+          <a class="post-link problem" href="{{ post.url | relative_url }}">
           <h3>
 <!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
-            {{ post.title | escape }}
+              {{ post.title | escape }}
           </h3>
           {% if post.tc or post.sc %}
           <span class="home-complexity">
@@ -36,9 +36,10 @@ layout: default
               {% if post.sc %}
               <span class="">Space: {{ post.sc }}</span>
               {% endif %}
-            </span>
+          </span>
           {% endif %}
-        </a>
+          </a>
+          <div class="post-data-only-mobile" id="post-data-mobile-{{ post.title | slugify }}"></div>
         </li>
         {% endfor %}
       </ul>

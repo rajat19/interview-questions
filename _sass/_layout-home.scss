@@ -33,7 +33,7 @@
 .home {
     .home-search {
         display: flex;
-        height: 5vh;
+        //height: 5vh;
         .post-search {
             width: 20vw;
             border-radius: 10px;
@@ -49,7 +49,9 @@
 }
 
 .home-wrapper {
-    width: 50vw;
+    @media screen and (min-width: $on-laptop) {
+        width: 50vw;
+    }
     height: 87vh;
     overflow-y: auto;
 }
@@ -70,5 +72,27 @@
 .home-complexity span {
     float: left;
     clear: left;
+}
+
+@media screen and (min-width: $on-laptop) {
+    #post-data {
+        display: block;
+    }
+    .post-data-only-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $on-mobile) {
+    #post-data {
+        display: none;
+    }
+    .post-data-only-mobile {
+        display: none;
+        &.active {
+            display: block;
+            border-bottom: 2px solid $theme-color;
+        }
+    }
 }
 

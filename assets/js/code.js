@@ -18,14 +18,22 @@ function openCode(evt, codeName) {
   evt.currentTarget.classList.add('active');
 }
 
-function showTopic(topicValue) {
+function clearPostData() {
+  const allmobile = $('.post-data-only-mobile');
   $('#post-data').empty();
+  allmobile.removeClass('active');
+  allmobile.empty();
+}
+
+function showTopic(topicValue) {
+  clearPostData();
   $('.problem').css('display', 'none');
   $('.topic-'+topicValue).css('display', 'flex');
   $('#topic-dropdown option[value='+topicValue+']').attr('selected', 'selected');
 }
 
 function filterForTopic() {
+  clearPostData();
   const selected = $('#topic-dropdown').val();
   $('.home-box li').show().filter(`:not(.topic-${selected})`).toggle();
   $('#topic-dropdown option[value='+selected+']').attr('selected', 'selected');
@@ -44,7 +52,22 @@ $(function() {
     e.preventDefault();
     $('.post-link').removeClass('active');
     $(this).addClass('active');
-    $('#post-data').load(this.href);
+    clearPostData();
+    if ($(window).width() >= 800) {
+      const postData = $('#post-data');
+      postData.load(this.href);
+      postData.scrollTop;
+    } else {
+      const sibling = $(this).siblings('.post-data-only-mobile');
+      if (sibling.hasClass('active')) {
+        sibling.empty();
+        sibling.removeClass('active');
+        return;
+      }
+      sibling.load(this.href);
+      sibling.addClass('active');
+      sibling.scrollTop;
+    }
   });
 
   $('#topic-dropdown').change(() => {

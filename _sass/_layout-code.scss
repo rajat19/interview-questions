@@ -113,7 +113,12 @@ pre code {
 }
 
 .code-tab-link {
-  width: 25%;
+  @media screen and (min-width: $on-laptop) {
+    width: 25%
+  }
+  @media screen and (max-width: $on-mobile) {
+    width: 50%;
+  }
 }
 
 .code-content {

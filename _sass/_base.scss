@@ -50,7 +50,7 @@ ul, ol, dl, figure,
 // wrapper
 .wrapper {
   //max-width: calc(#{$content-width} - (#{$spacing-unit}));
-  min-width: 50vw;
+
   float: left;
   margin-right: auto;
   margin-left: auto;
@@ -59,6 +59,7 @@ ul, ol, dl, figure,
   @extend %clearfix;
 
   @media screen and (min-width: $on-laptop) {
+    min-width: 50vw;
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
