@@ -6,7 +6,7 @@ topics: array hash-table
 langs: java py
 tc: O(n)
 sc: O(n)
-leetid: 5
+leetid: 560
 
 ---
 

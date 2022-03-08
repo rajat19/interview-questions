@@ -8,12 +8,14 @@
     {% for topic in topics %}
       <a class="pill post-topic" id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')">{{ topic | replace: "-", " " | capitalize }}</a>
     {% endfor %}
+    {% if page.leetid %}
+    <a target="_blank" href="https://leetcode.com/problems/{{ page.slug }}/" class="">
+      <img src="{{site.github.url}}/assets/img/global/leet.png" alt="Leetcode" width="25" height="25">
+    </a>
+    {% endif %}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <span style="display: none;">
-      Leetcode url:: https://leetcode.com/problems/{{ page.slug }}/
-    </span>
     {{ content }}
     {% include codetab.html btnClass="solution" %}
   </div>

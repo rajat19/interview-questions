@@ -15,7 +15,7 @@ layout: default
     </div>
     <div class="home-post-list">
     {% for collection in site.collections %}
-    {% assign items = site[collection.label] | sort: 'leetid' %}
+    {% assign items = site[collection.label] | sort: 'title' %}
       {% if items.size > 0 %}
       <h2 class="post-list-heading"> Category - {{ collection.title }} </h2>
       <ul class="box home-box" id="post-list-{{ collection.label }}">
@@ -24,7 +24,10 @@ layout: default
         {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
         <li class="{{topic-classes}}">
         <a class="post-link problem" href="{{ post.url | relative_url }}">
-          <h3> {% if post.leetid %}{{post.leetid}}. {% endif %} {{ post.title | escape }} </h3>
+          <h3>
+<!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
+            {{ post.title | escape }}
+          </h3>
           {% if post.tc or post.sc %}
           <span class="home-complexity">
               {% if post.tc %}

@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Median of Two Sorted Arrays
 topics: array binary-search divide-and-conquer
-langs: java
+langs: java cpp
 tc: O(log(m+n))
 sc: O(1)
 leetid: 4
@@ -77,37 +77,16 @@ when n is the number of elements in the first array, and m is the number of elem
 ---
 ## Test Cases
 
-**Input:**
-    
-    (int array) arr1 = {-5, 3, 6, 12, 15}
-    (int array) arr2 = {-12, -10, -6, -3, 4, 10}
+**Example 1:**
+```
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+Explanation: merged array = [1,2,3] and median is 2.
+```
 
-**Output:**
-
-	(int) 3
-
-**Explanation**
-
-    The merged array is :
-        ar3[] = {-12, -10, -6, -5 , -3,
-                 3, 4, 6, 10, 12, 15},
-       So the median of the merged array is 3
-
----
-**Input:**
-
-    (int array) arr1 = {2, 3, 5, 8}
-    (int array) arr2 = {10, 12, 14, 16, 18, 20}
-
-**Output:**
-
-	(int) 11
-
-**Explanation**
-
-    The merged array is :
-        ar3[] = {2, 3, 5, 8, 10, 12, 14, 16, 18, 20}
-        if the number of the elements are even, 
-        so there are two middle elements,
-        take the average between the two :
-        (10 + 12) / 2 = 11.
+**Example 2:**
+```
+Input: nums1 = [1,2], nums2 = [3,4]
+Output: 2.50000
+Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+```
