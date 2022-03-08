@@ -40,6 +40,8 @@ function filterForSearchBox() {
 }
 
 $(function() {
+  $(".dropdown-trigger").dropdown();
+
   $(".post-link").on("click",function(e) {
     e.preventDefault();
     $('.post-link').removeClass('active');

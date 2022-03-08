@@ -2,17 +2,65 @@
 layout: default
 ---
 
+<div class="row">
+    <div class="col s6 m6 l6">
+        <label for="topic-dropdown"></label><select name="topic-dropdown" id="topic-dropdown" class="pill">
+            <option value="" disabled selected>-- select a topic --</option>
+            {% for topic in site.data.topics %}
+            <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="col s6 m6 l6">
+        <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m4">
+        {% for collection in site.collections %}
+        {% assign items = site[collection.label] | sort: 'title' %}
+            {% if items.size > 0 %}
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>Category - {{ collection.title }}</h4></li>
+                {% for post in items %}
+                {% assign topics = post.topics | split: " " %}
+                {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
+                <li class="{{topic-classes}} collection-item">
+                    <a class="post-link problem" href="{{ post.url | relative_url }}">
+                        <h3>
+                            <!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
+                            {{ post.title | escape }}
+                        </h3>
+                        {% if post.tc or post.sc %}
+                        <span class="home-complexity">
+                            {% if post.tc %}
+                            <span class="">Time: {{ post.tc }}</span>
+                            {% endif %}
+                            {% if post.sc %}
+                            <span class="">Space: {{ post.sc }}</span>
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+            </ul>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="col s12 m8">
+
+    </div>
+</div>
+
+
 <div class="wrapper home-wrapper">
   <div class="home">
-    <div class="home-search">
-      <select name="topic-dropdown" id="topic-dropdown" class="pill">
-        <option value="" disabled selected>-- select a topic --</option>
-        {% for topic in site.data.topics %}
-        <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
-        {% endfor %}
-      </select>
-      <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
-    </div>
+
     <div class="home-post-list">
     {% for collection in site.collections %}
     {% assign items = site[collection.label] | sort: 'title' %}
