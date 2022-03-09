@@ -19,24 +19,18 @@ function openCode(evt, codeName) {
 }
 
 function clearPostData() {
-  const allmobile = $('.post-data-only-mobile');
+  const mobileDiv = $('.post-data-only-mobile');
   $('#post-data').empty();
-  allmobile.removeClass('active');
-  allmobile.empty();
+  mobileDiv.removeClass('active');
+  mobileDiv.empty();
 }
 
 function showTopic(topicValue) {
   clearPostData();
-  $('.problem').css('display', 'none');
-  $('.topic-'+topicValue).css('display', 'flex');
+  $('.post-link').removeClass('active');
+  $('.home-box li').show().filter(`:not(.topic-${topicValue})`).toggle();
   $('#topic-dropdown option[value='+topicValue+']').attr('selected', 'selected');
-}
-
-function filterForTopic() {
-  clearPostData();
-  const selected = $('#topic-dropdown').val();
-  $('.home-box li').show().filter(`:not(.topic-${selected})`).toggle();
-  $('#topic-dropdown option[value='+selected+']').attr('selected', 'selected');
+  $('.home-post-list').scrollTop;
 }
 
 function filterForSearchBox() {
@@ -52,8 +46,8 @@ $(function() {
     e.preventDefault();
     $('.post-link').removeClass('active');
     $(this).addClass('active');
-    clearPostData();
     if ($(window).width() >= 800) {
+      clearPostData();
       const postData = $('#post-data');
       postData.load(this.href);
       postData.scrollTop;
@@ -64,6 +58,7 @@ $(function() {
         sibling.removeClass('active');
         return;
       }
+      clearPostData();
       sibling.load(this.href);
       sibling.addClass('active');
       sibling.scrollTop;
@@ -71,8 +66,8 @@ $(function() {
   });
 
   $('#topic-dropdown').change(() => {
-    filterForTopic();
-    // showTopic(selected);
+    const selected = $('#topic-dropdown').val();
+    showTopic(selected);
   });
 
   $('#search-box').on('keyup', function () {

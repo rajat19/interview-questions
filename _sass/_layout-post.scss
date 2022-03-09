@@ -97,6 +97,12 @@ article, .comments, .box {
     font-size: 12px;
 }
 
+.post-topics, .post-ext-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .post-topic {
     color: inherit;
     cursor: pointer;

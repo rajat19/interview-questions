@@ -3,50 +3,50 @@ layout: default
 ---
 
 <div class="wrapper home-wrapper">
-  <div class="home">
-    <div class="home-search">
-      <select name="topic-dropdown" id="topic-dropdown" class="pill">
-        <option value="" disabled selected>-- select a topic --</option>
-        {% for topic in site.data.topics %}
-        <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
-        {% endfor %}
-      </select>
-      <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
+    <div class="home">
+        <div class="home-search">
+            <select name="topic-dropdown" id="topic-dropdown" class="pill">
+                <option value="" disabled selected>-- select a topic --</option>
+                {% for topic in site.data.topics %}
+                <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
+                {% endfor %}
+            </select>
+            <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
+        </div>
+        <div class="home-post-list">
+            {% for collection in site.collections %}
+            {% assign items = site[collection.label] | sort: 'title' %}
+            {% if items.size > 0 %}
+            <h2 class="post-list-heading"> Category - {{ collection.title }} </h2>
+            <ul class="box home-box" id="post-list-{{ collection.label }}">
+                {% for post in items %}
+                {% assign topics = post.topics | split: " " %}
+                {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
+                <li class="{{topic-classes}} problem">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        <h3>
+                            <!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
+                            {{ post.title | escape }}
+                        </h3>
+                        {% if post.tc or post.sc %}
+                        <span class="home-complexity">
+                            {% if post.tc %}
+                            <span class="">Time: {{ post.tc }}</span>
+                            {% endif %}
+                            {% if post.sc %}
+                            <span class="">Space: {{ post.sc }}</span>
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </a>
+                    <div class="post-data-only-mobile" id="post-data-mobile-{{ post.title | slugify }}"></div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
-    <div class="home-post-list">
-    {% for collection in site.collections %}
-    {% assign items = site[collection.label] | sort: 'title' %}
-      {% if items.size > 0 %}
-      <h2 class="post-list-heading"> Category - {{ collection.title }} </h2>
-      <ul class="box home-box" id="post-list-{{ collection.label }}">
-        {% for post in items %}
-        {% assign topics = post.topics | split: " " %}
-        {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
-        <li class="{{topic-classes}}">
-          <a class="post-link problem" href="{{ post.url | relative_url }}">
-          <h3>
-<!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
-              {{ post.title | escape }}
-          </h3>
-          {% if post.tc or post.sc %}
-          <span class="home-complexity">
-              {% if post.tc %}
-              <span class="">Time: {{ post.tc }}</span>
-              {% endif %}
-              {% if post.sc %}
-              <span class="">Space: {{ post.sc }}</span>
-              {% endif %}
-          </span>
-          {% endif %}
-          </a>
-          <div class="post-data-only-mobile" id="post-data-mobile-{{ post.title | slugify }}"></div>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    {% endfor %}
-    </div>
-  </div>
 </div>
 
 <div class="wrapper home-wrapper" id="post-data"></div>
