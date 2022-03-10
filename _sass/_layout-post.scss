@@ -112,3 +112,28 @@ article, .comments, .box {
         background-color: $header-color;
     }
 }
+
+.post-example-table {
+    background-color: white;
+    color: black;
+    width: auto;
+    tr {
+        &:nth-child(even) {
+            background-color: white;
+        }
+    }
+    td, tr {
+        border: 1px solid black;
+    }
+    td {
+        &.red {
+            background-color: #f14d4d;
+        }
+        &.green {
+            background-color: #5fbd5f;
+        }
+        &.blue {
+            background-color: #7c7cbb;
+        }
+    }
+}

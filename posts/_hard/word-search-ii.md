@@ -21,22 +21,22 @@ The same letter cell may not be used more than once in a word.
 
 **Example 1:**
 
-<table>
+<table class="post-example-table">
     <tr>
-        <td style="background-color: green">o</td>
-        <td style="background-color: green">a</td>
+        <td class="green">o</td>
+        <td class="green">a</td>
         <td>a</td>
         <td>n</td>
     </tr>
     <tr>
         <td>e</td>
-        <td style="background-color: red">t</td>
-        <td style="background-color: red">a</td>
-        <td style="background-color: red">e</td>
+        <td class="red">t</td>
+        <td class="red">a</td>
+        <td class="red">e</td>
     </tr>
     <tr>
         <td>i</td>
-        <td style="background-color: green">h</td>
+        <td class="green">h</td>
         <td>k</td>
         <td>r</td>
     </tr>
@@ -61,7 +61,7 @@ Output: ["eat","oath"]
 
 **Example 2:** 
 
-<table>
+<table class="post-example-table">
     <tr>
         <td>a</td>
         <td>b</td>

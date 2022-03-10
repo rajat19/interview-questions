@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Word Ladder
 topics: hash-table string
-langs: java
+langs: java cpp
 tc: O(m<sup>2</sup>n)
 sc: O(m<sup>2</sup>n)
 leetid: 127

@@ -5,7 +5,7 @@ title: Word Search
 topics: array backtracking string
 langs: java py
 tc: O(nmw)
-sc: O(1)
+sc: O(n)
 leetid: 79
 ---
 
