@@ -1,6 +1,8 @@
 /**
  * Posts
  */
+@import "highlight-dark";
+
  .post-header {
     margin-bottom: $spacing-unit;
 }
@@ -123,7 +125,7 @@ article, .comments, .box {
         }
     }
     td, tr {
-        border: 1px solid black;
+        border: 1px solid $table-border-color;
     }
     td {
         &.red {
@@ -133,7 +135,33 @@ article, .comments, .box {
             background-color: #5fbd5f;
         }
         &.blue {
-            background-color: #7c7cbb;
+            background-color: #4949ef;
+        }
+        &.gray {
+            background-color: #989595;
+        }
+    }
+}
+
+.post-example-bar {
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid blue;
+    background-color: white;
+    color: black;
+    height: 200px;
+    max-width: fit-content;
+    margin-bottom: 10px;
+    .bar {
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        border: 2px solid black;
+        //margin: 2px;
+        border-bottom: 0;
+        &.selected {
+            background-color: lightcoral;
         }
     }
 }

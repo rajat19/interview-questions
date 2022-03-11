@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Palindrome Partitioning
 topics: backtracking dynamic-programming string
-langs: java
+langs: java py
 tc: O(n2<sup>n</sup>)
 sc: O(n<sup>2</sup>)
 leetid: 131

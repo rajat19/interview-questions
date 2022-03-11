@@ -16,9 +16,21 @@ return the area of the largest rectangle in the `histogram`.
 
 ## Test Cases
 
-![Histogram]({{ site.github.url }}/assets/img/code/histogram.jpeg)
-
 **Input:**
+
+<div class="post-example-bar">
+    <div class="bar" style="height: 20%;">2</div>  
+    <div class="bar" style="height: 10%;">1</div>
+    <div class="bar selected" style="height: 50%;">5</div>
+    <div style="height: 60%">
+        <div class="bar" style="height: 16.67%;">1</div>
+        <div class="bar selected" style="height: 83.33%;">5</div>
+    </div>
+    <div class="bar" style="height: 20%;">2</div>
+    <div class="bar" style="height: 30%;">3</div>
+</div>
+
+
 ```
 (int[]) heights = [2,1,5,6,2,3]
 ```
