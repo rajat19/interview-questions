@@ -198,3 +198,26 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+/**
+Scrollbar design
+ */
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: transparent;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 5px;
+  -webkit-box-shadow: transparent;
+  background-color: black;
+}
