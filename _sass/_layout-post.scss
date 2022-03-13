@@ -67,7 +67,8 @@ article, .comments, .box {
     margin: 25px 0;
     @include media-query($on-mobile) {
         padding: 0;
-        background: transparent;
+        //background: transparent;
+        background: $content-color;
         box-shadow: none;
     }
 }
