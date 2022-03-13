@@ -33,14 +33,6 @@ function showTopic(topicValue) {
   $('.home-post-list').scrollTop;
 }
 
-function filterForSearchBox() {
-  const value = $(this).val().toLowerCase();
-  $(".home-box li").filter(function() {
-    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-  });
-  // commonFilter();
-}
-
 $(function() {
   $(".post-link").on("click",function(e) {
     e.preventDefault();
@@ -71,6 +63,12 @@ $(function() {
   });
 
   $('#search-box').on('keyup', function () {
-    filterForSearchBox();
+    clearPostData();
+    $('.post-link').removeClass('active');
+    const value = $(this).val().toLowerCase();
+    $(".home-box li").show().filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+    $('.home-post-list').scrollTop;
   });
 });
