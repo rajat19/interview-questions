@@ -16,6 +16,9 @@ Given a `rows x cols` binary matrix filled with `0`'s and `1`'s, find the larges
 ## Test Cases
 
 **Example 1:**
+
+[comment]: <> ({% include matrix.html rows=4 cols=5 matrix='[["1","0","1","0","0"],["1","0","1:$blue","1:$blue","1:$blue"],["1","1","1:$blue","1:$blue","1:$blue"],["1","0","0","1","0"]]' %})
+
 <table class="post-example-table">
     <tr>
         <td>1</td>

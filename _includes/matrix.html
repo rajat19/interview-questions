@@ -1,0 +1,17 @@
+{% assign rows = include.rows | 0 %}
+{% assign cols = include.cols | 0 %}
+{% assign matrix = include.matrix | [] | replace ',', ' ' | replace: '[', ' ' | replace ']', ' ' %}
+{{ matrix }}
+<table class="post-example-table">
+
+    {% for i in (0..rows) %}
+    <tr>
+        {% for j in (0..cols) %}
+            {% assign val = matrix[i][j] | split ":$" %}
+            <td class="{%if val[1] %}val[1]{%endif%}">
+                {{ val[0] }}
+            </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>

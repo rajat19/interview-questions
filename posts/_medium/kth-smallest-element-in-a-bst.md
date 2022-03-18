@@ -2,8 +2,8 @@
 layout: post
 author: Rajat Srivastava
 title: Kth Smallest Element in a BST
-topics: tree
-langs: java py
+topics: binary-tree binary-search-tree depth-first-search tree
+langs: java py cpp
 tc: O(h+k)
 sc: O(h)
 leetid: 230
@@ -15,13 +15,28 @@ Given the root of a binary search tree, and an integer k, return the k<sup>th</s
 ---
 ## Test Cases
 
-**Input:**
+**Example 1:**
+```
+Input: root = [3,1,4,null,2], k = 1
+Output: 1
+Explanation:
+   3
+  / \
+ 1   4
+  \
+   2
+```
 
-![Kth Tree]({{ site.github.url }}/assets/img/code/binarytree.jpeg)
-
-    (TreeNode)  root = [5,3,6,2,4,null,null,1]
-    (int)       k = 3
-
-**Output:**
-
-    (int) 3 
+**Example 2:**
+```
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+Output: 3
+Explanation:
+      5
+     / \
+    3   6
+   / \
+  2   4
+ /    
+1
+```
