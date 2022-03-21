@@ -1,17 +1,32 @@
-{% assign rows = include.rows | 0 %}
-{% assign cols = include.cols | 0 %}
-{% assign matrix = include.matrix | [] | replace ',', ' ' | replace: '[', ' ' | replace ']', ' ' %}
-{{ matrix }}
-<table class="post-example-table">
+{% assign rows = include.rows | minus: 1 %}
+{% assign cols = include.cols %}
+{% assign matrix = include.matrix | split: ',' %}
 
-    {% for i in (0..rows) %}
-    <tr>
-        {% for j in (0..cols) %}
-            {% assign val = matrix[i][j] | split ":$" %}
-            <td class="{%if val[1] %}val[1]{%endif%}">
-                {{ val[0] }}
-            </td>
-        {% endfor %}
-    </tr>
-    {% endfor %}
-</table>
+{{matrix}}
+<br>
+{% assign counter = 0 %}
+{% for i in (0..rows) %}
+{% for item in matrix limit: cols offset: i | times: cols %}
+{% assign val = item | split: ":$" %}
+{{val[0]}} {{val[1]}}
+{%endfor%}
+<!--{% for j in (1..cols) %}-->
+<!--{%capture pos %}{{i | times: cols | plus: j | minus: 1 }}{%endcapture%}-->
+<!--xx{{ matrix[pos] }} p:{{ pos }} c: {{ counter | plus: 1 }}xx-->
+<!--{% endfor %}-->
+<br>
+{% endfor %}
+
+<!--<table class="post-example-table">-->
+<!--    {% for i in (1..rows) %}-->
+<!--    <tr>-->
+<!--        i is {{ i }}-->
+<!--        {% for item in matrix limit: cols offset: (i-1)*cols %}-->
+<!--            {% assign val = item | split: ":$" %}-->
+<!--            <td class="{%if val[1] %}{{ val[1] }}{%endif%}">-->
+<!--                {{ val[0] }}-->
+<!--            </td>-->
+<!--        {% endfor %}-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--</table>-->
