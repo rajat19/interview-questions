@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Where Will the Ball Fall
 topics: array depth-first-search dynamic-programming
-langs: java
+langs: java cpp
 tc: O(nm)
 sc: O(m)
 leetid: 1706

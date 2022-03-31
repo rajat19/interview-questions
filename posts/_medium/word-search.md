@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Word Search
 topics: array backtracking string
-langs: java py
+langs: java py cpp
 tc: O(nmw)
 sc: O(n)
 leetid: 79

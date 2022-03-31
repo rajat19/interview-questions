@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Search a 2D Matrix
 topics: string
-langs: java
+langs: java cpp c py go
 tc: O(mn)
 sc: O(1)
 leetid: 74
