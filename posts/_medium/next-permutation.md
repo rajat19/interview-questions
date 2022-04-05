@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Next Permutation
 topics: array two-pointers
-langs: java py go
+langs: java py go cpp c
 tc: O(n)
 sc: O(1)
 leetid: 31
