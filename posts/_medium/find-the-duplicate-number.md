@@ -7,6 +7,7 @@ langs: java py cpp go
 tc: O(n)
 sc: O(1)
 leetid: 287
+companies: adobe amazon apple bloomberg facebook google microsoft
 ---
 
 Given an array of integers nums containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.
