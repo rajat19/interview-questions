@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def nextPermutation(self, arr: List[int]) -> None:
         """

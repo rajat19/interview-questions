@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Word Break
 topics: string dynamic-programming
-langs: java
+langs: java cpp py
 tc: O(n<sup>2</sup>)
 sc: O(n)
 leetid: 139

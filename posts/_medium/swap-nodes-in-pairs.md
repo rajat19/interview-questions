@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Swap Nodes in Pairs
 topics: linked-list recursion
-langs: java cpp py c
+langs: java cpp py c go
 tc: O(n)
 sc: O(1)
 leetid: 24

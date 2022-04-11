@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Combination Sum
 topics: array backtracking
-langs: java
+langs: java cpp
 tc: O(2<sup>n</sup>)
 sc: O(n)
 leetid: 32

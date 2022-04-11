@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Rajat Srivastava
-title: Hello World
+title: Construct Binary Tree from Preorder and Inorder Traversal
 topics: array binary-tree divide-and-conquer tree
 langs: java py cpp
 tc: O(h)
