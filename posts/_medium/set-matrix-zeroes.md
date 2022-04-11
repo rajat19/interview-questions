@@ -17,44 +17,12 @@ You must do it in place.
 
 ## Test Cases
 
-**Example 1:** 
+**Example 1:**
 
 <div style="display: flex">
-<table class="post-example-table">
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td class="blue">0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-</table>
+{% include matrix.html rows=3 cols=3 matrix='1,1,1,1,0:$blue,1,1,1,1' %}
 <div style="margin: 10px; align-items: center; display: flex">---></div>
-<table class="post-example-table">
-    <tr>
-        <td>1</td>
-        <td class="green">0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td class="green">0</td>
-        <td class="blue">0</td>
-        <td class="green">0</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td class="green">0</td>
-        <td>1</td>
-    </tr>
-</table>
+{% include matrix.html rows=3 cols=3 matrix='1,0:$green,1,0:$green,0:$blue,0:$green,1,0:$green,1' %}
 </div>
 
 ```

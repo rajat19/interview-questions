@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Maximum Frequency Stack
-topics: hash-table queue stack
+topics: hash-table heap queue
 langs: java
 tc: O(logn)
 sc: O(n)

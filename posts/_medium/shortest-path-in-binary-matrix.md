@@ -22,12 +22,16 @@ The length of a clear path is the number of visited cells of this path.
 ## Test Cases
 
 **Example 1:** 
+
+{% include matrix.html rows=2 cols=2 matrix='0:$green,1,1,0:$green' %}
 ```
 Input: grid = [[0,1],[1,0]]
 Output: 2
 ```
 
-**Example 2:** 
+**Example 2:**
+
+{% include matrix.html rows=3 cols=3 matrix='0:$green,0:$green,0:$green,1,1,0:$green,1,1,0:$green' %}
 ```
 Input: grid = [[0,0,0],[1,1,0],[1,1,0]]
 Output: 4

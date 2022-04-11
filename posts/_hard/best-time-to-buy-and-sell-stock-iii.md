@@ -2,7 +2,7 @@
 layout: post
 author: Rajat Srivastava
 title: Best Time to Buy and Sell Stock III
-topics: string
+topics: array dynamic-programming
 langs: java cpp py
 tc: O(n)
 sc: O(1)

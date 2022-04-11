@@ -6,9 +6,9 @@ Website: [interview-questions](https://rajat19.github.io/interview-questions/)
 
 ![Screenshot](assets/img/global/ss2.png)
 
-The repository contains solutions to some famous questions asked in interviews.
+The repository contains solutions to top questions asked in interviews.
 
-Questions are present inside [posts](/posts) folder, while their solutions are available in [code](_includes/code) folder
+Questions are present inside [posts](/posts) folder, with their working solutions available in [code](_includes/code) folder
 
 ### Sample coding question post [hello-world.md](/hello-world.md)
 
