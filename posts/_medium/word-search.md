@@ -7,6 +7,7 @@ langs: java py cpp
 tc: O(nmw)
 sc: O(n)
 leetid: 79
+companies: adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter
 ---
 
 Given an `m x n` grid of characters `board` and a string `word`, 

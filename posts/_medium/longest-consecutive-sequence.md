@@ -7,6 +7,7 @@ langs: java cpp
 tc: O(n)
 sc: O(n)
 leetid: 128
+companies: amazon apple facebook goldman_sachs google linkedin microsoft salesforce
 ---
 
 Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.

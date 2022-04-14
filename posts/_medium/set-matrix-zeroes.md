@@ -7,6 +7,7 @@ langs: java
 tc: O(n<sup>2</sup>)
 sc: O(1)
 leetid: 73
+companies: adobe amazon apple bloomberg facebook microsoft oracle
 ---
 
 Given an `m x n` integer `matrix`, if an element is `0`, set its entire row and column to `0`'s.

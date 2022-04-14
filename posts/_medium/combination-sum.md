@@ -7,6 +7,7 @@ langs: java cpp
 tc: O(2<sup>n</sup>)
 sc: O(n)
 leetid: 32
+companies: adobe airbnb amazon apple facebook goldman_sachs linkedin microsoft salesforce
 ---
 
 Given an array of distinct integers `candidates` and a target integer `target`, 

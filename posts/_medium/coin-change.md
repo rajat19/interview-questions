@@ -7,6 +7,7 @@ langs: java py cpp c
 tc: O(n*amount)
 sc: O(amount)
 leetid: 322
+companies: amazon apple google microsoft
 ---
 
 You are given an integer array coins representing coins of different denominations and 

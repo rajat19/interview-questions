@@ -11,6 +11,15 @@
             </a>
             {% endfor %}
         </div>
+        {% assign companies = page.companies | split: " " %}
+        <div class="post-ext-links">
+            {% for company in companies %}
+            <span class="post-ext-link" data-tooltip="{{ company }}">
+                <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
+                     width="25" height="25">
+            </span>
+            {% endfor %}
+        </div>
         <div class="post-ext-links">
             {% if page.leetid %}
             <a target="_blank" href="https://leetcode.com/problems/{{ page.slug }}/" class="">

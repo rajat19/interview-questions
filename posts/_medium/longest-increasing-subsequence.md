@@ -7,7 +7,7 @@ langs: java py
 tc: O(nlogn)
 sc: O(n)
 leetid: 300
-companies: facebook
+companies: amazon apple bloomberg facebook google microsoft
 ---
 
 Given an integer array `nums`, return the length of the longest strictly increasing subsequence.
