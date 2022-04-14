@@ -20,9 +20,9 @@ You must do it in place.
 **Example 1:**
 
 <div style="display: flex">
-{% include matrix.html rows=3 cols=3 matrix='1,1,1,1,0:$blue,1,1,1,1' %}
+{% include components/matrix.html rows=3 cols=3 matrix='1,1,1,1,0:$blue,1,1,1,1' %}
 <div style="margin: 10px; align-items: center; display: flex">---></div>
-{% include matrix.html rows=3 cols=3 matrix='1,0:$green,1,0:$green,0:$blue,0:$green,1,0:$green,1' %}
+{% include components/matrix.html rows=3 cols=3 matrix='1,0:$green,1,0:$green,0:$blue,0:$green,1,0:$green,1' %}
 </div>
 
 ```

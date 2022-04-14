@@ -161,6 +161,18 @@ article, .comments, .box {
         border: 2px solid black;
         //margin: 2px;
         border-bottom: 0;
+        &.red {
+            background-color: #f14d4d;
+        }
+        &.green {
+            background-color: #5fbd5f;
+        }
+        &.blue {
+            background-color: #4949ef;
+        }
+        &.gray {
+            background-color: #989595;
+        }
         &.selected {
             background-color: lightcoral;
         }

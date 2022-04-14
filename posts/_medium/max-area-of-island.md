@@ -23,7 +23,7 @@ Return the maximum area of an island in `grid`. If there is no island, return `0
 
 **Example 1:**
 
-{% include matrix.html rows=8 cols=13 matrix='0,0,1:$blue,0,0,0,0,1:$blue,0,0,0,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,1:$blue,0,0,0,0,1:$blue,1:$blue,0,1:$blue,0,0,0,0,0,0,0,0,0,1:$blue,0,0,1:$blue,1:$blue,0,0,1:$green,0,1:$green,0,0,0,1:$blue,0,0,1:$blue,1:$blue,0,0,1:$green,1:$green,1:$green,0,0,0,0,0,0,0,0,0,0,0,0,1:$green,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,1:$blue,0,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,0,0,0,0' %}
+{% include components/matrix.html rows=8 cols=13 matrix='0,0,1:$blue,0,0,0,0,1:$blue,0,0,0,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,1:$blue,0,0,0,0,1:$blue,1:$blue,0,1:$blue,0,0,0,0,0,0,0,0,0,1:$blue,0,0,1:$blue,1:$blue,0,0,1:$green,0,1:$green,0,0,0,1:$blue,0,0,1:$blue,1:$blue,0,0,1:$green,1:$green,1:$green,0,0,0,0,0,0,0,0,0,0,0,0,1:$green,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,1:$blue,0,0,0,0,0,0,0,0,0,0,1:$blue,1:$blue,0,0,0,0' %}
 
 ```
 Input: grid = 
