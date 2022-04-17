@@ -7,6 +7,7 @@ langs: java cpp py c
 tc: O(n)
 sc: O(1)
 leetid: 25
+companies: amazon apple facebook google microsoft oracle
 ---
 
 Given the `head` of a linked list, reverse the nodes of the list `k` at a time, and return the modified list.
