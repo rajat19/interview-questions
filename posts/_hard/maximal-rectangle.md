@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Maximal Rectangle
 topics: array dynamic-programming matrix stack
-langs: java
+langs: java cpp
 tc: O(nm)
 sc: O(m)
 leetid: 85
