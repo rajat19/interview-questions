@@ -9,3 +9,4 @@ Gemfile.lock
 .DS_Store
 .vscode/
 *.class
+*.out
