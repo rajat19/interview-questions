@@ -7,7 +7,7 @@ langs: java py
 tc: O(n2<sup>n</sup>)
 sc: O(n<sup>2</sup>)
 leetid: 131
-
+companies: adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter
 ---
 
 Given a string `s`, partition `s` such that every substring of the partition is a **palindrome**. 
@@ -39,20 +39,14 @@ Also, we must update the `dp` array, if we find that the current string is a pal
 ---
 ## Test Cases
 
-**Input:**
+**Example 1:**
+```
+Input: s = "aab"
+Output: [["a","a","b"],["aa","b"]]
+```
 
-    (String) s = "aab"
-
-**Output:**
-
-    (String[]) [["a","a","b"],["aa","b"]]
-
----
-
-**Input:**
-
-    (String) s = "a"
-
-**Output:**
-
-    (String[]) [["a"]]
+**Example 2:**
+```
+Input: s = "a"
+Output: [["a"]]
+```

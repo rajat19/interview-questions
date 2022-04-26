@@ -7,7 +7,7 @@ langs: java py c cpp
 tc: O(n)
 sc: O(1)
 leetid: 41
-
+companies: adobe amazon apple facebook google microsoft
 ---
 
 Given an unsorted integer array `nums`, return the smallest missing positive integer.

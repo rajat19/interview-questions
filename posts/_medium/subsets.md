@@ -7,6 +7,7 @@ langs: java
 tc: O(n2<sup>n</sup>)
 sc: O(n)
 leetid: 78
+companies: adobe amazon bloomberg facebook goldman_sachs google twitter
 ---
 
 Given an integer array nums of unique elements, return all possible subsets (the power set).

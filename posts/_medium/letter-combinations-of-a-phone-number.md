@@ -7,6 +7,7 @@ langs: java
 tc: O(n)
 sc: O(n)
 leetid: 17
+companies: adobe amazon apple bloomberg facebook goldman_sachs google intuit microsoft oracle twitter uber
 ---
 
 Given a string containing digits from `2-9` inclusive, 

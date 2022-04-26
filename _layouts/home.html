@@ -11,6 +11,12 @@ layout: default
                 <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
                 {% endfor %}
             </select>
+            <select name="company-dropdown" id="company-dropdown" class="pill">
+                <option value="" disabled selected>-- select a company --</option>
+                {% for company in site.data.companies %}
+                <option value="{{company}}">{{ company | replace: "-", " " | capitalize }}</option>
+                {% endfor %}
+            </select>
             <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
         </div>
         <div class="home-post-list">
@@ -22,7 +28,9 @@ layout: default
                 {% for post in items %}
                 {% assign topics = post.topics | split: " " %}
                 {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
-                <li class="{{topic-classes}} problem">
+                {% assign companies = post.companies | split: " " %}
+                {% capture company-classes %}{% for company in companies %}company-{{company}} {% endfor %}{% endcapture %}
+                <li class="{{topic-classes}} {{company-classes}} problem">
                     <a class="post-link" href="{{ post.url | relative_url }}">
                         <h3>
                             <!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->

@@ -7,6 +7,7 @@ langs: java
 tc: O(n)
 sc: O(1)
 leetid: 152
+companies: amazon apple bloomberg facebook google linkedin microsoft
 ---
 
 Given an integer array `nums`, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
