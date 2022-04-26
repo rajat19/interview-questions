@@ -33,6 +33,14 @@ function showTopic(topicValue) {
   $('.home-post-list').scrollTop;
 }
 
+function showCompany(companyValue) {
+  clearPostData();
+  $('.post-link').removeClass('active');
+  $('.home-box li').show().filter(`:not(.company-${companyValue})`).toggle();
+  $('#company-dropdown option[value='+companyValue+']').attr('selected', 'selected');
+  $('.home-post-list').scrollTop;
+}
+
 $(function() {
   $(".post-link").on("click",function(e) {
     e.preventDefault();
@@ -60,6 +68,11 @@ $(function() {
   $('#topic-dropdown').change(() => {
     const selected = $('#topic-dropdown').val();
     showTopic(selected);
+  });
+
+  $('#company-dropdown').change(() => {
+    const selected = $('#company-dropdown').val();
+    showCompany(selected);
   });
 
   $('#search-box').on('keyup', function () {

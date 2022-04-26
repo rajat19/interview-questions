@@ -15,8 +15,10 @@
         <div class="post-ext-links">
             {% for company in companies %}
             <span class="post-ext-link" data-tooltip="{{ company }}">
-                <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
-                     width="25" height="25">
+                <a onclick="showCompany('{{company}}')">
+                    <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
+                         width="25" height="25">
+                </a>
             </span>
             {% endfor %}
         </div>
