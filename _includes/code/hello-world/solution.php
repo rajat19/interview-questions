@@ -4,3 +4,6 @@ class Solution {
         echo "Hello ".$s;
     }
 }
+
+$solution = new Solution();
+$solution->helloWorld("PHP");
