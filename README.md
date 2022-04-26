@@ -1,12 +1,19 @@
-# interview-questions
+# Interview Questions
+
+![Languages count](https://img.shields.io/github/languages/count/rajat19/interview-questions.svg?style=for-the-badge)
+![Top Language](https://img.shields.io/github/languages/top/rajat19/interview-questions.svg?style=for-the-badge)
+![License](https://img.shields.io/github/license/rajat19/interview-questions?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/rajat19/interview-questions?style=for-the-badge)
+
+A collection of top interview questions asked in DSA rounds of companies. The project is build over jekyll.
+
+The project contains solutions of the questions in multiple languages, the questions are also tagged with topics and companies.
 
 Website: [interview-questions](https://rajat19.github.io/interview-questions/)
 
 ![Screenshot](assets/img/global/ss.png)
 
 ![Screenshot](assets/img/global/ss2.png)
-
-The repository contains solutions to top questions asked in interviews.
 
 Questions are present inside [posts](/posts) folder, with their working solutions available in [code](_includes/code) folder
 
