@@ -27,7 +27,7 @@ Output: true
 
 **Example 2:** 
 
-{% include matrix.html rows=3 cols=4 matrix='1,3:$blue,5,7,10,11,16,20,23,30,34,60' %}
+{% include matrix.html rows=3 cols=4 matrix='1,3,5,7,10,11,16,20,23,30,34,60' %}
 ```
 Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
 Output: false
