@@ -1,10 +1,10 @@
-Class TreeNode{
+class TreeNode{
     int data;
     TreeNode left;
     TreeNode right;
 }
 
-Class Solution{
+class BurningTree{
     public int minTimeToBurnTree(TreeNode root,int target){
         Map<TreeNode, TreeNode> parentMap=new HashMap<>();
         Queue<TreeNode> queue=new LinkedList<>();
