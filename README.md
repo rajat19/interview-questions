@@ -46,6 +46,20 @@ Print Hello appended by input string
 	(string) "Hello World"
 ```
 
+### Setup:
+The project is build over `jekyll`
+
+To start the project
+1. Install ruby
+2. Install bundles using 
+   ```shell
+    bundle install
+    ```
+3. Start project using
+   ```shell 
+   jekyll serve
+   ```
+
 ### TODO:
 1. Add solutions in most major languages
 2. Add `main` method in solutions so that we can test them out
