@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Hello World
 topics: string
-langs: java py c cpp go js php cs rb rust scala kt
+langs: java py c cpp go js php cs rb rust scala kt swift erl ex rkt
 tc: O(1)
 sc: O(1)
 leetid: 0

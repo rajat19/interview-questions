@@ -25,3 +25,11 @@ map:
     ext: rust
   - name: Scala
     ext: scala
+  - name: Swift
+    ext: swift
+  - name: Erlang
+    ext: erl
+  - name: Elixir
+    ext: ex
+  - name: Racket
+    ext: rkt
