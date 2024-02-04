@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Palindrome Partitioning
 topics: backtracking dynamic-programming string
-langs: java py
+langs: java py cpp
 tc: O(n2<sup>n</sup>)
 sc: O(n<sup>2</sup>)
 leetid: 131
@@ -33,8 +33,6 @@ we use a 2 Dimensional array `dp` of size `NxN` where,
 Otherwise, `dp[start][end] ==false`.
 
 Also, we must update the `dp` array, if we find that the current string is a palindrome.
-
-
 
 ---
 ## Test Cases

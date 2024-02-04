@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Median of Two Sorted Arrays
 topics: array binary-search divide-and-conquer
-langs: java cpp
+langs: java cpp py
 tc: O(log(m+n))
 sc: O(1)
 leetid: 4
