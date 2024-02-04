@@ -51,13 +51,17 @@ The project is build over `jekyll`
 
 To start the project
 1. Install ruby
-2. Install bundles using 
+2. Set config for bundle so that it installs for current project only
    ```shell
-    bundle install
-    ```
-3. Start project using
+   bundle config set --local path 'vendor/bundle'
+   ```
+3. Install bundles using
+   ```shell
+   bundle install
+   ```
+4. Serve the website (using local bundle files)
    ```shell 
-   jekyll serve
+   bundle exec jekyll serve
    ```
 
 ### TODO:

@@ -11,6 +11,20 @@ leetid: 0
 
 Print Hello appended by input string
 
+Following represents a [mermaid](https://mermaid.js.org/syntax/flowchart.html) diagram
+```mermaid
+graph LR
+    Question(Question) --> case[Test Case]
+    case --> input>Input]
+    case --> output>Output]
+    Question --> Solution
+    Solution --> Diagram
+    Solution --> Complexities
+    Complexities --> tc((Time))
+    Complexities --> sc((Space))
+    Solution --> Code
+```
+
 ---
 
 ## Test Cases

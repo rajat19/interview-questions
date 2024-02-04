@@ -1,87 +1,115 @@
-function openCode(evt, codeName) {
-  if (evt.currentTarget.classList.contains("active")) {
-    evt.currentTarget.classList.remove("active");
+const openCode = (evt, codeName) => {
+  const { currentTarget } = evt;
+
+  if (currentTarget.classList.contains("active")) {
+    currentTarget.classList.remove("active");
     document.getElementById(codeName).classList.remove('active');
     return;
   }
-  const tabContents = document.getElementsByClassName("code-tab-content");
-  for (let tabContent of tabContents) {
-    tabContent.classList.remove('active');
-  }
-  
-  const tabLinks = document.getElementsByClassName("code-tab-link");
-  for(let tabLink of tabLinks) {
-    tabLink.classList.remove('active');
-  }
-  
+
+  document.querySelectorAll(".code-tab-content, .code-tab-link").forEach((element) => {
+    element.classList.remove('active');
+  });
+
   document.getElementById(codeName).classList.add('active');
-  evt.currentTarget.classList.add('active');
-}
+  currentTarget.classList.add('active');
+};
 
-function clearPostData() {
-  const mobileDiv = $('.post-data-only-mobile');
-  $('#post-data').empty();
-  mobileDiv.removeClass('active');
-  mobileDiv.empty();
-}
+const clearPostData = () => {
+  const mobileDiv = document.querySelector('.post-data-only-mobile');
+  document.getElementById('post-data').innerHTML = '';
+  mobileDiv.classList.remove('active');
+  mobileDiv.innerHTML = '';
+};
 
-function showTopic(topicValue) {
+const showFilter = (filterType, filterValue) => {
   clearPostData();
-  $('.post-link').removeClass('active');
-  $('.home-box li').show().filter(`:not(.topic-${topicValue})`).toggle();
-  $('#topic-dropdown option[value='+topicValue+']').attr('selected', 'selected');
-  $('.home-post-list').scrollTop;
-}
+  document.querySelectorAll('.post-link').forEach((postLink) => {
+    postLink.classList.remove('active');
+  });
 
-function showCompany(companyValue) {
-  clearPostData();
-  $('.post-link').removeClass('active');
-  $('.home-box li').show().filter(`:not(.company-${companyValue})`).toggle();
-  $('#company-dropdown option[value='+companyValue+']').attr('selected', 'selected');
-  $('.home-post-list').scrollTop;
-}
-
-$(function() {
-  $(".post-link").on("click",function(e) {
-    e.preventDefault();
-    $('.post-link').removeClass('active');
-    $(this).addClass('active');
-    if ($(window).width() >= 800) {
-      clearPostData();
-      const postData = $('#post-data');
-      postData.load(this.href);
-      postData.scrollTop;
-    } else {
-      const sibling = $(this).siblings('.post-data-only-mobile');
-      if (sibling.hasClass('active')) {
-        sibling.empty();
-        sibling.removeClass('active');
-        return;
-      }
-      clearPostData();
-      sibling.load(this.href);
-      sibling.addClass('active');
-      sibling.scrollTop;
+  document.querySelectorAll('.home-box li').forEach((li) => {
+    li.style.display = 'block';
+    const filterClass = filterType === 'topic' ? 'topic-' : 'company-';
+    if (!li.classList.contains(`${filterClass}${filterValue}`)) {
+      li.style.display = 'none';
     }
   });
 
-  $('#topic-dropdown').change(() => {
-    const selected = $('#topic-dropdown').val();
+  const dropdown = document.getElementById(`${filterType}-dropdown`);
+  dropdown.value = filterValue;
+  document.querySelector('.home-post-list').scrollTop;
+};
+
+const showTopic = (topicValue) => showFilter('topic', topicValue);
+const showCompany = (companyValue) => showFilter('company', companyValue);
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll(".post-link").forEach((postLink) => {
+    postLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelectorAll('.post-link').forEach((link) => {
+        link.classList.remove('active');
+      });
+
+      const width = window.innerWidth;
+      const postData = document.getElementById('post-data');
+      const { href } = postLink;
+
+      if (width >= 800) {
+        clearPostData();
+        postData.innerHTML = '';
+        fetch(href)
+            .then(response => response.text())
+            .then(data => {
+              postData.innerHTML = data;
+              postData.scrollTop;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+      } else {
+        const sibling = postLink.nextElementSibling;
+        if (sibling.classList.contains('active')) {
+          sibling.innerHTML = '';
+          sibling.classList.remove('active');
+          return;
+        }
+
+        clearPostData();
+        sibling.innerHTML = '';
+        fetch(href)
+            .then(response => response.text())
+            .then(data => {
+              sibling.innerHTML = data;
+              sibling.classList.add('active');
+              sibling.scrollTop;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+      }
+      postLink.classList.add('active');
+    });
+  });
+
+  document.getElementById('topic-dropdown').addEventListener('change', (event) => {
+    const selected = event.target.value;
     showTopic(selected);
   });
 
-  $('#company-dropdown').change(() => {
-    const selected = $('#company-dropdown').val();
+  document.getElementById('company-dropdown').addEventListener('change', (event) => {
+    const selected = event.target.value;
     showCompany(selected);
   });
 
-  $('#search-box').on('keyup', function () {
+  document.getElementById('search-box').addEventListener('keyup', (event) => {
     clearPostData();
-    $('.post-link').removeClass('active');
-    const value = $(this).val().toLowerCase();
-    $(".home-box li").show().filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    document.querySelectorAll('.post-link').forEach((link) => {
+      link.classList.remove('active');
     });
-    $('.home-post-list').scrollTop;
+
+    const value = event.target.value.toLowerCase();
+    document.querySelectorAll(".home-box li").forEach((li) => {
+      li.style.display = li.textContent.toLowerCase().includes(value) ? 'block' : 'none';
+    });
+
+    document.querySelector('.home-post-list').scrollTop;
   });
 });

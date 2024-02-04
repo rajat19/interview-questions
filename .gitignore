@@ -10,3 +10,5 @@ Gemfile.lock
 .vscode/
 *.class
 *.out
+vendor/
+.vendor/

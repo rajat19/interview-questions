@@ -88,8 +88,10 @@
         display: none;
         &.active {
             display: block;
-            border-bottom: 2px solid $theme-color;
+            border-bottom: 0.5rem solid $theme-color;
         }
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .home-complexity {
         display: none;

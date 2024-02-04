@@ -16,7 +16,6 @@ pre {
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
-  white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
@@ -70,7 +69,7 @@ pre code {
   background-color: #f1f1f1;
   //width: fit-content;
   border-radius: 14px;
-  margin: 6px 12px;
+  //margin: 6px 12px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -97,13 +96,20 @@ pre code {
 /* Style the tab content */
 .code-tab-content {
   display: none;
-  padding: 6px 12px;
+  //padding: 6px 12px;
 //   border: 1px solid #ccc;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
   &.active {
     display: block;
   }
+}
+
+.code-tab-content {
+  padding: 1rem 0;
+}
+.code-tab {
+  margin: 1rem 0;
 }
 
 /* Go from zero to full opacity */
@@ -119,12 +125,6 @@ pre code {
   @media screen and (max-width: $on-mobile) {
     width: 50%;
   }
-}
-
-.code-content {
-  //:first-child {
-  //  display: block;
-  //}
 }
 
 .code-complexity {
