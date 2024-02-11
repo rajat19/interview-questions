@@ -5,7 +5,7 @@ from html import unescape
 
 
 class Leetcode:
-    def __init__(self, question, time_complexity, space_complexity, languages):
+    def __init__(self, question: str, time_complexity: str, space_complexity: str, languages: str):
         self.question = question
         self.time_complexity = time_complexity
         self.space_complexity = space_complexity
@@ -100,13 +100,24 @@ companies:
         os.makedirs(os.path.dirname(file_name), exist_ok=True)
         with open(file_name, 'w') as text_file:
             text_file.write(content)
+        print(os.path.abspath(file_name))
+
+    def create_solution_files(self):
+        path = os.path.join('..', '_includes', 'code', self.question)
+        for lang in self.languages.split(' '):
+            file_name = os.path.join(path, 'solution.{}'.format(lang))
+            os.makedirs(os.path.dirname(file_name), exist_ok=True)
+            with open(file_name, 'w') as text_file:
+                text_file.write('')
+            print(os.path.abspath(file_name))
 
     def generate_question(self):
         self.retrieve_question_data()
         post_data = self.create_post_data()
+        print('Created following files::')
         self.create_file(post_data, 'md')
         # self.create_file(self.format_content(self.question_data['content']), 'html')
-        print('Successfully created post for ', self.question)
+        self.create_solution_files()
 
 
 if __name__ == '__main__':
