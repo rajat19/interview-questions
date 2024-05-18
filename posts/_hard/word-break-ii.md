@@ -3,9 +3,9 @@ layout: post
 author: Rajat Srivastava
 title: Word Break II
 topics: backtracking dynamic-programming hash-table string
-langs: java
-tc: O(1)
-sc: O(1)
+langs: java py
+tc: O(2<sup>n</sup>)
+sc: O(n)
 leetid: 140
 ---
 Given a string `s` and a dictionary of strings `wordDict`, 

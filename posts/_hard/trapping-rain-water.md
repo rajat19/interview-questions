@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Trapping Rain Water
 topics: array stack two-pointers
-langs: java go c cpp py
+langs: java go c cpp py js ts cs
 tc: O(n)
 sc: O(1)
 leetid: 42

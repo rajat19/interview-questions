@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Sort Colors
 topics: array sorting two-pointers
-langs: java
+langs: java cpp
 tc: O(n)
 sc: O(1)
 leetid: 75

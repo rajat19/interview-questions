@@ -121,7 +121,7 @@ companies:
 
 
 if __name__ == '__main__':
-    ques = input('Question title: ')
+    ques = input('Question path: ')
     tc = input('Time complexity: ')
     sc = input('Space complexity: ')
     languages = input('Available languages (default java): ')

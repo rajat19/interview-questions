@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Largest Rectangle in Histogram
 topics: array stack
-langs: java py
+langs: java py go cpp
 tc: O(n)
 sc: O(n)
 leetid: 84

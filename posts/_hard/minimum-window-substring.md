@@ -4,7 +4,7 @@ author: Rajat Srivastava
 title: Minimum Window Substring
 category: hard
 topics: hash-table sliding-window string
-langs: java cpp py
+langs: java cpp py c
 tc: O(n+m)
 sc: O(n+m)
 leetid: 76

@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Longest Increasing Path in a Matrix
 topics: depth-first-search dynamic-programming graph
-langs: java
+langs: java cpp
 tc: O(4<sup>mn</sup>)
 sc: O(mn)
 leetid: 329

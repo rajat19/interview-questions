@@ -1,7 +1,7 @@
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Set<String> wordSet = new HashSet<>(wordDict);
-        return DFS(s, wordSet, new HashMap<String, List<String>>());
+        return dfs(s, wordSet, new HashMap<String, List<String>>());
     }
 
     private List<String> dfs(String s, Set<String> wordDict, Map<String, List<String>> map) {

@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Binary Tree Zigzag Level Order Traversal
 topics: binary-tree breadth-first-search tree
-langs: java js
+langs: java js py cpp
 tc: O(n)
 sc: O(n)
 leetid: 103
