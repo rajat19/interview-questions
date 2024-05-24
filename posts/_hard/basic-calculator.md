@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Basic Calculator
 topics: math string stack recursion
-langs: java cpp py go
+langs: java cpp py
 tc: O(n)
 sc: O(n)
 leetid: 224

@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Subsets
 topics: array backtracking
-langs: java
+langs: java cpp
 tc: O(n2<sup>n</sup>)
 sc: O(n)
 leetid: 78
