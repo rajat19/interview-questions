@@ -6,6 +6,7 @@ from html import unescape
 
 class Leetcode:
     def __init__(self, question: str, time_complexity: str, space_complexity: str, languages: str):
+        self.root_path = os.path.join(os.path.dirname(__file__), '..', '..')
         self.question = question
         self.time_complexity = time_complexity
         self.space_complexity = space_complexity
@@ -95,7 +96,7 @@ companies:
 
     def create_file(self, content, ext='md'):
         difficulty_path = '_{}'.format(self.question_data['difficulty'].lower())
-        file_name = os.path.join('..', 'posts', difficulty_path, self.question + '.' + ext)
+        file_name = os.path.join(self.root_path, 'posts', difficulty_path, self.question + '.' + ext)
         # print(file_name, content)
         os.makedirs(os.path.dirname(file_name), exist_ok=True)
         with open(file_name, 'w') as text_file:
@@ -103,7 +104,7 @@ companies:
         print(os.path.abspath(file_name))
 
     def create_solution_files(self):
-        path = os.path.join('..', '_includes', 'code', self.question)
+        path = os.path.join(self.root_path, '_includes', 'code', self.question)
         for lang in self.languages.split(' '):
             file_name = os.path.join(path, 'solution.{}'.format(lang))
             os.makedirs(os.path.dirname(file_name), exist_ok=True)
