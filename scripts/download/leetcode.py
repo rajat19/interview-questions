@@ -126,5 +126,7 @@ if __name__ == '__main__':
     tc = input('Time complexity: ')
     sc = input('Space complexity: ')
     languages = input('Available languages (default java): ')
+    if len(languages) == 0:
+        languages = 'java'
     leetcode = Leetcode(ques, tc, sc, languages)
     leetcode.generate_question()

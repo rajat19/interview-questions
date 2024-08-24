@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Sort List
 topics: divide-and-conquer linked-list sorting two-pointers
-langs: java
+langs: java cpp
 tc: O(nlogn)
 sc: O(1)
 leetid: 148
