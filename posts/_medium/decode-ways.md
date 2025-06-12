@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Decode Ways
 topics: dynamic-programming string
-langs: java py
+langs: java py cpp
 tc: O(n)
 sc: O(n)
 leetid: 91

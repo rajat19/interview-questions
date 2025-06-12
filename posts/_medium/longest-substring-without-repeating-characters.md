@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Longest Substring Without Repeating Characters
 topics: hash-table sliding-window string
-langs: java
+langs: java py
 tc: O(n)
 sc: O(26)
 leetid: 3

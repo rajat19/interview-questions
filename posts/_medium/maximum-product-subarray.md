@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Maximum Product Subarray
 topics: array dynamic-programming
-langs: java
+langs: java py cpp
 tc: O(n)
 sc: O(1)
 leetid: 152
