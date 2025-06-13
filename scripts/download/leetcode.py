@@ -31,14 +31,6 @@ class Leetcode:
                     slug
                     translatedName
                 }
-                hints
-                challengeQuestion {
-                    id
-                    date
-                    incompleteChallengeCount
-                    streakCount
-                    type
-                }
             }
         }
         """
