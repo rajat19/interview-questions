@@ -3,10 +3,11 @@ layout: post
 author: Rajat Srivastava
 title: Longest Substring Without Repeating Characters
 topics: hash-table sliding-window string
-langs: java py
+langs: java py cpp ts
 tc: O(n)
 sc: O(26)
 leetid: 3
+companies: facebook
 ---
 
 Given a string `s`, find the length of the longest substring without repeating characters.

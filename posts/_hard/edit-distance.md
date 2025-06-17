@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Edit Distance
 topics: dynamic-programming string
-langs: java cpp
+langs: java cpp py
 tc: O(nm)
 sc: O(nm)
 leetid: 72

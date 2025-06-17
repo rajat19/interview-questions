@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Number of Islands
 topics: array depth-first-search breadth-first-search union-find matrix
-langs: java py
+langs: java py cpp
 tc: O(mn)
 sc: O(1)
 leetid: 200

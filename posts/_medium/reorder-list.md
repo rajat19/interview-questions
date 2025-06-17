@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Reorder List
 topics: linked-list recursion stack two-pointers
-langs: java
+langs: java py
 tc: O(n)
 sc: O(1)
 leetid: 143
