@@ -24,6 +24,11 @@ dependencies:
     specifier: ^4.1.10
     version: 4.1.10
 
+devDependencies:
+  daisyui:
+    specifier: ^5.0.43
+    version: 5.0.43
+
 packages:
 
   /@ampproject/remapping@2.3.0:
@@ -2056,6 +2061,10 @@ packages:
       d3: 7.9.0
       lodash-es: 4.17.21
     dev: false
+
+  /daisyui@5.0.43:
+    resolution: {integrity: sha512-2pshHJ73vetSpsbAyaOncGnNYL0mwvgseS1EWy1I9Qpw8D11OuBoDNIWrPIME4UFcq2xuff3A9x+eXbuFR9fUQ==, tarball: https://registry.npmjs.org/daisyui/-/daisyui-5.0.43.tgz}
+    dev: true
 
   /dayjs@1.11.13:
     resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==, tarball: https://registry.npmjs.org/dayjs/-/dayjs-1.11.13.tgz}
