@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Search in Rotated Sorted Array
 topics: array two-pointers
-langs: java go cpp py
+langs: java go cpp py c
 tc: O(n)
 sc: O(n)
 leetid: 33
