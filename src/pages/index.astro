@@ -1,11 +1,29 @@
 ---
+import { getCollection } from "astro:content";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
+import QuestionSection from "../components/QuestionSection.astro";
+import QuestionPost from "../components/QuestionPost.astro";
+
+const allPosts = await getCollection("posts");
+
+// Optional: Filter via URL params
+const urlParams = new URLSearchParams(Astro.url.search);
+const topic = urlParams.get("topic");
+const lang = urlParams.get("lang");
+const difficulty = urlParams.get("difficulty");
+
+const filtered = allPosts.filter(({ data }) =>
+    (!topic || data.topics.includes(topic)) &&
+    (!lang || data.langs.includes(lang)) &&
+    (!difficulty || data.difficulty === difficulty)
+);
+
 ---
 
 <BaseLayout>
-    <div class="float-left w-full h-full">
-        <div class="flex">
-
-        </div>
+    <div class="grid grid-cols-2 gap-4 p-4">
+        <QuestionSection />
+        <QuestionPost />
     </div>
 </BaseLayout>

@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 
-const problemSchema = z.object({
+const questionSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
   difficulty: z.enum(['hard', 'medium']),
@@ -13,11 +13,11 @@ const problemSchema = z.object({
   langs: z.string() // Languages available for this problem
 });
 
-const problemsCollection = defineCollection({
+const questionsCollection = defineCollection({
   type: 'content',
-  schema: problemSchema
+  schema: questionSchema
 });
 
 export const collections = {
-  'problems': problemsCollection
+  'questions': questionsCollection
 }; 
