@@ -3,6 +3,24 @@ import topics from '../data/topics.json';
 
 ---
 
+<div class="flex flex-col gap-2 mb-4">
+    <select class="select select-bordered" x-model="$store.questionApp.filters.topic">
+        <option value="">All Topics</option>
+        <template x-for="t in [...new Set($store.questionApp.allQuestions.flatMap(q => q.topics))]" :key="t">
+            <option x-text="t"></option>
+        </template>
+    </select>
+
+    <select class="select select-bordered" x-model="$store.questionApp.filters.lang">
+        <option value="">All Languages</option>
+        <template x-for="l in [...new Set($store.questionApp.allQuestions.flatMap(q => q.langs))]" :key="l">
+            <option x-text="l"></option>
+        </template>
+    </select>
+
+    <input type="text" class="input input-bordered" placeholder="Search..." x-model="$store.questionApp.filters.search" />
+</div>
+
 <div class="card bg-base-100 w-96 shadow-sm">
     <div class="card-body">
         <h2 class="card-title">Find Questions!</h2>

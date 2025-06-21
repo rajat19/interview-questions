@@ -4,13 +4,13 @@ import mdx from '@astrojs/mdx';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import alpinejs from '@astrojs/alpinejs';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://github.com/rajat19/interview-questions',
 
-  integrations: [
-    mdx(),
-  ],
+  integrations: [mdx(), alpinejs()],
 
   markdown: {
     shikiConfig: {

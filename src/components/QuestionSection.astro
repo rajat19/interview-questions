@@ -31,7 +31,31 @@ const parsedQuestions = filtered.map((question) => {
 });
 ---
 
-<div class="flex flex-col gap-4 p-4">
+<div class="flex flex-col gap-4 p-4" x-data="questionFilter" x-data="questionApp({ questions: parsedQuestions })">
     <SearchPanel />
     <QuestionList questions={parsedQuestions}/>
 </div>
+
+<script>
+    function questionApp({ questions: [] }) {
+        return {
+            allQuestions: Alpine.raw({ questions: [] }),
+            filters: {
+                topic: '',
+                lang: '',
+                search: ''
+            },
+            selectedSlug: '',
+            get filtered() {
+                return this.allQuestions.filter(q =>
+                    (!this.filters.topic || q.topics.includes(this.filters.topic)) &&
+                    (!this.filters.lang || q.langs.includes(this.filters.lang)) &&
+                    q.title.toLowerCase().includes(this.filters.search.toLowerCase())
+                );
+            },
+            select(slug: string) {
+                this.selectedSlug = slug;
+            }
+        }
+    }
+</script>
