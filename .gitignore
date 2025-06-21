@@ -12,3 +12,7 @@ Gemfile.lock
 *.out
 vendor/
 .vendor/
+
+# astro related
+.astro/
+node_modules/
