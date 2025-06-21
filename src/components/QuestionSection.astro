@@ -2,9 +2,36 @@
 
 import SearchPanel from "./SearchPanel.astro";
 import QuestionList from "./QuestionList.astro";
+import {getCollection, type CollectionEntry} from "astro:content";
+
+const allQuestions = await getCollection("questions");
+
+const urlParams = new URLSearchParams(Astro.url.search);
+const topic = urlParams.get("topic");
+const lang = urlParams.get("lang");
+const difficulty = urlParams.get("difficulty");
+
+const filtered = allQuestions.filter((questions: CollectionEntry<"questions">) => {
+    const { data } = questions;
+    return (!topic || data.topics.includes(topic)) &&
+        (!lang || data.langs.includes(lang)) &&
+        (!difficulty || data.difficulty === difficulty)
+});
+
+const parsedQuestions = filtered.map((question) => {
+    const { data } = question;
+    return {
+        title: data.title,
+        slug: question.slug,
+        topics: data.topics.split(" "),
+        langs: data.langs.split(" "),
+        difficulty: data.difficulty,
+        companies: (data.companies ?? "").split(" ")
+    };
+});
 ---
 
 <div class="flex flex-col gap-4 p-4">
     <SearchPanel />
-    <QuestionList />
+    <QuestionList questions={parsedQuestions}/>
 </div>
