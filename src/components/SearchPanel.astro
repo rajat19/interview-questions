@@ -12,19 +12,14 @@ import topics from '../data/topics.json';
                 <label>
                     <select class="select">
                         <option disabled selected>Pick a topic</option>
-                        <option>Chrome</option>
-                        <option>FireFox</option>
-                        <option>Safari</option>
+                        {topics.map((topic) => (
+                            <option value={topic}>
+                                {topic}
+                            </option>
+                        ))}
                     </select>
                 </label>
-                <span class="label">Optional</span>
             </fieldset>
-
-            <input class="btn btn-square" type="reset" value="×"/>
-            <input class="btn" type="radio" name="frameworks" aria-label="Svelte"/>
-            <input class="btn" type="radio" name="frameworks" aria-label="Vue"/>
-            <input class="btn" type="radio" name="frameworks" aria-label="React"/>
-
 
             <label class="input">
                 <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

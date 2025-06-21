@@ -5,12 +5,15 @@ const questionSchema = z.object({
   description: z.string().optional(),
   difficulty: z.enum(['hard', 'medium']),
   leetid: z.number().optional(),
-  topics: z.array(z.string()).optional(),
-  companies: z.array(z.string()).optional(),
+  // TODO: move to array of strings
+  topics: z.string(),
+  // TODO: move to array of strings
+  companies: z.string().optional(),
   tc: z.string().optional(),
   sc: z.string().optional(),
-  date: z.string(),
-  langs: z.string() // Languages available for this problem
+  date: z.date(),
+  // TODO: move to array of strings
+  langs: z.string()
 });
 
 const questionsCollection = defineCollection({
