@@ -2,6 +2,7 @@ import { defineCollection, z } from 'astro:content';
 
 const questionSchema = z.object({
   title: z.string(),
+  author: z.string().optional(),
   description: z.string().optional(),
   difficulty: z.enum(['hard', 'medium']),
   leetid: z.number().optional(),

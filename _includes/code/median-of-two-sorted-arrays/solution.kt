@@ -33,6 +33,6 @@ class Solution {
                 start = mid1 + 1
             }
         }
-        return -1.0 // Return a Double consistent with the function's return type
+        return -1.0
     }
 }

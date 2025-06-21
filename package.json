@@ -11,14 +11,17 @@
   "author": "Rajat Srivastava",
   "license": "MIT",
   "dependencies": {
+    "@astrojs/alpinejs": "^0.4.8",
     "@astrojs/mdx": "^4.3.0",
     "@tailwindcss/vite": "^4.1.10",
+    "alpinejs": "^3.14.9",
     "astro": "^5.9.4",
     "rehype-mermaid": "^3.0.0",
     "simple-icons-astro": "^15.2.0",
     "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
-    "daisyui": "^5.0.43"
+    "daisyui": "^5.0.43",
+    "@types/alpinejs": "^3.13.11"
   }
 }

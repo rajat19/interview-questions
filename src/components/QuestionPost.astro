@@ -1,3 +1,30 @@
 ---
+import type { QuestionCardProps } from "./QuestionCard.astro";
+import { getEntry, render } from "astro:content";
+
+interface QuestionPostProps extends QuestionCardProps {
+
+}
+
+const { slug } = Astro.props as { slug: string};
+const post = await getEntry("questions", slug);
+const { data } = post;
+const { Content } = await render(post);
 
 ---
+
+<div class="flex flex-col gap-4 p-4 bg-base-200 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold">{data.title}</h1>
+    <div class="text-sm opacity-70">
+        {data.topics.split(" ").map((topic) => (
+            <span class="badge badge-sm badge-outline mr-1">{topic}</span>
+        ))}
+        {data.langs.split(" ").map((lang) => (
+            <span class="badge badge-sm badge-outline mr-1">{lang}</span>
+        ))}
+        {data.companies && data.companies.split(" ").map((company) => (
+            <span class="badge badge-sm badge-outline mr-1">{company}</span>
+        ))}
+    </div>
+    <Content />
+</div>
