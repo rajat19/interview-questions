@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Find the Duplicate Number
 topics: array binary-search two-pointers
-langs: java py cpp go
+langs: java py cpp go kt
 tc: O(n)
 sc: O(1)
 leetid: 287

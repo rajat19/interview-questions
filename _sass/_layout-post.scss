@@ -90,6 +90,13 @@ article, .comments, .box {
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
     color: white;
+    cursor: pointer;
+    transition: .3s background-color;
+}
+
+.pill:hover {
+    text-decoration: none;
+    background-color: #0f0f0f;
 }
 
 .pill-small {
@@ -101,7 +108,7 @@ article, .comments, .box {
     font-size: 12px;
 }
 
-.post-topics, .post-ext-links {
+.post-pills-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

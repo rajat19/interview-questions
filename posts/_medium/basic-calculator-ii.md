@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Basic Calculator II
 topics: math string stack
-langs: java
+langs: java py
 tc: O(n)
 sc: O(n)
 leetid: 227

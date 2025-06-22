@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Find K Closest Elements
 topics: array two-pointers binary-search sliding-window sorting heap-priority-queue
-langs: java
+langs: java py
 tc: O(n)
 sc: O(1)
 leetid: 658

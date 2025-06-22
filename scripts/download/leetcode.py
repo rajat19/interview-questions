@@ -9,12 +9,13 @@ def format_complexity(complexity: str) -> str:
 
 
 class Leetcode:
-    def __init__(self, question: str, time_complexity: str, space_complexity: str, languages: str):
+    def __init__(self, question: str, time_complexity: str, space_complexity: str, languages: str, companies: str = ''):
         self.root_path = os.path.join(os.path.dirname(__file__), '..', '..')
         self.question = question
         self.time_complexity = format_complexity(time_complexity)
         self.space_complexity = format_complexity(space_complexity)
         self.languages = languages
+        self.companies = companies
         self.url = "https://leetcode.com/graphql"
         self.question_query = """
         query questionData($titleSlug: String!) {
@@ -45,7 +46,7 @@ langs: {languages}
 tc: {tc}
 sc: {sc}
 leetid: {leetcode_id}
-companies:
+companies: {companies}
 ---
 {content}
         """
@@ -87,6 +88,7 @@ companies:
             tc=self.time_complexity,
             sc=self.space_complexity,
             languages=self.languages if self.languages != '' else 'java',
+            companies=self.companies,
             content=content
         )
 
@@ -121,8 +123,9 @@ if __name__ == '__main__':
     ques = input('Question path [url path joined by dash]: ')
     tc = input('Time complexity [O(...) use <sup></sup> to fill power]: ')
     sc = input('Space complexity [O(...) use <sup></sup> to fill power]: ')
-    languages = input('Available languages (default java) [separate by space]: ')
-    if len(languages.strip()) == 0:
-        languages = 'java'
-    leetcode = Leetcode(ques, tc, sc, languages)
+    langs = input('Available languages (default java) [separate by space]: ')
+    comps = input('Companies (default none) [separate by space]: ')
+    if len(langs.strip()) == 0:
+        langs = 'java'
+    leetcode = Leetcode(ques, tc, sc, langs, comps)
     leetcode.generate_question()

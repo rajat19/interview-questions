@@ -7,7 +7,7 @@ langs: java go c cpp py js ts cs
 tc: O(n)
 sc: O(1)
 leetid: 42
-
+gfg: trapping-rain-water
 ---
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, 

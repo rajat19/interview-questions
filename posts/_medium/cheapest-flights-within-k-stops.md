@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Cheapest Flights Within K Stops
 topics: breadth-first-search depth-first-search dynamic-programming graph
-langs: java
+langs: java cpp
 tc: O(n<sup>k</sup>)
 sc: O(n<sup>2</sup>k)
 leetid: 787

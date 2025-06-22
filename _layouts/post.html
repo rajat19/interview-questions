@@ -4,28 +4,34 @@
     <header class="post-header">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
         {% assign topics = page.topics | split: " " %}
-        <div class="post-topics">
+        <div class="post-pills-row">
             {% for topic in topics %}
-            <a class="pill post-topic" id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')">
+            <a class="pill" id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')">
                 {{ topic | replace: "-", " " | capitalize }}
             </a>
             {% endfor %}
         </div>
         {% assign companies = page.companies | split: " " %}
-        <div class="post-ext-links">
+        <div class="post-pills-row">
             {% for company in companies %}
-            <span class="post-ext-link" data-tooltip="{{ company }}">
-                <a onclick="showCompany('{{company}}')">
-                    <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
-                         width="25" height="25">
-                </a>
-            </span>
+            <a class="pill" id="post-company-{{company}}" onclick="showCompany('{{company}}')">
+                <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
+                     width="25" height="25">
+                {{company | capitalize}}
+            </a>
             {% endfor %}
         </div>
-        <div class="post-ext-links">
+        <div class="post-pills-row">
             {% if page.leetid %}
-            <a target="_blank" href="https://leetcode.com/problems/{{ page.slug }}/" class="">
-                <img src="{{site.github.url}}/assets/img/global/leet.png" alt="Leetcode" width="25" height="25">
+            <a target="_blank" href="https://leetcode.com/problems/{{ page.slug }}/" class="pill">
+                <img src="{{site.github.url}}/assets/img/platform/leetcode.svg" alt="Leetcode" width="25" height="25">
+                Leetcode
+            </a>
+            {% endif %}
+            {% if page.gfg %}
+            <a target="_blank" href="https://www.geeksforgeeks.org/dsa/{{ page.gfg }}/" class="pill">
+                <img src="{{site.github.url}}/assets/img/platform/gfg.svg" alt="Leetcode" width="25" height="25">
+                GeeksforGeeks
             </a>
             {% endif %}
         </div>
