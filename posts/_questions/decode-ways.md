@@ -9,7 +9,7 @@ sc: O(n)
 leetid: 91
 interviewbit: ways-to-decode
 difficulty: medium
-companies: 
+companies: [facebook, amazon]
 gfg: 
 hackerrank: 
 ---

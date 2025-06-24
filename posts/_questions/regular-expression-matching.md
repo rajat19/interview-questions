@@ -10,7 +10,7 @@ leetid: 10
 gfg: 
 interviewbit: regular-expression-match
 hackerrank: 
-companies: facebook
+companies: facebook microsoft goldman-sachs uber google
 difficulty: hard
 ---
 Given an input string `s` and a pattern `p`, implement regular expression matching with support for `'.'` and `'*'` where:

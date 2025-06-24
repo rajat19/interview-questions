@@ -7,7 +7,7 @@ langs: [java, py]
 tc: O(n)
 sc: O(1)
 leetid: 122
-companies: facebook
+companies: [facebook, amazon]
 interviewbit: best-time-to-buy-and-sell-stocks-ii
 difficulty: medium
 gfg: 

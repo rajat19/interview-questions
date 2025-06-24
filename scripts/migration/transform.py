@@ -51,11 +51,8 @@ def convert_space_to_list(data, key):
     if key in data and isinstance(data[key], str):
         data[key] = data[key].split()
 
-def process_file(filepath, difficulty, output_dir):
+def process_file(filepath, output_dir):
     data, content = parse_markdown(filepath)
-
-    # Add difficulty
-    data['difficulty'] = difficulty
 
     # Ensure required keys
     ensure_keys(data, ['companies', 'gfg', 'hackerrank', 'interviewbit'])
@@ -63,6 +60,7 @@ def process_file(filepath, difficulty, output_dir):
     # Convert to list format
     convert_space_to_list(data, 'langs')
     convert_space_to_list(data, 'topics')
+    convert_space_to_list(data, 'companies')
 
     # Serialize and save to _common
     os.makedirs(output_dir, exist_ok=True)
@@ -73,23 +71,17 @@ def process_file(filepath, difficulty, output_dir):
         f.write(serialize_markdown(data, content))
 
 def process_all():
-    base_dirs = [('_hard', 'hard'), ('_medium', 'medium')]
     output_dir = 'posts/_common'
-    base_path = 'posts/'
+    path = 'posts/_common'
 
-    for folder, difficulty in base_dirs:
-        path = f"{base_path}/{folder}"
-        if not os.path.exists(path):
-            continue
-
-        for filename in os.listdir(path):
-            if filename.endswith('.md'):
-                filepath = os.path.join(path, filename)
-                try:
-                    process_file(filepath, difficulty, output_dir)
-                    print(f"Processed {filepath}")
-                except Exception as e:
-                    print(f"Error processing {filepath}: {e}")
+    for filename in os.listdir(path):
+        if filename.endswith('.md'):
+            filepath = os.path.join(path, filename)
+            try:
+                process_file(filepath, output_dir)
+                print(f"Processed {filepath}")
+            except Exception as e:
+                print(f"Error processing {filepath}: {e}")
 
 if __name__ == '__main__':
     process_all()

@@ -11,7 +11,7 @@ gfg: iterative-letter-combinations-of-a-phone-number
 companies: adobe amazon apple bloomberg facebook goldman_sachs google intuit microsoft oracle twitter uber
 difficulty: medium
 hackerrank: 
-interviewbit: 
+interviewbit: letter-phone
 ---
 
 Given a string containing digits from `2-9` inclusive, 

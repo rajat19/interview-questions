@@ -7,11 +7,11 @@ langs: [java, py]
 tc: O(n)
 sc: O(h)
 leetid: 236
-companies: 
+companies: [adobe, amazon, facebook, microsoft, google]
 difficulty: medium
-gfg: 
+gfg: lowest-common-ancestor-binary-tree-set-1
 hackerrank: 
-interviewbit: 
+interviewbit: least-common-ancestor
 ---
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow <b>a node to be a descendant of itself</b>).”
