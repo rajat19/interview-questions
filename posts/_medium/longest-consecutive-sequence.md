@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Longest Consecutive Sequence
 topics: array hash-table
-langs: java cpp
+langs: java cpp py
 tc: O(n)
 sc: O(n)
 leetid: 128

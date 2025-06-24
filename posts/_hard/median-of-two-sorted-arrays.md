@@ -7,7 +7,8 @@ langs: java cpp py
 tc: O(log(m+n))
 sc: O(1)
 leetid: 4
-
+gfg: median-of-two-sorted-arrays-of-different-sizes
+companies: facebook
 ---
 
 Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in `O(log n + log m)` time complexity, 

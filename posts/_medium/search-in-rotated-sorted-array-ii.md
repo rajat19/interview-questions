@@ -7,6 +7,8 @@ langs: java
 tc: O(n)
 sc: O(1)
 leetid: 81
+gfg: search-an-element-in-a-sorted-and-pivoted-array
+companies: facebook
 ---
 
 There is an integer array `nums` sorted in non-decreasing order (not necessarily with distinct values).

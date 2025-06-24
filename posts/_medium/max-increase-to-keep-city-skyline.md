@@ -3,7 +3,7 @@ layout: post
 author: Rajat Srivastava
 title: Max Increase to Keep City Skyline
 topics: array greedy
-langs: java
+langs: java py
 tc: O(n<sup>2</sup>)
 sc: O(n)
 leetid: 807

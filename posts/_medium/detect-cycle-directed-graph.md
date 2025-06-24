@@ -6,6 +6,7 @@ topics: graph
 langs: java
 tc: O(V+E)
 sc: O(V)
+gfg: detect-cycle-in-a-graph
 ---
 
 Given a Directed Graph with V vertices (Numbered from 0 to V-1) and E edges, check whether it contains any cycle or not.

@@ -7,6 +7,8 @@ langs: java cpp
 tc: O(nlogn)
 sc: O(n)
 leetid: 315
+gfg: count-smaller-elements-on-right-side
+companies: facebook
 ---
 
 You are given an integer array `nums` and you have to return a new `counts` array. 

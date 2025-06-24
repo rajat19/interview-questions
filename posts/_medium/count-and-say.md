@@ -7,6 +7,8 @@ langs: java
 tc: O(n)
 sc: O(1)
 leetid: 38
+gfg: look-and-say-sequence
+companies: facebook
 ---
 
 The **count-and-say** sequence is a sequence of digit strings defined by the recursive formula:

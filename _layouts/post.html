@@ -17,7 +17,7 @@
             <a class="pill" id="post-company-{{company}}" onclick="showCompany('{{company}}')">
                 <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
                      width="25" height="25">
-                {{company | capitalize}}
+                {{company | replace: "-", " " | capitalize}}
             </a>
             {% endfor %}
         </div>
@@ -30,8 +30,20 @@
             {% endif %}
             {% if page.gfg %}
             <a target="_blank" href="https://www.geeksforgeeks.org/dsa/{{ page.gfg }}/" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/gfg.svg" alt="Leetcode" width="25" height="25">
+                <img src="{{site.github.url}}/assets/img/platform/gfg.svg" alt="GeeksforGeeks" width="25" height="25">
                 GeeksforGeeks
+            </a>
+            {% endif %}
+            {% if page.hackerrank %}
+            <a target="_blank" href="https://www.hackerrank.com/challenges/{{ page.hackerrank }}/problem" class="pill">
+                <img src="{{site.github.url}}/assets/img/platform/hackerrank.svg" alt="Hackerrank" width="25" height="25">
+                Hackerrank
+            </a>
+            {% endif %}
+            {% if page.ib %}
+            <a target="_blank" href="https://www.interviewbit.com/problems/{{ page.ib }}/" class="pill">
+                <img src="{{site.github.url}}/assets/img/platform/interviewbit.svg" alt="InterviewBit" width="25" height="25">
+                InterviewBit
             </a>
             {% endif %}
         </div>

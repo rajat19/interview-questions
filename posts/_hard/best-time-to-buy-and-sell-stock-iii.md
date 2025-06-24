@@ -3,11 +3,12 @@ layout: post
 author: Rajat Srivastava
 title: Best Time to Buy and Sell Stock III
 topics: array dynamic-programming
-langs: java cpp py
+langs: java cpp py c
 tc: O(n)
 sc: O(1)
 leetid: 123
 companies: facebook
+interviewbit: best-time-to-buy-and-sell-stocks-iii
 ---
 
 You are given an array prices where `prices[i]` is the price of a given stock on the i<sup>th</sup> day.

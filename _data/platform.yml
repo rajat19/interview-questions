@@ -1,15 +1,19 @@
 - name: Leetcode
   url: https://leetcode.com
-  identifier: leetid
-  img: leet.png
-- name: Geeks For Geeks
+  identifier: slug
+  img: leetcode.svg
+- name: GeeksForGeeks
   url: https://geeksforgeeks.com
   identifier: gfg
-  img: gfg.png
+  img: gfg.svg
 - name: Facebook Interview Preparation
   identifier: fb-prep
-  img: fb-prep.png
-- name: InterviewBit
+  img: fb-prep.svg
+- name: Interview Bit
   url: https://interviewbit.com
-  identifier: ib
-  img: ib.png
+  identifier: interviewbit
+  img: interviewbit.svg
+- name: Hackerrank
+  url: https://hackerrank.com
+  identifier: hackerrank
+  img: interviewbit.svg

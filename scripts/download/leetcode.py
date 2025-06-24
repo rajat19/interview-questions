@@ -3,41 +3,26 @@ import os
 import re
 from html import unescape
 
-
-def format_complexity(complexity: str) -> str:
-    return complexity if complexity.startswith('O') else f'O({complexity})'
-
-
-class Leetcode:
-    def __init__(self, question: str, time_complexity: str, space_complexity: str, languages: str, companies: str = ''):
-        self.root_path = os.path.join(os.path.dirname(__file__), '..', '..')
-        self.question = question
-        self.time_complexity = format_complexity(time_complexity)
-        self.space_complexity = format_complexity(space_complexity)
-        self.languages = languages
-        self.companies = companies
-        self.url = "https://leetcode.com/graphql"
-        self.question_query = """
-        query questionData($titleSlug: String!) {
-            question(titleSlug: $titleSlug) {
-                questionId
-                title
-                titleSlug
-                content
-                difficulty
-                exampleTestcases
-                categoryTitle
-                topicTags {
-                    name
-                    slug
-                    translatedName
-                }
-            }
+question_query = """
+query questionData($titleSlug: String!) {
+    question(titleSlug: $titleSlug) {
+        questionId
+        title
+        titleSlug
+        content
+        difficulty
+        exampleTestcases
+        categoryTitle
+        topicTags {
+            name
+            slug
+            translatedName
         }
-        """
-        self.variable = {"titleSlug": self.question}
-        self.question_data = None
-        self.post_data_format = """---
+    }
+}
+"""
+
+post_data_format = """---
 layout: post
 author: Rajat Srivastava
 title: {title}
@@ -46,13 +31,43 @@ langs: {languages}
 tc: {tc}
 sc: {sc}
 leetid: {leetcode_id}
+gfg: {gfg}
+interviewbit: {interviewbit}
+hackerrank: {hackerrank}
 companies: {companies}
 ---
 {content}
-        """
+"""
+
+
+def format_complexity(complexity: str) -> str:
+    return complexity if complexity.startswith('O') else f'O({complexity})'
+
+
+class Leetcode:
+    def __init__(self):
+        self.root_path = os.path.join(os.path.dirname(__file__), '..', '..')
+        self.url = "https://leetcode.com/graphql"
+        self.question_data = None
+
+    def take_input(self):
+        self.question = input('Leetcode path [url path joined by dash]: ')
+        self.variable = {"titleSlug": self.question}
+        tc = input('Time complexity [O(...) use <sup></sup> to fill power]: ')
+        sc = input('Space complexity [O(...) use <sup></sup> to fill power]: ')
+        langs = input('Available languages (default java) [separate by space]: ')
+        self.companies = input('Companies (default none) [separate by space]: ')
+        self.gfg = input('GeeksforGeeks path [url path joined by dash]: ')
+        self.hackerrank = input('Hackerrank path [url path joined by dash]: ')
+        self.interviewbit = input('InterviewBit path [url path joined by dash]: ')
+        if len(langs.strip()) == 0:
+            langs = 'java'
+        self.languages = langs
+        self.time_complexity = format_complexity(tc)
+        self.space_complexity = format_complexity(sc)
 
     def retrieve_question_data(self):
-        response = requests.post(self.url, json={'query': self.question_query, 'variables': self.variable})
+        response = requests.post(self.url, json={'query': question_query, 'variables': self.variable})
         self.question_data = response.json()['data']['question']
 
     def create_post_data(self):
@@ -81,7 +96,7 @@ companies: {companies}
 
     def format_content(self, content):
         topics = ' '.join([tag['slug'] for tag in self.question_data['topicTags']])
-        return self.post_data_format.format(
+        return post_data_format.format(
             title=self.question_data['title'],
             topics=topics,
             leetcode_id=self.question_data['questionId'],
@@ -89,6 +104,9 @@ companies: {companies}
             sc=self.space_complexity,
             languages=self.languages if self.languages != '' else 'java',
             companies=self.companies,
+            gfg=self.gfg,
+            hackerrank=self.hackerrank,
+            interviewbit=self.interviewbit,
             content=content
         )
 
@@ -111,6 +129,7 @@ companies: {companies}
             print(os.path.abspath(file_name))
 
     def generate_question(self):
+        self.take_input()
         self.retrieve_question_data()
         post_data = self.create_post_data()
         print('Created following files::')
@@ -120,12 +139,5 @@ companies: {companies}
 
 
 if __name__ == '__main__':
-    ques = input('Question path [url path joined by dash]: ')
-    tc = input('Time complexity [O(...) use <sup></sup> to fill power]: ')
-    sc = input('Space complexity [O(...) use <sup></sup> to fill power]: ')
-    langs = input('Available languages (default java) [separate by space]: ')
-    comps = input('Companies (default none) [separate by space]: ')
-    if len(langs.strip()) == 0:
-        langs = 'java'
-    leetcode = Leetcode(ques, tc, sc, langs, comps)
+    leetcode = Leetcode()
     leetcode.generate_question()

@@ -7,7 +7,8 @@ langs: java py
 tc: O(nm)
 sc: O(nm)
 leetid: 49
-companies:
+companies: facebook
+gfg: given-a-sequence-of-words-print-all-anagrams-together
 ---
 Given an array of strings `strs`, group the `anagrams` together. You can return the answer in **any order**.
  

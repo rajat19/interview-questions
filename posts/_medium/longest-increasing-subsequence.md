@@ -8,6 +8,8 @@ tc: O(nlogn)
 sc: O(n)
 leetid: 300
 companies: amazon apple bloomberg facebook google microsoft
+gfg: longest-increasing-subsequence-dp-3
+interviewbit: longest-increasing-subsequence
 ---
 
 Given an integer array `nums`, return the length of the longest strictly increasing subsequence.

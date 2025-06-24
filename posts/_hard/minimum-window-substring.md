@@ -4,11 +4,12 @@ author: Rajat Srivastava
 title: Minimum Window Substring
 category: hard
 topics: hash-table sliding-window string
-langs: java cpp py c
+langs: java cpp py c kt
 tc: O(n+m)
 sc: O(n+m)
 leetid: 76
-
+gfg: find-the-smallest-window-in-a-string-containing-all-characters-of-another-string
+companies: facebook
 ---
 
 Given two strings `s` and `t` of lengths `m` and `n` respectively, 

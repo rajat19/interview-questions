@@ -8,6 +8,7 @@ tc: O(4<sup>n</sup>/n&#8730;n)
 sc: O(4<sup>n</sup>/n&#8730;n)
 leetid: 22
 companies: adobe amazon apple bloomberg facebook goldman_sachs google microsoft uber
+gfg: print-all-combinations-of-balanced-parentheses
 ---
 
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.

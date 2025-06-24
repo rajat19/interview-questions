@@ -7,6 +7,7 @@ langs: java py cpp
 tc: O(n)
 sc: O(n)
 leetid: 91
+interviewbit: ways-to-decode
 ---
 
 A message containing letters from A-Z can be encoded into numbers using the following mapping:
