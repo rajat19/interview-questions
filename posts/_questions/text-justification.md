@@ -7,7 +7,7 @@ langs: [java]
 tc: O(nm)
 sc: O(n)
 leetid: 68
-companies: facebook
+companies: [facebook]
 gfg: justify-the-given-text-based-on-the-given-width-of-each-line
 difficulty: hard
 hackerrank: 

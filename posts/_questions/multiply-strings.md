@@ -7,7 +7,7 @@ langs: [java, py]
 tc: O(nm)
 sc: O(nm)
 leetid: 43
-companies: facebook
+companies: [facebook]
 gfg: multiply-large-numbers-represented-as-strings
 difficulty: medium
 hackerrank: 

@@ -8,7 +8,7 @@ tc: O(n)
 sc: O(1)
 leetid: 81
 gfg: search-an-element-in-a-sorted-and-pivoted-array
-companies: facebook
+companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 

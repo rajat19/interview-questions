@@ -7,7 +7,7 @@ langs: [java, cpp]
 tc: O(n2<sup>n</sup>)
 sc: O(n)
 leetid: 78
-companies: adobe amazon bloomberg facebook goldman_sachs google twitter
+companies: [adobe, amazon, bloomberg, facebook, goldman-sachs, google, twitter]
 difficulty: medium
 gfg: 
 hackerrank: 

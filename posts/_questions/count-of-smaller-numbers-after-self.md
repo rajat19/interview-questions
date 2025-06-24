@@ -8,7 +8,7 @@ tc: O(nlogn)
 sc: O(n)
 leetid: 315
 gfg: count-smaller-elements-on-right-side
-companies: facebook
+companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 

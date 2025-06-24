@@ -7,7 +7,7 @@ langs: [java, cpp, py]
 tc: O(n)
 sc: O(1)
 leetid: 134
-companies: facebook
+companies: [facebook]
 gfg: find-a-tour-that-visits-all-stations
 interviewbit: gas-station
 hackerrank: truck-tour

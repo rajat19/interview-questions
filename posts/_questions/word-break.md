@@ -8,7 +8,7 @@ tc: O(n<sup>2</sup>)
 sc: O(n)
 leetid: 139
 gfg: word-break-problem-dp-32
-companies: facebook
+companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 

@@ -8,9 +8,9 @@ tc: O(n)
 sc: O(n)
 companies: 
 difficulty: medium
-gfg:
-hackerrank:
-interviewbit:
+gfg: 
+hackerrank: 
+interviewbit: 
 ---
 
 Given two strings s and t of length N, 

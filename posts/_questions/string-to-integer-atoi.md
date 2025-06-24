@@ -7,7 +7,7 @@ langs: [java, cpp]
 tc: O(n)
 sc: O(1)
 leetid: 8
-companies: facebook
+companies: [facebook]
 difficulty: medium
 gfg: 
 hackerrank: 

@@ -7,7 +7,7 @@ langs: [java, cpp, py, c]
 tc: O(n)
 sc: O(1)
 leetid: 25
-companies: amazon apple facebook google microsoft oracle
+companies: [amazon, apple, facebook, google, microsoft, oracle]
 difficulty: hard
 gfg: 
 hackerrank: 

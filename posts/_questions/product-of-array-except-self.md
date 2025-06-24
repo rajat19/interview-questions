@@ -7,7 +7,7 @@ langs: [java, cpp, py]
 tc: O(n)
 sc: O(1)
 leetid: 238
-companies: facebook
+companies: [facebook]
 gfg: a-product-array-puzzle
 difficulty: medium
 hackerrank: 

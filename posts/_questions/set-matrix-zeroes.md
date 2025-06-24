@@ -7,7 +7,7 @@ langs: [java]
 tc: O(n<sup>2</sup>)
 sc: O(1)
 leetid: 73
-companies: adobe amazon apple bloomberg facebook microsoft oracle
+companies: [adobe, amazon, apple, bloomberg, facebook, microsoft, oracle]
 difficulty: medium
 gfg: 
 hackerrank: 

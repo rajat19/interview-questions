@@ -8,7 +8,7 @@ tc: O(n)
 sc: O(1)
 leetid: 38
 gfg: look-and-say-sequence
-companies: facebook
+companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 

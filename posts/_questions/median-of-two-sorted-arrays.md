@@ -8,7 +8,7 @@ tc: O(log(m+n))
 sc: O(1)
 leetid: 4
 gfg: median-of-two-sorted-arrays-of-different-sizes
-companies: facebook
+companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 

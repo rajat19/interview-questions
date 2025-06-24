@@ -20,7 +20,7 @@ def parse_markdown(filepath):
 def serialize_markdown(data, content):
     """Serialize frontmatter with inline lists and no nulls."""
     # Convert lists to inline format
-    for key in ['langs', 'topics']:
+    for key in ['langs', 'topics', 'companies']:
         if key in data and isinstance(data[key], list):
             data[key] = f"[{', '.join(data[key])}]"
 
@@ -54,13 +54,13 @@ def convert_space_to_list(data, key):
 def process_file(filepath, output_dir):
     data, content = parse_markdown(filepath)
 
+    # Convert to list format
+    # convert_space_to_list(data, 'langs')
+    # convert_space_to_list(data, 'topics')
+    convert_space_to_list(data, 'companies')
+
     # Ensure required keys
     ensure_keys(data, ['companies', 'gfg', 'hackerrank', 'interviewbit'])
-
-    # Convert to list format
-    convert_space_to_list(data, 'langs')
-    convert_space_to_list(data, 'topics')
-    convert_space_to_list(data, 'companies')
 
     # Serialize and save to _common
     os.makedirs(output_dir, exist_ok=True)
@@ -71,8 +71,8 @@ def process_file(filepath, output_dir):
         f.write(serialize_markdown(data, content))
 
 def process_all():
-    output_dir = 'posts/_common'
-    path = 'posts/_common'
+    output_dir = 'posts/_questions'
+    path = 'posts/_questions'
 
     for filename in os.listdir(path):
         if filename.endswith('.md'):

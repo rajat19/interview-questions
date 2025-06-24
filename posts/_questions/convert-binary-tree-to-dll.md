@@ -6,7 +6,7 @@ topics: [binary-tree, linked-list, tree]
 langs: [java]
 tc: O(n)
 sc: O(h)
-leetid:
+leetid: 
 difficulty: medium
 companies: [amazon, microsoft, facebook, salesforce]
 gfg: convert-binary-tree-to-doubly-linked-list-using-inorder-traversal

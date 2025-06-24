@@ -7,7 +7,7 @@ langs: [java, cpp]
 tc: O(n)
 sc: O(1)
 leetid: 75
-companies: facebook
+companies: [facebook]
 gfg: sort-an-array-of-0s-1s-and-2s
 difficulty: medium
 hackerrank: 

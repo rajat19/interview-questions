@@ -7,7 +7,7 @@ langs: [java, cpp, py, go]
 tc: O(n)
 sc: O(n)
 leetid: 53
-companies: facebook
+companies: [facebook]
 gfg: find-subarray-with-given-sum
 difficulty: medium
 hackerrank: 

@@ -9,7 +9,7 @@ tc: O(n+m)
 sc: O(n+m)
 leetid: 76
 gfg: find-the-smallest-window-in-a-string-containing-all-characters-of-another-string
-companies: facebook
+companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 

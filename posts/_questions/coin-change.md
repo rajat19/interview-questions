@@ -7,7 +7,7 @@ langs: [java, py, cpp, c]
 tc: O(n*amount)
 sc: O(amount)
 leetid: 322
-companies: amazon apple google microsoft
+companies: [amazon, apple, google, microsoft]
 difficulty: medium
 gfg: 
 hackerrank: 

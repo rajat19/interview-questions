@@ -7,7 +7,7 @@ langs: [java, py, go, cpp]
 tc: O(n)
 sc: O(n)
 leetid: 84
-companies: facebook
+companies: [facebook]
 gfg: largest-rectangular-area-in-a-histogram-using-segment-tree
 difficulty: hard
 hackerrank: 

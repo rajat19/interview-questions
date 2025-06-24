@@ -7,7 +7,7 @@ langs: [java, py, cpp]
 tc: O(n2<sup>n</sup>)
 sc: O(n<sup>2</sup>)
 leetid: 131
-companies: adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman-sachs, google, microsoft, oracle, twitter]
 difficulty: hard
 gfg: 
 hackerrank: 

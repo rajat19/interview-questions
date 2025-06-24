@@ -7,7 +7,7 @@ langs: [java, py, cpp]
 tc: O(nmw)
 sc: O(n)
 leetid: 79
-companies: adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman-sachs, google, microsoft, oracle, twitter]
 difficulty: medium
 gfg: 
 hackerrank: 
