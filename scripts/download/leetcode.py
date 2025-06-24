@@ -26,6 +26,7 @@ post_data_format = """---
 layout: post
 author: Rajat Srivastava
 title: {title}
+difficulty: {difficulty}
 topics: {topics}
 langs: {languages}
 tc: {tc}
@@ -62,7 +63,7 @@ class Leetcode:
         self.interviewbit = input('InterviewBit path [url path joined by dash]: ')
         if len(langs.strip()) == 0:
             langs = 'java'
-        self.languages = langs
+        self.languages = langs.split(' ')
         self.time_complexity = format_complexity(tc)
         self.space_complexity = format_complexity(sc)
 
@@ -95,14 +96,17 @@ class Leetcode:
         return self.format_content(markdown_content)
 
     def format_content(self, content):
-        topics = ' '.join([tag['slug'] for tag in self.question_data['topicTags']])
+        topics = f"[{', '.join([tag['slug'] for tag in self.question_data['topicTags']])}]"
+        difficulty = self.question_data['difficulty'].lower()
+        languages = f"[{', '.join(self.languages)}]"
         return post_data_format.format(
             title=self.question_data['title'],
+            difficulty=difficulty,
             topics=topics,
             leetcode_id=self.question_data['questionId'],
             tc=self.time_complexity,
             sc=self.space_complexity,
-            languages=self.languages if self.languages != '' else 'java',
+            languages=languages,
             companies=self.companies,
             gfg=self.gfg,
             hackerrank=self.hackerrank,
@@ -111,8 +115,8 @@ class Leetcode:
         )
 
     def create_file(self, content, ext='md'):
-        difficulty_path = '_{}'.format(self.question_data['difficulty'].lower())
-        file_name = os.path.join(self.root_path, 'posts', difficulty_path, self.question + '.' + ext)
+        # difficulty_path = '_{}'.format(self.question_data['difficulty'].lower())
+        file_name = os.path.join(self.root_path, 'posts', '_questions', self.question + '.' + ext)
         # print(file_name, content)
         os.makedirs(os.path.dirname(file_name), exist_ok=True)
         with open(file_name, 'w') as text_file:
@@ -121,7 +125,7 @@ class Leetcode:
 
     def create_solution_files(self):
         path = os.path.join(self.root_path, '_includes', 'code', self.question)
-        for lang in self.languages.split(' '):
+        for lang in self.languages:
             file_name = os.path.join(path, 'solution.{}'.format(lang))
             os.makedirs(os.path.dirname(file_name), exist_ok=True)
             with open(file_name, 'w') as text_file:
@@ -134,7 +138,6 @@ class Leetcode:
         post_data = self.create_post_data()
         print('Created following files::')
         self.create_file(post_data, 'md')
-        # self.create_file(self.format_content(self.question_data['content']), 'html')
         self.create_solution_files()
 
 
