@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Least Number of Unique Integers after K Removals
 topics: [array, hash-table, greedy, sorting, counting]
 langs: [java, py]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: least-number-of-unique-integers-after-k-removals
 ---
 Given an array of integers `arr` and an integer `k`. Find the *least number of unique integers* after removing **exactly** `k` elements
 

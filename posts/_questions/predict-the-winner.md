@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Predict the Winner
 topics: [array, dynamic-programming, recursion]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: predict-the-winner
 ---
 
 You are given an integer array `nums`. Two players are playing a game with this array: player 1 and player 2.

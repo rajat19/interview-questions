@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Gas Station
 topics: [array, greedy]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ gfg: find-a-tour-that-visits-all-stations
 interviewbit: gas-station
 hackerrank: truck-tour
 difficulty: medium
+leetcode: gas-station
 ---
 There are `n` gas stations along a circular route, where the amount of gas at the `i<sup>th</sup>` station is `gas[i]`.
 You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from the `i<sup>th</sup>` station to its next `(i + 1)<sup>th</sup>` station. You begin the journey with an empty tank at one of the gas stations.

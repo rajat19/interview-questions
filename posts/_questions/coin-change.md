@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Coin Change
 topics: [array, dynamic-programming]
 langs: [java, py, cpp, c]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: coin-change
 ---
 
 You are given an integer array coins representing coins of different denominations and 

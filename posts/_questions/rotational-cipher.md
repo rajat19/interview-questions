@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Rotational Cipher
 topics: [string]
 langs: [java]
@@ -11,6 +10,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 One simple way to encrypt a string is to "rotate" every alphanumeric character by a certain amount. Rotating a character means replacing it with another character that is a certain number of steps away in normal alphabetic or numerical order.

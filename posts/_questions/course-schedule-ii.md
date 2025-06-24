@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Course Schedule II
 topics: [depth-first-search, graph, topological-sort]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: course-schedule-ii
 ---
 
 There are a total of numCourses courses you have to take, labeled from `0` to `numCourses - 1`. 

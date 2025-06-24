@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Maximum Subarray
 topics: [array, divide-and-conquer, dynamic-programming]
 langs: [java, cpp, py, go]
@@ -12,6 +11,7 @@ gfg: find-subarray-with-given-sum
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: maximum-subarray
 ---
 Given an integer array `nums`, find the `subarray` with the largest sum, and return *its sum*.
  

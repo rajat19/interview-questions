@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Cherry Pickup II
 topics: [array, dynamic-programming, matrix]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: hard
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: cherry-pickup-ii
 ---
 You are given a `rows x cols` matrix `grid` representing a field of cherries where `grid[i][j]` represents the number of cherries that you can collect from the `(i, j)` cell.
 You have two robots that can collect cherries for you:

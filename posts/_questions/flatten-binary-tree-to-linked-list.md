@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Flatten Binary Tree to Linked List
 topics: [binary-tree, depth-first-search, linked-list, tree]
 langs: [java, cpp, c, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: flatten-binary-tree-to-linked-list
 ---
 
 Given the root of a binary tree, flatten the tree into a "linked list":

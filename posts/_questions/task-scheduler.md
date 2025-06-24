@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Task Scheduler
 topics: [array, greedy, hash-table]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: task-scheduler
 ---
 
 Given a characters array `tasks`, representing the tasks a CPU needs to do, where each letter represents a different task. 

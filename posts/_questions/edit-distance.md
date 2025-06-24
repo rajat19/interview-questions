@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Edit Distance
 topics: [dynamic-programming, string]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: edit-distance
 ---
 
 Given two strings `word1` and `word2`, return the minimum number of operations required to convert `word1` to `word2`.

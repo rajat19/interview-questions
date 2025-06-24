@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Hello World
 topics: string
 langs: java py c cpp go js php cs rb rust scala kt swift erl ex rkt

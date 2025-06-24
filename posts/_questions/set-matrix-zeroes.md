@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Set Matrix Zeroes
 topics: [array, hash-table, matrix]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: set-matrix-zeroes
 ---
 
 Given an `m x n` integer `matrix`, if an element is `0`, set its entire row and column to `0`'s.

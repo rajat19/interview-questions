@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Remove K Digits
 topics: [greedy, string, stack]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: remove-k-digits
 ---
 
 Given string `num` representing a non-negative integer `num`, and an integer `k`, 

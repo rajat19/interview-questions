@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Remove Duplicate Letters
 topics: [greedy, stack, string]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: remove-duplicate-letters
 ---
 
 Given a string `s`, remove duplicate letters so that every letter appears once and only once. 

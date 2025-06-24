@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Detect Cycle Undirected Graph
 topics: [graph]
 langs: [java]
@@ -11,6 +10,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not.

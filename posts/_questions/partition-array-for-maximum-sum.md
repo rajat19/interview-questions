@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Partition Array for Maximum Sum
 topics: [array, dynamic-programming]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: partition-array-for-maximum-sum
 ---
 
 Given an integer array `arr`, partition the array into (contiguous) subarrays of length **at most** `k`. 

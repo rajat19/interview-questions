@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Find Median from Data Stream
 topics: [heap, sorting, two-pointers]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: find-median-from-data-stream
 ---
 
 The median is the middle value in an ordered integer list. 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Basic Calculator II
 topics: [math, string, stack]
 langs: [java, py]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: basic-calculator-ii
 ---
 Given a string `s` which represents an expression, *evaluate this expression and return its value*. 
 The integer division should truncate toward zero.

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Swap Nodes in Pairs
 topics: [linked-list, recursion]
 langs: [java, cpp, py, c, go]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: swap-nodes-in-pairs
 ---
 
 Given a linked list, swap every two adjacent nodes and return its head. 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Remove Nth Node From End of List
 topics: [linked-list]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: remove-nth-node-from-end-of-list
 ---
 
 Given the `head` of a linked list, remove the `n`th node from the end of the list and return its `head`.

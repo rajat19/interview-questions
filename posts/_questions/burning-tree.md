@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Burning Tree
 topics: [binary-tree, breadth-first-search, queue, tree]
 langs: [java]
@@ -11,6 +10,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 Given a binary tree and target node. By giving the fire to the target node and fire starts to spread in a complete tree. 

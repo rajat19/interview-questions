@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Course Schedule III
 topics: [array, greedy, heap]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: course-schedule-iii
 ---
 
 There are `n` different online courses numbered from `1` to `n`. 

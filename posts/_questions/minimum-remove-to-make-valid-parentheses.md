@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Minimum Remove to Make Valid Parentheses
 topics: [stack, string]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: minimum-remove-to-make-valid-parentheses
 ---
 
 Given a string s of `'('` , `')'` and lowercase English characters.

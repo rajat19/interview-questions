@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Increasing Path in a Matrix
 topics: [depth-first-search, dynamic-programming, graph]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: longest-increasing-path-in-a-matrix
 ---
 
 Given an `m` x `n` integers `matrix`, return the length of the longest increasing path in `matrix`.

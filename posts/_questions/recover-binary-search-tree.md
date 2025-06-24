@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Recover Binary Search Tree
 topics: [binary-search-tree, binary-tree, depth-first-search, tree]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: recover-binary-search-tree
 ---
 
 You are given the root of a binary search tree (BST), 

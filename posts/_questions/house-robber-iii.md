@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: House Robber III
 topics: [binary-tree, depth-first-search, dynamic-programming, tree]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: house-robber-iii
 ---
 
 The thief has found himself a new place for his thievery again. There is only one entrance to this area, called `root`.

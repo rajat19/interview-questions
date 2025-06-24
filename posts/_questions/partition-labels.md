@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Partition Labels
 topics: [hash-table, greedy, string]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: partition-labels
 ---
 
 You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.

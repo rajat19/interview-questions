@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Clone Graph
 topics: [depth-first-search, graph, hash-table]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: clone-graph
 ---
 
 Given a reference of a node in a connected undirected graph.

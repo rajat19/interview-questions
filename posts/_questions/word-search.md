@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Word Search
 topics: [array, backtracking, string]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: word-search
 ---
 
 Given an `m x n` grid of characters `board` and a string `word`, 

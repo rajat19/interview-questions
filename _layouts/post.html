@@ -22,30 +22,15 @@
             {% endfor %}
         </div>
         <div class="post-pills-row">
-            {% if page.leetid %}
-            <a target="_blank" href="https://leetcode.com/problems/{{ page.slug }}/" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/leetcode.svg" alt="Leetcode" width="25" height="25">
-                Leetcode
-            </a>
+            {% for platform in site.data.platforms %}
+            {% assign identifier = page[platform.identifier] %}
+            {% if identifier %}
+                <a target="_blank" href="{{ platform.base }}{{ identifier }}{{ platform.suffix }}" class="pill">
+                <img src="{{site.github.url}}/assets/img/platform/{{platform.img}}" alt="{{ platform.name }}" width="25" height="25">
+                {{ platform.name }}
+                </a>
             {% endif %}
-            {% if page.gfg %}
-            <a target="_blank" href="https://www.geeksforgeeks.org/dsa/{{ page.gfg }}/" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/gfg.svg" alt="GeeksforGeeks" width="25" height="25">
-                GeeksforGeeks
-            </a>
-            {% endif %}
-            {% if page.hackerrank %}
-            <a target="_blank" href="https://www.hackerrank.com/challenges/{{ page.hackerrank }}/problem" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/hackerrank.svg" alt="Hackerrank" width="25" height="25">
-                Hackerrank
-            </a>
-            {% endif %}
-            {% if page.interviewbit %}
-            <a target="_blank" href="https://www.interviewbit.com/problems/{{ page.interviewbit }}/" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/interviewbit.svg" alt="InterviewBit" width="25" height="25">
-                InterviewBit
-            </a>
-            {% endif %}
+            {% endfor %}
         </div>
     </header>
 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Reverse Nodes in k-Group
 topics: [linked-list, recursion]
 langs: [java, cpp, py, c]
@@ -12,6 +11,7 @@ difficulty: hard
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: reverse-nodes-in-k-group
 ---
 
 Given the `head` of a linked list, reverse the nodes of the list `k` at a time, and return the modified list.

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Sort List
 topics: [divide-and-conquer, linked-list, sorting, two-pointers]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: sort-list
 ---
 
 Given the `head` of a linked list, return the list after sorting it in ascending order.

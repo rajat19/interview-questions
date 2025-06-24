@@ -1,11 +1,11 @@
-{% assign langs = page.langs | default: site.data.lang.default %}
+{% assign langs = page.langs | default: site.data.languages.default %}
 {% assign active_lang = langs | first %}
 
 <hr>
 <h2>Solution</h2>
 
 <div class="code-tab">
-    {% for lang in site.data.lang.map %}
+    {% for lang in site.data.languages.map %}
     {% if langs contains lang.ext %}
     {% capture active_class %}{% if lang.ext == active_lang %}active{% endif %}{% endcapture %}
     <button class="code-tab-link {{active_class}}" onclick="openCode(event, '{{page.slug}}-{{ include.btnClass }}-{{ lang.name }}')" type="button">
@@ -23,7 +23,7 @@
 </div>
 
 <div class="code-content">
-    {% for lang in site.data.lang.map %}
+    {% for lang in site.data.languages.map %}
     {% if langs contains lang.ext %}
     {% capture the_snippet_content %}{% include code/{{page.title | slugify}}/{{include.btnClass}}.{{lang.ext}} %}{% endcapture %}
     {% capture lang_file_name %}lang/{{lang.ext}}.html{% endcapture %}

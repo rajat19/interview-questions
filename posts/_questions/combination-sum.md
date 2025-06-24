@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Combination Sum
 topics: [array, backtracking]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: combination-sum
 ---
 
 Given an array of distinct integers `candidates` and a target integer `target`, 

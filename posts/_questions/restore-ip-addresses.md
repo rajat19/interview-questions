@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Restore IP Addresses
 topics: [backtracking, string]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: restore-ip-addresses
 ---
 
 A valid IP address consists of exactly four integers separated by single dots. 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Max Increase to Keep City Skyline
 topics: [array, greedy]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: max-increase-to-keep-city-skyline
 ---
 
 There is a city composed of `n x n` blocks, 

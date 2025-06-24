@@ -22,7 +22,6 @@ Questions are present inside [posts](/posts) folder, with their working solution
 ```markdown
 ---
 layout: post
-author: Rajat Srivastava
 title: Hello World
 topics: string
 langs: java py c cpp go js php cs rb rust scala kt

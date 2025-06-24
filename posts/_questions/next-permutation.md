@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Next Permutation
 topics: [array, two-pointers]
 langs: [java, py, go, cpp, c]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: next-permutation
 ---
 
 A permutation of an array of integers is an arrangement of its members into a sequence or linear order.

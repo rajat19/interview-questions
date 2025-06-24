@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Reorder List
 topics: [linked-list, recursion, stack, two-pointers]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: reorder-list
 ---
 
 You are given the head of a singly linked-list. The list can be represented as:

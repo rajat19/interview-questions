@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Group Anagrams
 topics: [array, hash-table, string, sorting]
 langs: [java, py]
@@ -12,6 +11,7 @@ gfg: given-a-sequence-of-words-print-all-anagrams-together
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: group-anagrams
 ---
 Given an array of strings `strs`, group the `anagrams` together. You can return the answer in **any order**.
  

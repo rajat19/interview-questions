@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Sliding Window Maximum
 topics: [array, heap, queue, sliding-window]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: sliding-window-maximum
 ---
 
 You are given an array of integers nums, 

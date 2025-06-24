@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Minimum Window Substring
 category: hard
 topics: [hash-table, sliding-window, string]
@@ -13,6 +12,7 @@ companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 
+leetcode: minimum-window-substring
 ---
 
 Given two strings `s` and `t` of lengths `m` and `n` respectively, 

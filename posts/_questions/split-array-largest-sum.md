@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Split Array Largest Sum
 topics: [array, dynamic-programming, greedy]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: split-array-largest-sum
 ---
 
 Given an array nums which consists of non-negative integers and an integer `m`, 

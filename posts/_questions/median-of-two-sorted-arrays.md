@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Median of Two Sorted Arrays
 topics: [array, binary-search, divide-and-conquer]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 
+leetcode: median-of-two-sorted-arrays
 ---
 
 Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in `O(log n + log m)` time complexity, 

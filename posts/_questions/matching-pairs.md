@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Matching Pairs
 topics: [string]
 langs: [java]
@@ -11,6 +10,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 Given two strings s and t of length N, 

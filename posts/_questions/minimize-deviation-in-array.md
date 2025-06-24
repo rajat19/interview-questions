@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Minimize Deviation in Array
 topics: [array, greedy, heap]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: minimize-deviation-in-array
 ---
 
 You are given an array nums of `n` positive integers.

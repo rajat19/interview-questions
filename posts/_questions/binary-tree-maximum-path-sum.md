@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Binary Tree Maximum Path Sum
 topics: [binary-tree, depth-first-search, dynamic-programming, tree]
 langs: [java, py, cpp, ts]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: binary-tree-maximum-path-sum
 ---
 
 A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.

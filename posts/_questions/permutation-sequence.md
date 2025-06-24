@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Permutation Sequence
 topics: [recursion]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: permutation-sequence
 ---
 
 The set `[1, 2, 3, ..., n]` contains a total of `n!` unique permutations.

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Find Peak Element
 difficulty: medium
 topics: [array, binary-search]
@@ -12,6 +11,7 @@ gfg:
 interviewbit: 
 hackerrank: 
 companies: 
+leetcode: find-peak-element
 ---
 A peak element is an element that is strictly greater than its neighbors.
 Given a **0-indexed** integer array `nums`, find a peak element, and return its index. If the array contains multiple peaks, return the index to **any of the peaks**.

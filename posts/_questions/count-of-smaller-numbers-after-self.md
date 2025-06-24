@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Count of Smaller Numbers After Self
 topics: [array, divide-and-conquer, sorting]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies: [facebook]
 difficulty: hard
 hackerrank: 
 interviewbit: 
+leetcode: count-of-smaller-numbers-after-self
 ---
 
 You are given an integer array `nums` and you have to return a new `counts` array. 

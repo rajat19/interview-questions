@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Construct Binary Tree from Preorder and Inorder Traversal
 topics: [array, binary-tree, divide-and-conquer, tree]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: construct-binary-tree-from-preorder-and-inorder-traversal
 ---
 
 Given two integer arrays `preorder` and `inorder` where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Super Egg Drop
 topics: [binary-search, dynamic-programming]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: super-egg-drop
 ---
 
 You are given `K` identical eggs and you have access to a building with `N` floors labeled from `1` to `N`.

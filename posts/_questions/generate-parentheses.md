@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Generate Parentheses
 topics: [backtracking, dynamic-programming, string]
 langs: [java]
@@ -12,6 +11,7 @@ gfg: print-all-combinations-of-balanced-parentheses
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: generate-parentheses
 ---
 
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.

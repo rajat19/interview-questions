@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Binary Tree Zigzag Level Order Traversal
 topics: [binary-tree, breadth-first-search, tree]
 langs: [java, js, py, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: binary-tree-zigzag-level-order-traversal
 ---
 
 Given the `root` of a binary tree, 

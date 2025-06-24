@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Remove Duplicates from Sorted List II
 topics: [linked-list]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: remove-duplicates-from-sorted-list-ii
 ---
 
 Given the `head` of a sorted linked list, delete all nodes that have duplicate numbers, 

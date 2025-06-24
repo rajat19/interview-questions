@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Valid Number
 topics: [string]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: valid-number
 ---
 
 A valid number can be split up into these components (in order):

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Subsets
 topics: [array, backtracking]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: subsets
 ---
 
 Given an integer array nums of unique elements, return all possible subsets (the power set).

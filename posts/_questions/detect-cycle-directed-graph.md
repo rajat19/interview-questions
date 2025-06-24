@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Detect Cycle Directed Graph
 topics: [graph]
 langs: [java]
@@ -11,6 +10,7 @@ difficulty: medium
 companies: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 Given a Directed Graph with V vertices (Numbered from 0 to V-1) and E edges, check whether it contains any cycle or not.

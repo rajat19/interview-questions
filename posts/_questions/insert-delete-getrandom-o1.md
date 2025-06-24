@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Insert Delete GetRandom O1
 topics: [array, hash-table]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: insert-delete-getrandom-o1
 ---
 
 Implement the RandomizedSet class:

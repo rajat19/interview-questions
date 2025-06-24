@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Palindromic Substring
 topics: [string, dynamic-programming]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: longest-palindromic-substring
 ---
 
 Given a string s, return the longest palindromic substring in s.

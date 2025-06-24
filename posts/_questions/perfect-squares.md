@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Perfect Squares
 topics: [dynamic-programming]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: perfect-squares
 ---
 
 Given an integer `n`, return the _least number of perfect square numbers that sum to_ `n`.

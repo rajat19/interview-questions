@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Regular Expression Matching
 topics: [string, dynamic-programming, recursion]
 langs: [java, py]
@@ -12,6 +11,7 @@ interviewbit: regular-expression-match
 hackerrank: 
 companies: [facebook, microsoft, goldman-sachs, uber, google]
 difficulty: hard
+leetcode: regular-expression-matching
 ---
 Given an input string `s` and a pattern `p`, implement regular expression matching with support for `'.'` and `'*'` where:
 	

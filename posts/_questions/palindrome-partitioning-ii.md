@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Palindrome Partitioning II
 topics: [dynamic-programming, string]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: palindrome-partitioning-ii
 ---
 
 Given a string s, partition s such that every substring of the partition is a palindrome.

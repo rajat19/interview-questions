@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Palindrome Partitioning
 topics: [backtracking, dynamic-programming, string]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ difficulty: hard
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: palindrome-partitioning
 ---
 
 Given a string `s`, partition `s` such that every substring of the partition is a **palindrome**. 

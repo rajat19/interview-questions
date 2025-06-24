@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Cheapest Flights Within K Stops
 topics: [breadth-first-search, depth-first-search, dynamic-programming, graph]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: cheapest-flights-within-k-stops
 ---
 
 There are `n` cities connected by some number of flights. 

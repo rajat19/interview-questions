@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: First Missing Positive
 topics: [array, hash-table]
 langs: [java, py, c, cpp]
@@ -12,6 +11,7 @@ difficulty: hard
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: first-missing-positive
 ---
 
 Given an unsorted integer array `nums`, return the smallest missing positive integer.

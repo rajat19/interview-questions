@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Word Ladder
 topics: [hash-table, string]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: word-ladder
 ---
 
 A transformation sequence from word `beginWord` to word `endWord` using a dictionary `wordList` is a sequence of words 

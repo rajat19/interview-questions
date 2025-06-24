@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Subarray Sum Equals K
 topics: [array, hash-table]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: subarray-sum-equals-k
 ---
 
 Given an array of integers nums and an integer `k`, return the total number of continuous subarray whose sum equals to `k`.

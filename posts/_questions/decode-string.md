@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Decode String
 topics: [queue, recursion, stack, string]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: decode-string
 ---
 
 Given an encoded string, return its decoded string.

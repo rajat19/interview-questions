@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Increasing Subsequence
 topics: [array, binary-search, dynamic-programming]
 langs: [java, py]
@@ -12,6 +11,7 @@ gfg: longest-increasing-subsequence-dp-3
 interviewbit: longest-increasing-subsequence
 difficulty: medium
 hackerrank: 
+leetcode: longest-increasing-subsequence
 ---
 
 Given an integer array `nums`, return the length of the longest strictly increasing subsequence.

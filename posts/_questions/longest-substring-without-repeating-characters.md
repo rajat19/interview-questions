@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Substring Without Repeating Characters
 topics: [hash-table, sliding-window, string]
 langs: [java, py, cpp, ts]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: longest-substring-without-repeating-characters
 ---
 
 Given a string `s`, find the length of the longest substring without repeating characters.

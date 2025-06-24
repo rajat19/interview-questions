@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: The Skyline Problem
 topics: [array, divide-and-conquer, heap]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: the-skyline-problem
 ---
 
 A city's **skyline** is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. 

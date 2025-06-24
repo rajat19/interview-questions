@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Convert Binary Tree to DLL
 topics: [binary-tree, linked-list, tree]
 langs: [java]
@@ -12,6 +11,7 @@ companies: [amazon, microsoft, facebook, salesforce]
 gfg: convert-binary-tree-to-doubly-linked-list-using-inorder-traversal
 hackerrank: 
 interviewbit: 
+leetcode: convert-binary-tree-to-dll
 ---
 
 Given a Binary Tree (BT), the task is to convert it to a Doubly Linked List (DLL) in place. The left and right pointers in nodes will be used as previous and next pointers respectively in converted DLL. The order of nodes in DLL must be the same as the order of the given Binary Tree. The first node of Inorder traversal (leftmost node in BT) must be the head node of the DLL.

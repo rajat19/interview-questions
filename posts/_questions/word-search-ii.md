@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Word Search II
 topics: [array, backtracking, string, trie]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: hard
 companies: 
 hackerrank: 
 interviewbit: 
+leetcode: word-search-ii
 ---
 
 Given an `m x n` board of characters and a list of strings words, return all words on the board.

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Reconstruct Itinerary
 topics: [string]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: reconstruct-itinerary
 ---
 
 You are given a list of airline tickets where `tickets[i] = [from[i], to[i]]` represent the departure and the arrival airports of one flight. 

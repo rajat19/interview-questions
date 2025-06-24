@@ -24,18 +24,18 @@ query questionData($titleSlug: String!) {
 
 post_data_format = """---
 layout: post
-author: Rajat Srivastava
 title: {title}
 difficulty: {difficulty}
 topics: {topics}
 langs: {languages}
 tc: {tc}
 sc: {sc}
+companies: {companies}
 leetid: {leetcode_id}
+leetcode: {leetcode}
 gfg: {gfg}
 interviewbit: {interviewbit}
 hackerrank: {hackerrank}
-companies: {companies}
 ---
 {content}
 """
@@ -103,11 +103,12 @@ class Leetcode:
             title=self.question_data['title'],
             difficulty=difficulty,
             topics=topics,
-            leetcode_id=self.question_data['questionId'],
             tc=self.time_complexity,
             sc=self.space_complexity,
             languages=languages,
             companies=self.companies,
+            leetcode_id=self.question_data['questionId'],
+            leetcode=self.question
             gfg=self.gfg,
             hackerrank=self.hackerrank,
             interviewbit=self.interviewbit,

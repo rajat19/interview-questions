@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Text Justification
 topics: [array, string]
 langs: [java]
@@ -12,6 +11,7 @@ gfg: justify-the-given-text-based-on-the-given-width-of-each-line
 difficulty: hard
 hackerrank: 
 interviewbit: 
+leetcode: text-justification
 ---
 
 Given an array of strings `words` and a width `maxWidth`, 

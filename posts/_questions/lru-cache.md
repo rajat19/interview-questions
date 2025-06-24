@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: LRU Cache
 topics: [hash-table, linked-list]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: lru-cache
 ---
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.

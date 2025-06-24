@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Linked List Cycle II
 topics: [linked-list, two-pointers]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: linked-list-cycle-ii
 ---
 
 Given the `head` of a linked list, return the node where the cycle begins. If there is no cycle, return `null`.

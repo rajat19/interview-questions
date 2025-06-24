@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Largest Number
 topics: [greedy, sorting, string]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: largest-number
 ---
 
 Given a list of non-negative integers `nums`, arrange them such that they form the largest number and return it.

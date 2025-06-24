@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Word Break
 topics: [string, dynamic-programming]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: word-break
 ---
 
 Given a string s and a dictionary of strings `wordDict`, return true if s can be segmented into a space-separated sequence of one or more dictionary words.

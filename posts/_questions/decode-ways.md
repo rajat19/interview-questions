@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Decode Ways
 topics: [dynamic-programming, string]
 langs: [java, py, cpp]
@@ -12,6 +11,7 @@ difficulty: medium
 companies: [facebook, amazon]
 gfg: 
 hackerrank: 
+leetcode: decode-ways
 ---
 
 A message containing letters from A-Z can be encoded into numbers using the following mapping:

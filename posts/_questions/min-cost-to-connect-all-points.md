@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Min Cost to Connect All Points
 topics: [array, graph]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: min-cost-to-connect-all-points
 ---
 
 You are given an array points representing integer coordinates of some points on a 2D-plane, where `points[i] = [xi, yi]`.

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Scramble String
 topics: [dynamic-programming, string]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: scramble-string
 ---
 
 We can scramble a string `s` to get a string `t` using the following algorithm:

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Search in Rotated Sorted Array II
 topics: [array, binary-search]
 langs: [java]
@@ -12,6 +11,7 @@ companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: search-in-rotated-sorted-array-ii
 ---
 
 There is an integer array `nums` sorted in non-decreasing order (not necessarily with distinct values).

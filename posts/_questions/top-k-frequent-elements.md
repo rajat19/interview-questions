@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Top K Frequent Elements
 topics: [array, hash-table, divide-and-conquer, sorting, heap-priority-queue, bucket-sort, counting, quickselect]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: top-k-frequent-elements
 ---
 Given an integer array `nums` and an integer `k`, return *the* `k` *most frequent elements*. You may return the answer in **any order**.
 

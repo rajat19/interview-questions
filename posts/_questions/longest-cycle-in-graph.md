@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Cycle in Graph
 topics: [depth-first-search, graph, topological-sort]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: longest-cycle-in-graph
 ---
 
 You are given a directed graph of n nodes numbered from `0` to `n - 1`, where each node has at most one outgoing edge.

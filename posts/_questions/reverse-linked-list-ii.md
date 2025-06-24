@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Reverse Linked List II
 topics: [linked-list]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: medium
 companies: 
 gfg: 
 hackerrank: 
+leetcode: reverse-linked-list-ii
 ---
 
 Given the head of a singly linked list and two integers `left` and `right` where `left <= right`, 

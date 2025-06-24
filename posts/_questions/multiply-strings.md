@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Multiply Strings
 topics: [math, string, simulation]
 langs: [java, py]
@@ -12,6 +11,7 @@ gfg: multiply-large-numbers-represented-as-strings
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: multiply-strings
 ---
 Given two non-negative integers `num1` and `num2` represented as strings, return the product of `num1` and `num2`, also represented as a string.
 **Note:** You must not use any built-in BigInteger library or convert the inputs to integer directly.

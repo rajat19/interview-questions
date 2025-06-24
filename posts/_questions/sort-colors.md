@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Sort Colors
 topics: [array, sorting, two-pointers]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ gfg: sort-an-array-of-0s-1s-and-2s
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: sort-colors
 ---
 
 Given an array `nums` with `n` objects colored red, white, or blue, 

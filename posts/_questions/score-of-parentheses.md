@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Score of Parentheses
 topics: [stack, string]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: score-of-parentheses
 ---
 
 Given a balanced parentheses string `s`, return the score of the string.

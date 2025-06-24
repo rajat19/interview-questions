@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Maximal Square
 topics: [array, dynamic-programming, matrix]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: maximal-square
 ---
 
 Given an `m x n` binary matrix filled with `0`'s and `1`'s, find the largest square containing only `1`'s and return its area.

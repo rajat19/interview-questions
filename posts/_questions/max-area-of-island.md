@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Max Area of Island
 topics: [array, depth-first-search, matrix]
 langs: [java, cpp]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: max-area-of-island
 ---
 
 You are given an `m` x `n` binary matrix `grid`. An island is a group of `1`'s (representing land) connected

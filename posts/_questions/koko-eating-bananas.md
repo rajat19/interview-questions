@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Koko Eating Bananas
 topics: [array, binary-search]
 langs: [java]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: koko-eating-bananas
 ---
 
 Koko loves to eat bananas. There are `n` piles of bananas, the ith pile has `piles[i]` bananas. 

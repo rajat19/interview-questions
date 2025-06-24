@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Rotate Array
 topics: [array, two-pointers]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: rotate-array
 ---
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.

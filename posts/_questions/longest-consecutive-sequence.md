@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Longest Consecutive Sequence
 topics: [array, hash-table]
 langs: [java, cpp, py]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: longest-consecutive-sequence
 ---
 
 Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.

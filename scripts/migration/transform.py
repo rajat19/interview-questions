@@ -51,16 +51,23 @@ def convert_space_to_list(data, key):
     if key in data and isinstance(data[key], str):
         data[key] = data[key].split()
 
+def generate_leetcode(data):
+    key = 'leetid'
+    if key in data and data[key] != '':
+        data['leetcode'] = data['title'].lower().replace(' ', '-')
+
 def process_file(filepath, output_dir):
     data, content = parse_markdown(filepath)
 
     # Convert to list format
     # convert_space_to_list(data, 'langs')
     # convert_space_to_list(data, 'topics')
-    convert_space_to_list(data, 'companies')
+    # convert_space_to_list(data, 'companies')
+
+    generate_leetcode(data)
 
     # Ensure required keys
-    ensure_keys(data, ['companies', 'gfg', 'hackerrank', 'interviewbit'])
+    ensure_keys(data, ['companies', 'gfg', 'hackerrank', 'interviewbit', 'leetcode'])
 
     # Serialize and save to _common
     os.makedirs(output_dir, exist_ok=True)

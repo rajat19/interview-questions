@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Shortest Path in Binary Matrix
 topics: [array, breadth-first-search, matrix]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: shortest-path-in-binary-matrix
 ---
 
 Given an `n x n` binary matrix `grid`, return the length of the shortest clear path in the matrix. If there is no clear path, return `-1`.

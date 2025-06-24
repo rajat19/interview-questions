@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Trapping Rain Water
 topics: [array, stack, two-pointers]
 langs: [java, go, c, cpp, py, js, ts, cs]
@@ -12,6 +11,7 @@ difficulty: hard
 companies: 
 hackerrank: 
 interviewbit: 
+leetcode: trapping-rain-water
 ---
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, 

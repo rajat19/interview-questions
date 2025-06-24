@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Partition Equal Subset Sum
 topics: [array, dynamic-programming]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: partition-equal-subset-sum
 ---
 
 Given a non-empty array nums containing only positive integers, 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Minimum sum partition
 topics: [array, dynamic-programming]
 langs: [java]
@@ -11,6 +10,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: 
 ---
 
 Given an integer array arr of size N, 

@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Maximum Width of Binary Tree
 topics: [binary-tree, depth-first-search, tree]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: maximum-width-of-binary-tree
 ---
 
 Given the root of a binary tree, return the **_maximum width_** of the given tree.

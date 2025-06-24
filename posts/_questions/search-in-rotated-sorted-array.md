@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Search in Rotated Sorted Array
 topics: [array, two-pointers]
 langs: [java, go, cpp, py, c]
@@ -12,6 +11,7 @@ companies: [facebook]
 difficulty: medium
 hackerrank: 
 interviewbit: 
+leetcode: search-in-rotated-sorted-array
 ---
 
 There is an integer array `nums` sorted in ascending order (with distinct values).

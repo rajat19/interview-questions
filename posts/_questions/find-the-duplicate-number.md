@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Find the Duplicate Number
 topics: [array, binary-search, two-pointers]
 langs: [java, py, cpp, go, kt]
@@ -12,6 +11,7 @@ difficulty: medium
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: find-the-duplicate-number
 ---
 
 Given an array of integers nums containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.

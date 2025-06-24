@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Word Break II
 topics: [backtracking, dynamic-programming, hash-table, string]
 langs: [java, py]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: word-break-ii
 ---
 Given a string `s` and a dictionary of strings `wordDict`, 
 add spaces in `s` to construct a sentence where each word is a valid dictionary word. 

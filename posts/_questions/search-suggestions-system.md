@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Rajat Srivastava
 title: Search Suggestions System
 topics: [array, string, trie]
 langs: [java]
@@ -12,6 +11,7 @@ companies:
 gfg: 
 hackerrank: 
 interviewbit: 
+leetcode: search-suggestions-system
 ---
 
 You are given an array of strings `products` and a string `searchWord`.
