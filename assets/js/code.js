@@ -30,8 +30,7 @@ const showFilter = (filterType, filterValue) => {
 
   document.querySelectorAll('.home-box li').forEach((li) => {
     li.style.display = 'block';
-    const filterClass = filterType === 'topic' ? 'topic-' : 'company-';
-    if (!li.classList.contains(`${filterClass}${filterValue}`)) {
+    if (!li.classList.contains(`${filterType}-${filterValue}`)) {
       li.style.display = 'none';
     }
   });
@@ -43,6 +42,7 @@ const showFilter = (filterType, filterValue) => {
 
 const showTopic = (topicValue) => showFilter('topic', topicValue);
 const showCompany = (companyValue) => showFilter('company', companyValue);
+const showDifficulty = (difficultyValue) => showFilter('difficulty', difficultyValue);
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(".post-link").forEach((postLink) => {
@@ -97,6 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('company-dropdown').addEventListener('change', (event) => {
     const selected = event.target.value;
     showCompany(selected);
+  });
+
+  document.getElementById('difficulty-dropdown').addEventListener('change', (event) => {
+    const selected = event.target.value;
+    showDifficulty(selected);
   });
 
   document.getElementById('search-box').addEventListener('keyup', (event) => {

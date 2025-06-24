@@ -17,6 +17,12 @@ layout: default
                 <option value="{{company}}">{{ company | replace: "-", " " | capitalize }}</option>
                 {% endfor %}
             </select>
+            <select name="difficulty-dropdown" id="difficulty-dropdown" class="pill">
+                <option value="" disabled selected>-- select difficulty --</option>
+                {% for difficulty in site.data.difficulties %}
+                <option value="{{difficulty}}">{{ difficulty | replace: "-", " " | capitalize }}</option>
+                {% endfor %}
+            </select>
             <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
         </div>
         <div class="home-post-list">
@@ -26,14 +32,11 @@ layout: default
             <!-- <h2 class="post-list-heading"> Category - {{ collection.title }} </h2> -->
             <ul class="box home-box" id="post-list-{{ collection.label }}">
                 {% for post in items %}
-                {% assign topics = post.topics | split: " " %}
-                {% capture topic-classes %}{% for topic in topics %}topic-{{topic}} {% endfor %}{% endcapture %}
-                {% assign companies = post.companies | split: " " %}
-                {% capture company-classes %}{% for company in companies %}company-{{company}} {% endfor %}{% endcapture %}
-                <li class="{{topic-classes}} {{company-classes}} problem">
+                {% capture topic-classes %}{% for topic in post.topics %}topic-{{topic}} {% endfor %}{% endcapture %}
+                {% capture company-classes %}{% for company in post.companies %}company-{{company}} {% endfor %}{% endcapture %}
+                <li class="{{topic-classes}} {{company-classes}} difficulty-{{post.difficulty}} problem">
                     <a class="post-link" href="{{ post.url | relative_url }}">
                         <h3>
-                            <!--            {% if post.leetid %}{{post.leetid}}. {% endif %}-->
                             {{ post.title | escape }}
                         </h3>
                         {% if post.tc or post.sc %}
