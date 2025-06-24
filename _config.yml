@@ -1,6 +1,6 @@
 title: Interview Questions
 description: Interview Questions and their solutions. Contains solutions of quality questions asked in interviews.
-iconURL: assets/img/global/among_us.svg
+iconURL: assets/img/global/geek-paradox-transparent.png
 
 markdown: kramdown
 
@@ -18,14 +18,18 @@ plugins:
 collections_dir: posts
 
 collections:
-  hard:
-    title: Leetcode Hard
+  questions:
+    title: Interview Question
     output: true
-    sort_by: leetid
-  medium:
-    title: Leetcode Medium
-    output: true
-    sort_by: leetid
+    sort_by: title
+  # hard:
+  #   title: Leetcode Hard
+  #   output: true
+  #   sort_by: leetid
+  # medium:
+  #   title: Leetcode Medium
+  #   output: true
+  #   sort_by: leetid
 #  fb:
 #    title: Facebook Recruiting Practice
 #    output: true
