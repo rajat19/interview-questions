@@ -2,7 +2,7 @@
 layout: post
 title: Lowest Common Ancestor of a Binary Tree
 topics: [tree, depth-first-search, binary-tree]
-langs: [java, py]
+langs: [java, py, cpp, c]
 tc: O(n)
 sc: O(h)
 leetid: 236

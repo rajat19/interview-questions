@@ -2,12 +2,12 @@
 layout: post
 title: Kth Smallest Element in a Sorted Matrix
 topics: [array, binary-search]
-langs: [java, py, cpp]
+langs: [java, py, cpp, kt]
 tc: O(n+m)
 sc: O(1)
 leetid: 378
 difficulty: medium
-companies: 
+companies: facebook
 gfg: 
 hackerrank: 
 interviewbit: 

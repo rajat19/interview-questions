@@ -7,7 +7,7 @@ tc: O(1)
 sc: O(n)
 leetid: 380
 difficulty: medium
-companies: 
+companies: facebook
 gfg: 
 hackerrank: 
 interviewbit: 

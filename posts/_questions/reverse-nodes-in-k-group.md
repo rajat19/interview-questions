@@ -8,7 +8,7 @@ sc: O(1)
 leetid: 25
 companies: [amazon, apple, facebook, google, microsoft, oracle]
 difficulty: hard
-gfg: 
+gfg: reverse-a-linked-list-in-groups-of-given-size
 hackerrank: 
 interviewbit: 
 leetcode: reverse-nodes-in-k-group

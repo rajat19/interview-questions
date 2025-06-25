@@ -99,6 +99,7 @@ class Leetcode:
         topics = f"[{', '.join([tag['slug'] for tag in self.question_data['topicTags']])}]"
         difficulty = self.question_data['difficulty'].lower()
         languages = f"[{', '.join(self.languages)}]"
+        companies = f"[{', '.join(self.companies.split(' '))}]"
         return post_data_format.format(
             title=self.question_data['title'],
             difficulty=difficulty,
@@ -106,9 +107,9 @@ class Leetcode:
             tc=self.time_complexity,
             sc=self.space_complexity,
             languages=languages,
-            companies=self.companies,
+            companies=companies,
             leetcode_id=self.question_data['questionId'],
-            leetcode=self.question
+            leetcode=self.question,
             gfg=self.gfg,
             hackerrank=self.hackerrank,
             interviewbit=self.interviewbit,
