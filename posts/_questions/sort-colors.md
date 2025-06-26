@@ -10,7 +10,7 @@ companies: [facebook]
 gfg: sort-an-array-of-0s-1s-and-2s
 difficulty: medium
 hackerrank: 
-interviewbit: 
+interviewbit: sort-colors
 leetcode: sort-colors
 ---
 

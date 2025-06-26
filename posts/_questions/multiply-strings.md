@@ -2,7 +2,7 @@
 layout: post
 title: Multiply Strings
 topics: [math, string, simulation]
-langs: [java, py]
+langs: [java, py, cpp]
 tc: O(nm)
 sc: O(nm)
 leetid: 43

@@ -6,7 +6,7 @@ langs: [java, py, cpp]
 tc: O(mn)
 sc: O(1)
 leetid: 200
-companies: 
+companies: [google, facebook]
 difficulty: medium
 gfg: 
 hackerrank: 

@@ -2,12 +2,12 @@
 layout: post
 title: Wildcard Matching
 topics: [dynamic-programming, greedy, string]
-langs: [java]
+langs: [java, cpp]
 tc: O(n+m)
 sc: O(m)
 leetid: 44
 difficulty: hard
-companies: 
+companies: [facebook]
 gfg: 
 hackerrank: 
 interviewbit: 

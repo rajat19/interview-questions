@@ -6,7 +6,7 @@ langs: [java, py]
 tc: O(nm)
 sc: O(nm)
 leetid: 49
-companies: [facebook]
+companies: [facebook, uber]
 gfg: given-a-sequence-of-words-print-all-anagrams-together
 difficulty: medium
 hackerrank: 

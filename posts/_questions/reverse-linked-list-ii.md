@@ -2,13 +2,13 @@
 layout: post
 title: Reverse Linked List II
 topics: [linked-list]
-langs: [java]
+langs: [java, c, cpp]
 tc: O(n)
 sc: O(1)
 leetid: 92
 interviewbit: reverse-link-list-ii
 difficulty: medium
-companies: 
+companies: [facebook, uber]
 gfg: 
 hackerrank: 
 leetcode: reverse-linked-list-ii

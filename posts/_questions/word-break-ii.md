@@ -7,10 +7,10 @@ tc: O(2<sup>n</sup>)
 sc: O(n)
 leetid: 140
 difficulty: hard
-companies: 
+companies: [facebook]
 gfg: 
 hackerrank: 
-interviewbit: 
+interviewbit: word-break-ii
 leetcode: word-break-ii
 ---
 Given a string `s` and a dictionary of strings `wordDict`, 

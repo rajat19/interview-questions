@@ -8,7 +8,7 @@ sc: O(n)
 leetid: 79
 companies: [adobe, amazon, apple, bloomberg, facebook, goldman-sachs, google, microsoft, oracle, twitter]
 difficulty: medium
-gfg: 
+gfg: word-ladder-length-of-shortest-chain-to-reach-a-target-word
 hackerrank: 
 interviewbit: 
 leetcode: word-search

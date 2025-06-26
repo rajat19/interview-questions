@@ -10,7 +10,7 @@ gfg: word-break-problem-dp-32
 companies: [facebook]
 difficulty: medium
 hackerrank: 
-interviewbit: 
+interviewbit: word-break
 leetcode: word-break
 ---
 

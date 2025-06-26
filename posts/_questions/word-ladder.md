@@ -7,10 +7,10 @@ tc: O(m<sup>2</sup>n)
 sc: O(m<sup>2</sup>n)
 leetid: 127
 difficulty: hard
-companies: 
+companies: [linkedin, facebook]
 gfg: 
 hackerrank: 
-interviewbit: 
+interviewbit: word-ladder-i
 leetcode: word-ladder
 ---
 

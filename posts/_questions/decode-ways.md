@@ -8,7 +8,7 @@ sc: O(n)
 leetid: 91
 interviewbit: ways-to-decode
 difficulty: medium
-companies: [facebook, amazon]
+companies: [facebook, amazon, uber]
 gfg: 
 hackerrank: 
 leetcode: decode-ways
