@@ -46,19 +46,35 @@ Print Hello appended by input string
 ```
 
 ### Setup:
-The project is build over `jekyll`
+The project is build over `jekyll` and `ruby`
+
+Ruby setup is complex on macbook so it is recommended to use `rbenv` or `rvm` to manage ruby versions.
+Check GitHub pages supported ruby versions [here](https://pages.github.com/versions/).
+1. Install `rbenv`
+   ```shell
+   brew install rbenv
+   ```
+2. Install ruby latest version
+   ```shell
+   rbenv install 3.3.4
+   ```
+3. Set the local ruby version for the project
+   ```shell
+    rbenv local 3.3.4
+    ```
+4. Add rbenv ruby path to your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`)
+   ```shell
+   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+   echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
 
 To start the project
-1. Install ruby
-2. Set config for bundle so that it installs for current project only
-   ```shell
-   bundle config set --local path 'vendor/bundle'
-   ```
-3. Install bundles using
+1. Install bundles using
    ```shell
    bundle install
    ```
-4. Serve the website (using local bundle files)
+2. Serve the website (using local bundle files)
    ```shell 
    bundle exec jekyll serve
    ```
