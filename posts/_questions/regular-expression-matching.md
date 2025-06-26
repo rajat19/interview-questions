@@ -9,7 +9,7 @@ leetid: 10
 gfg: 
 interviewbit: regular-expression-match
 hackerrank: 
-companies: [facebook, microsoft, goldman-sachs, uber, google, airbnb]
+companies: [facebook, microsoft, goldman, uber, google, airbnb]
 difficulty: hard
 leetcode: regular-expression-matching
 ---

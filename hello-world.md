@@ -1,11 +1,16 @@
 ---
 layout: post
 title: Hello World
-topics: string
+topics: [string]
 langs: java py c cpp go js php cs rb rust scala kt swift erl ex rkt
 tc: O(1)
 sc: O(1)
 leetid: 0
+companies: [adobe, airbnb, amazon, apple, atlassian, bloomberg, booking, doordash, ebay, expedia, facebook, goldman, google, indeed, intuit, linkedin, lyft, microsoft, netflix, openai, oracle, paypal, pinterest, salesforce, sap, snapchat, tesla, twitter, uber, vmware, walmart, yelp]
+leetcode: test
+gfg: test
+hackerrank: test
+interviewbit: test
 ---
 
 Print Hello appended by input string

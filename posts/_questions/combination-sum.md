@@ -6,7 +6,7 @@ langs: [java, cpp, py]
 tc: O(2<sup>n</sup>)
 sc: O(n)
 leetid: 32
-companies: [adobe, airbnb, amazon, apple, facebook, goldman-sachs, linkedin, microsoft, salesforce]
+companies: [adobe, airbnb, amazon, apple, facebook, goldman, linkedin, microsoft, salesforce]
 difficulty: medium
 gfg: 
 hackerrank: 

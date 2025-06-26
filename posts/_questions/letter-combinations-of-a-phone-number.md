@@ -7,7 +7,7 @@ tc: O(n)
 sc: O(n)
 leetid: 17
 gfg: iterative-letter-combinations-of-a-phone-number
-companies: [adobe, amazon, apple, bloomberg, facebook, goldman-sachs, google, intuit, microsoft, oracle, twitter, uber]
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, intuit, microsoft, oracle, twitter, uber]
 difficulty: medium
 hackerrank: 
 interviewbit: letter-phone

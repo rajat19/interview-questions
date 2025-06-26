@@ -6,7 +6,7 @@ langs: [java, py, cpp]
 tc: O(nmw)
 sc: O(n)
 leetid: 79
-companies: [adobe, amazon, apple, bloomberg, facebook, goldman-sachs, google, microsoft, oracle, twitter]
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, microsoft, oracle, twitter]
 difficulty: medium
 gfg: word-ladder-length-of-shortest-chain-to-reach-a-target-word
 hackerrank: 

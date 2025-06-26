@@ -6,7 +6,7 @@ langs: [java, py]
 tc: O(nlogn)
 sc: O(n)
 leetid: 300
-companies: [amazon, apple, bloomberg, facebook, google, microsoft]
+companies: [amazon, apple, bloomberg, facebook, google, microsoft, adobe]
 gfg: longest-increasing-subsequence-dp-3
 interviewbit: longest-increasing-subsequence
 difficulty: medium
