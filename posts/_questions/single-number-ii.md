@@ -2,7 +2,7 @@
 layout: post
 title: Single Number II
 topics: [array, bit-manipulation]
-langs: [java, cpp]
+langs: [java, cpp, c]
 tc: O(n)
 sc: O(1)
 leetid: 137

@@ -7,6 +7,10 @@ map:
     ext: cpp
   - name: C#
     ext: cs
+  - name: Erlang
+    ext: erl
+  - name: Elixir
+    ext: ex
   - name: Golang
     ext: go
   - name: Java
@@ -19,6 +23,8 @@ map:
     ext: php
   - name: Python
     ext: py
+  - name: Racket
+    ext: rkt
   - name: Ruby
     ext: rb
   - name: Rust
@@ -27,9 +33,5 @@ map:
     ext: scala
   - name: Swift
     ext: swift
-  - name: Erlang
-    ext: erl
-  - name: Elixir
-    ext: ex
-  - name: Racket
-    ext: rkt
+  - name: Typescript
+    ext: ts

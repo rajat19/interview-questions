@@ -6,7 +6,7 @@ langs: [java, py]
 tc: O(n)
 sc: O(n)
 leetid: 297
-companies: 
+companies: [facebook, google, linkedin, uber]
 difficulty: hard
 gfg: 
 hackerrank: 

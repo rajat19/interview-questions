@@ -2,7 +2,7 @@
 layout: post
 title: Median of Two Sorted Arrays
 topics: [array, binary-search, divide-and-conquer]
-langs: [java, cpp, py]
+langs: [java, cpp, py, kt, ts]
 tc: O(log(m+n))
 sc: O(1)
 leetid: 4
