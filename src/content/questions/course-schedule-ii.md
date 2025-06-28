@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Course Schedule II"
-topics: "depth-first-search graph topological-sort"
-langs: "java py"
-tc: "O(V+E)"
-sc: "O(V+E)"
+title: Course Schedule II
+topics: [depth-first-search, graph, topological-sort]
+langs: [java, py]
+tc: O(V+E)
+sc: O(V+E)
 leetid: 210
-difficulty: "medium"
-date: 2025-06-18T01:15:27.925926
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: course-schedule-ii
 ---
 
 There are a total of numCourses courses you have to take, labeled from `0` to `numCourses - 1`. 

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Palindromic Substring"
-topics: "string dynamic-programming"
-langs: "java py cpp"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n<sup>2</sup>)"
+title: Longest Palindromic Substring
+topics: [string, dynamic-programming]
+langs: [java, py, cpp]
+tc: O(n<sup>2</sup>)
+sc: O(n<sup>2</sup>)
 leetid: 5
-companies: "adobe amazon apple bloomberg facebook google linkedin microsoft oracle salesforce"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.915390
+companies: [adobe, amazon, apple, bloomberg, facebook, google, linkedin, microsoft, oracle, salesforce]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-palindromic-substring
 ---
 
 Given a string s, return the longest palindromic substring in s.

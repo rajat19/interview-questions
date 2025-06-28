@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Minimize Deviation in Array"
-topics: "array greedy heap"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Minimize Deviation in Array
+topics: [array, greedy, heap]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 1675
-difficulty: "hard"
-date: 2025-06-18T01:15:27.865929
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: minimize-deviation-in-array
 ---
 
 You are given an array nums of `n` positive integers.

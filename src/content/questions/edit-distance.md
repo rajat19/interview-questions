@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Edit Distance"
-topics: "dynamic-programming string"
-langs: "java cpp py"
-tc: "O(nm)"
-sc: "O(nm)"
+title: Edit Distance
+topics: [dynamic-programming, string]
+langs: [java, cpp, py]
+tc: O(nm)
+sc: O(nm)
 leetid: 72
-difficulty: "hard"
-date: 2025-06-18T01:15:27.882597
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: edit-distance
 ---
 
 Given two strings `word1` and `word2`, return the minimum number of operations required to convert `word1` to `word2`.

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Basic Calculator II"
-topics: "math string stack"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Basic Calculator II
+topics: [math, string, stack]
+langs: [java, py]
+tc: O(n)
+sc: O(n)
 leetid: 227
-companies: None
-difficulty: "medium"
-date: 2025-06-18T01:15:27.923793
+companies: 
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: basic-calculator-ii
 ---
 Given a string `s` which represents an expression, *evaluate this expression and return its value*. 
 The integer division should truncate toward zero.

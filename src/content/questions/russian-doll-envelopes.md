@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Russian Doll Envelopes"
-topics: "array binary-search dynamic-programming sorting"
-langs: "java"
-tc: "O(nlogn)"
-sc: "O(n)"
+title: Russian Doll Envelopes
+topics: [array, binary-search, dynamic-programming, sorting]
+langs: [java]
+tc: O(nlogn)
+sc: O(n)
 leetid: 354
-difficulty: "hard"
-date: 2025-06-18T01:15:27.867475
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: russian-doll-envelopes
 ---
 
 You are given a 2D array of integers envelopes where `envelopes[i] = [wi, hi]` represents the width and the height of an envelope.

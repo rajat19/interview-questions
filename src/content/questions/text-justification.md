@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Text Justification"
-topics: "array string"
-langs: "java"
-tc: "O(nm)"
-sc: "O(n)"
+title: Text Justification
+topics: [array, string]
+langs: [java]
+tc: O(nm)
+sc: O(n)
 leetid: 68
-difficulty: "hard"
-date: 2025-06-18T01:15:27.877313
+companies: [facebook]
+gfg: justify-the-given-text-based-on-the-given-width-of-each-line
+difficulty: hard
+hackerrank: 
+interviewbit: 
+leetcode: text-justification
 ---
 
 Given an array of strings `words` and a width `maxWidth`, 

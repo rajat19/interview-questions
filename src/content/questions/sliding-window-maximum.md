@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Sliding Window Maximum"
-topics: "array heap queue sliding-window"
-langs: "java py"
-tc: "O(n)"
-sc: "O(k)"
+title: Sliding Window Maximum
+topics: [array, heap, queue, sliding-window]
+langs: [java, py]
+tc: O(n)
+sc: O(k)
 leetid: 239
-difficulty: "hard"
-date: 2025-06-18T01:15:27.876840
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: sliding-window-maximum
 ---
 
 You are given an array of integers nums, 

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Subsets"
-topics: "array backtracking"
-langs: "java cpp"
-tc: "O(n2<sup>n</sup>)"
-sc: "O(n)"
+title: Subsets
+topics: [array, backtracking]
+langs: [java, cpp]
+tc: O(n2<sup>n</sup>)
+sc: O(n)
 leetid: 78
-companies: "adobe amazon bloomberg facebook goldman_sachs google twitter"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.883201
+companies: [adobe, amazon, bloomberg, facebook, goldman, google, twitter]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: subsets
 ---
 
 Given an integer array nums of unique elements, return all possible subsets (the power set).

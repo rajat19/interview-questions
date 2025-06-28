@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Kth Smallest Element in a Sorted Matrix"
-topics: "array binary-search"
-langs: "java py cpp"
-tc: "O(n+m)"
-sc: "O(1)"
+title: Kth Smallest Element in a Sorted Matrix
+topics: [array, binary-search]
+langs: [java, py, cpp, kt]
+tc: O(n+m)
+sc: O(1)
 leetid: 378
-difficulty: "medium"
-date: 2025-06-18T01:15:27.889974
+difficulty: medium
+companies: [facebook]
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: kth-smallest-element-in-a-sorted-matrix
 ---
 
 Given an `n x n` matrix where each of the rows and columns is sorted in ascending order, 

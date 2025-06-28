@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "House Robber III"
-topics: "binary-tree depth-first-search dynamic-programming tree"
-langs: "java py cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: House Robber III
+topics: [binary-tree, depth-first-search, dynamic-programming, tree]
+langs: [java, py, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 337
-difficulty: "medium"
-date: 2025-06-18T01:15:27.920651
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: house-robber-iii
 ---
 
 The thief has found himself a new place for his thievery again. There is only one entrance to this area, called `root`.

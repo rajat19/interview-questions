@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Reverse Linked List II"
-topics: "linked-list"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Reverse Linked List II
+topics: [linked-list]
+langs: [java, c, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 92
-difficulty: "medium"
-date: 2025-06-18T01:15:27.916825
+interviewbit: reverse-link-list-ii
+difficulty: medium
+companies: [facebook, uber]
+gfg: 
+hackerrank: 
+leetcode: reverse-linked-list-ii
 ---
 
 Given the head of a singly linked list and two integers `left` and `right` where `left <= right`, 
@@ -17,7 +20,7 @@ reverse the nodes of the list from position `left` to position `right`, and retu
 
 ## Test Cases
 
-![Linked list]({{ site.github.url }}/assets/img/code/rev2ex2.jpeg)
+![Linked list](../../assets/img/code/rev2ex2.jpeg)
 
 **Input:**
 ```

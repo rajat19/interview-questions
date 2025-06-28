@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Basic Calculator"
-topics: "math string stack recursion"
-langs: "java cpp py"
-tc: "O(n)"
-sc: "O(n)"
+title: Basic Calculator
+topics: [math, string, stack, recursion]
+langs: [java, cpp, py]
+tc: O(n)
+sc: O(n)
 leetid: 224
-companies: None
-difficulty: "hard"
-date: 2025-06-18T01:15:27.875141
+companies: 
+difficulty: hard
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: basic-calculator
 ---
 Given a string `s` representing a valid expression, implement a basic calculator to evaluate it, and return *the result of the evaluation*.
 **Note:** You are **not** allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.

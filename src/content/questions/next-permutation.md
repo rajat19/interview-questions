@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Next Permutation"
-topics: "array two-pointers"
-langs: "java py go cpp c"
-tc: "O(n)"
-sc: "O(1)"
+title: Next Permutation
+topics: [array, two-pointers]
+langs: [java, py, go, cpp, c]
+tc: O(n)
+sc: O(1)
 leetid: 31
-difficulty: "medium"
-date: 2025-06-18T01:15:27.898713
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: next-permutation
 ---
 
 A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
@@ -43,7 +46,7 @@ Now, what kind of rearrangement will produce the next larger number?
 We want to create the permutation just larger than the current one.
 Therefore, we need to replace the number `a[i-1]` with the number which is just larger than itself among the numbers lying to its right section, say `a[j]`.
 
-![Next Permutation]({{ site.github.url }}/assets/img/code/nextpermutation.png)
+![Next Permutation](../../assets/img/code/nextpermutation.png)
 
 We swap the numbers `a[i-1]` and `a[j]`. We now have the correct number at index `i-1`.
 But still the current permutation isn't the permutation that we are looking for.

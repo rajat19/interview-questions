@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Single Number II"
-topics: "array bit-manipulation"
-langs: "java cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: Single Number II
+topics: [array, bit-manipulation]
+langs: [java, cpp, c]
+tc: O(n)
+sc: O(1)
 leetid: 137
-companies: None
-difficulty: "medium"
-date: 2025-06-18T01:15:27.912089
+companies: 
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: single-number-ii
 ---
 Given an integer array `nums` where every element appears **three times** except for one, which appears **exactly once**. *Find the single element and return it*.
 You must implement a solution with a linear runtime complexity and use only constant extra space.

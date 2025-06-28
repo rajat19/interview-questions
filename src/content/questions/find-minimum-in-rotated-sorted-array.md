@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Find Minimum in Rotated Sorted Array"
-topics: "array binary-search"
-langs: "java"
-tc: "O(logn)"
-sc: "O(1)"
+title: Find Minimum in Rotated Sorted Array
+topics: [array, binary-search]
+langs: [java]
+tc: O(logn)
+sc: O(1)
 leetid: 153
-companies: None
-difficulty: "medium"
-date: 2025-06-18T01:15:27.895147
+companies: 
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: find-minimum-in-rotated-sorted-array
 ---
 Suppose an array of length `n` sorted in ascending order is **rotated** between `1` and `n` times. For example, the array `nums = [0,1,2,4,5,6,7]` might become:
 	

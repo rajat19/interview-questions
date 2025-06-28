@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "LRU Cache"
-topics: "hash-table linked-list"
-langs: "java py"
-tc: "O(1)"
-sc: "O(n)"
+title: LRU Cache
+topics: [hash-table, linked-list]
+langs: [java, py]
+tc: O(1)
+sc: O(n)
 leetid: 146
-difficulty: "medium"
-date: 2025-06-18T01:15:27.891360
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: lru-cache
 ---
 
 Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Task Scheduler"
-topics: "array greedy hash-table"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Task Scheduler
+topics: [array, greedy, hash-table]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 621
-difficulty: "medium"
-date: 2025-06-18T01:15:27.895597
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: task-scheduler
 ---
 
 Given a characters array `tasks`, representing the tasks a CPU needs to do, where each letter represents a different task. 

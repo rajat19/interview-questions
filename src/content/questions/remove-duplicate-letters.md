@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Remove Duplicate Letters"
-topics: "greedy stack string"
-langs: "java py"
-tc: "O(n)"
-sc: "O(n)"
+title: Remove Duplicate Letters
+topics: [greedy, stack, string]
+langs: [java, py]
+tc: O(n)
+sc: O(n)
 leetid: 316
-difficulty: "medium"
-date: 2025-06-18T01:15:27.922651
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: remove-duplicate-letters
 ---
 
 Given a string `s`, remove duplicate letters so that every letter appears once and only once. 

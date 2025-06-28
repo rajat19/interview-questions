@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Substring with at least k repeating characters"
-topics: "divide-and-conquer hash-table sliding-window string"
-langs: "java"
-tc: "O(n)"
-sc: "O(26)"
+title: Longest Substring with at least k repeating characters
+topics: [divide-and-conquer, hash-table, sliding-window, string]
+langs: [java]
+tc: O(n)
+sc: O(26)
 leetid: 395
-difficulty: "medium"
-date: 2025-06-18T01:15:27.904129
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-substring-with-at-least-k-repeating-characters
 ---
 
 Given a string `s` and an integer `k`, 

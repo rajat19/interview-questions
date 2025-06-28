@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Largest Rectangle in Histogram"
-topics: "array stack"
-langs: "java py go cpp"
-tc: "O(n)"
-sc: "O(n)"
+title: Largest Rectangle in Histogram
+topics: [array, stack]
+langs: [java, py, go, cpp]
+tc: O(n)
+sc: O(n)
 leetid: 84
-difficulty: "hard"
-date: 2025-06-18T01:15:27.870313
+companies: [facebook]
+gfg: largest-rectangular-area-in-a-histogram-using-segment-tree
+difficulty: hard
+hackerrank: 
+interviewbit: 
+leetcode: largest-rectangle-in-histogram
 ---
 
 Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Max Area of Island"
-topics: "array depth-first-search matrix"
-langs: "java cpp"
-tc: "O(nm)"
-sc: "O(1)"
+title: Max Area of Island
+topics: [array, depth-first-search, matrix]
+langs: [java, cpp]
+tc: O(nm)
+sc: O(1)
 leetid: 695
-difficulty: "medium"
-date: 2025-06-18T01:15:27.919233
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: max-area-of-island
 ---
 
 You are given an `m` x `n` binary matrix `grid`. An island is a group of `1`'s (representing land) connected

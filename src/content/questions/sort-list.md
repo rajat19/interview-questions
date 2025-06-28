@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Sort List"
-topics: "divide-and-conquer linked-list sorting two-pointers"
-langs: "java cpp"
-tc: "O(nlogn)"
-sc: "O(1)"
+title: Sort List
+topics: [divide-and-conquer, linked-list, sorting, two-pointers]
+langs: [java, cpp]
+tc: O(nlogn)
+sc: O(1)
 leetid: 148
-difficulty: "medium"
-date: 2025-06-18T01:15:27.917287
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: sort-list
 ---
 
 Given the `head` of a linked list, return the list after sorting it in ascending order.

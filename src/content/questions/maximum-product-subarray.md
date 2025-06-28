@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Maximum Product Subarray"
-topics: "array dynamic-programming"
-langs: "java py cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: Maximum Product Subarray
+topics: [array, dynamic-programming]
+langs: [java, py, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 152
-companies: "amazon apple bloomberg facebook google linkedin microsoft"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.921602
+companies: [amazon, apple, bloomberg, facebook, google, linkedin, microsoft]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: maximum-product-subarray
 ---
 
 Given an integer array `nums`, find a contiguous non-empty subarray within the array that has the largest product, and return the product.

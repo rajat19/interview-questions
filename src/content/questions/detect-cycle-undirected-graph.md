@@ -1,12 +1,15 @@
 ---
-author: "Rajat Srivastava"
-title: "Detect Cycle Undirected Graph"
-topics: "graph"
-langs: "java"
-tc: "O(V+E)"
-sc: "O(V)"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.904549
+title: Detect Cycle Undirected Graph
+topics: [graph]
+langs: [java]
+tc: O(V+E)
+sc: O(V)
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: 
 ---
 
 Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not.

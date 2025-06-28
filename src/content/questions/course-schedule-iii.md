@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Course Schedule III"
-topics: "array greedy heap"
-langs: "java"
-tc: "O(nlogn)"
-sc: "O(n)"
+title: Course Schedule III
+topics: [array, greedy, heap]
+langs: [java]
+tc: O(nlogn)
+sc: O(n)
 leetid: 630
-difficulty: "hard"
-date: 2025-06-18T01:15:27.864956
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: course-schedule-iii
 ---
 
 There are `n` different online courses numbered from `1` to `n`. 

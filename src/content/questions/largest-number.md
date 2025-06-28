@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Largest Number"
-topics: "greedy sorting string"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Largest Number
+topics: [greedy, sorting, string]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 179
-difficulty: "medium"
-date: 2025-06-18T01:15:27.883643
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: largest-number
 ---
 
 Given a list of non-negative integers `nums`, arrange them such that they form the largest number and return it.

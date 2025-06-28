@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Decode String"
-topics: "queue recursion stack string"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Decode String
+topics: [queue, recursion, stack, string]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 394
-difficulty: "medium"
-date: 2025-06-18T01:15:27.900052
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: decode-string
 ---
 
 Given an encoded string, return its decoded string.

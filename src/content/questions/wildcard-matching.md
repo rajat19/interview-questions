@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Wildcard Matching"
-topics: "dynamic-programming greedy string"
-langs: "java"
-tc: "O(n+m)"
-sc: "O(m)"
+title: Wildcard Matching
+topics: [dynamic-programming, greedy, string]
+langs: [java, cpp]
+tc: O(n+m)
+sc: O(m)
 leetid: 44
-difficulty: "hard"
-date: 2025-06-18T01:15:27.862553
+difficulty: hard
+companies: [facebook]
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: wildcard-matching
 ---
 
 Given an input string `(s)` and a pattern `(p)`, implement wildcard pattern matching with support for `'?'` and `'*'` where:

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Reverse Nodes in k-Group"
-topics: "linked-list recursion"
-langs: "java cpp py c"
-tc: "O(n)"
-sc: "O(1)"
+title: Reverse Nodes in k-Group
+topics: [linked-list, recursion]
+langs: [java, cpp, py, c]
+tc: O(n)
+sc: O(1)
 leetid: 25
-companies: "amazon apple facebook google microsoft oracle"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.871801
+companies: [amazon, apple, facebook, google, microsoft, oracle]
+difficulty: hard
+gfg: reverse-a-linked-list-in-groups-of-given-size
+hackerrank: 
+interviewbit: 
+leetcode: reverse-nodes-in-k-group
 ---
 
 Given the `head` of a linked list, reverse the nodes of the list `k` at a time, and return the modified list.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Search Suggestions System"
-topics: "array string trie"
-langs: "java"
-tc: "O(ns)"
-sc: "O(1)"
+title: Search Suggestions System
+topics: [array, string, trie]
+langs: [java]
+tc: O(ns)
+sc: O(1)
 leetid: 1268
-difficulty: "medium"
-date: 2025-06-18T01:15:27.919689
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: search-suggestions-system
 ---
 
 You are given an array of strings `products` and a string `searchWord`.

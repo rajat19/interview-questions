@@ -23,10 +23,10 @@ const parsedQuestions = filtered.map((question) => {
     return {
         title: data.title,
         slug: question.slug,
-        topics: data.topics.split(" "),
-        langs: data.langs.split(" "),
+        topics: data.topics,
+        langs: data.langs,
         difficulty: data.difficulty,
-        companies: (data.companies ?? "").split(" ")
+        companies: (data.companies || []),
     };
 });
 ---

@@ -1,0 +1,59 @@
+---
+import { Code } from 'astro:components';
+import languagesData from '../data/languages.json';
+
+export interface CodeTabProps {
+    questionLanguages: Array<string>;
+    slug?: string;
+    tc?: string;
+    sc?: string;
+    snippets?: Record<string, string>;
+}
+
+const {
+    questionLanguages,
+    slug , tc, sc, snippets
+} = Astro.props as CodeTabProps;
+
+const btnClass = "solution";
+const allLanguages = languagesData.map;
+const defaultActive = questionLanguages[0] || languagesData.default;
+---
+
+<hr>
+<h2>Solution</h2>
+
+<div class="tabs tabs-lift">
+    {allLanguages
+        .filter(language => questionLanguages.indexOf(language.ext) != -1)
+        .map(language => (
+            <label class="tab">
+                <input
+                    type="radio"
+                    name={`my_tabs_${btnClass}`}
+                    checked={language.ext === defaultActive}
+                />
+                <img
+                    src={`/assets/img/lang/${language.ext}.svg`}
+                    height="20"
+                    width="20"
+                    alt={`${language.name} logo`}
+                    class="me-2"
+                />
+                {language.aka || language.name}
+            </label>
+            <div
+                id={`${slug}-${btnClass}-${language.name}`}
+                class={`tab-content bg-base-100 border-base-300 p-2 ${language.ext === defaultActive ? "active" : ""}`}
+            >
+                <Code wrap="true" code={snippets[language.ext]} lang={language.ext} theme="gruvbox-light-hard" />
+            </div>
+    ))}
+</div>
+
+{(tc || sc) && (
+    <div class="code-complexity">
+        {tc && <h6>Time Complexity: {tc}</h6>}
+        {sc && <h6>Space Complexity: {sc}</h6>}
+    </div>
+)}

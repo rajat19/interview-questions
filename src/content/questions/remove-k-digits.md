@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Remove K Digits"
-topics: "greedy string stack"
-langs: "java py"
-tc: "O(n+k)"
-sc: "O(n)"
+title: Remove K Digits
+topics: [greedy, string, stack]
+langs: [java, py]
+tc: O(n+k)
+sc: O(n)
 leetid: 402
-difficulty: "medium"
-date: 2025-06-18T01:15:27.910115
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: remove-k-digits
 ---
 
 Given string `num` representing a non-negative integer `num`, and an integer `k`, 

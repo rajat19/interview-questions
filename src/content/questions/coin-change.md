@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Coin Change"
-topics: "array dynamic-programming"
-langs: "java py cpp c"
-tc: "O(n*amount)"
-sc: "O(amount)"
+title: Coin Change
+topics: [array, dynamic-programming]
+langs: [java, py, cpp, c]
+tc: O(n*amount)
+sc: O(amount)
 leetid: 322
-companies: "amazon apple google microsoft"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.886177
+companies: [amazon, apple, google, microsoft, adobe]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: coin-change
 ---
 
 You are given an integer array coins representing coins of different denominations and 

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Letter Combinations of a Phone Number"
-topics: "string"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Letter Combinations of a Phone Number
+topics: [string]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 17
-companies: "adobe amazon apple bloomberg facebook goldman_sachs google intuit microsoft oracle twitter uber"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.885688
+gfg: iterative-letter-combinations-of-a-phone-number
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, intuit, microsoft, oracle, twitter, uber]
+difficulty: medium
+hackerrank: 
+interviewbit: letter-phone
+leetcode: letter-combinations-of-a-phone-number
 ---
 
 Given a string containing digits from `2-9` inclusive, 

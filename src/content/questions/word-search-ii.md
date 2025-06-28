@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Word Search II"
-topics: "array backtracking string trie"
-langs: "java"
-tc: "O(nm)"
-sc: "O(w)"
+title: Word Search II
+topics: [array, backtracking, string, trie]
+langs: [java]
+tc: O(nm)
+sc: O(w)
 leetid: 212
-difficulty: "hard"
-date: 2025-06-18T01:15:27.867914
+gfg: boggle-using-trie
+difficulty: hard
+companies: 
+hackerrank: 
+interviewbit: 
+leetcode: word-search-ii
 ---
 
 Given an `m x n` board of characters and a list of strings words, return all words on the board.

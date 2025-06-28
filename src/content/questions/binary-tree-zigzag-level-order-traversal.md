@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Binary Tree Zigzag Level Order Traversal"
-topics: "binary-tree breadth-first-search tree"
-langs: "java js py cpp"
-tc: "O(n)"
-sc: "O(n)"
+title: Binary Tree Zigzag Level Order Traversal
+topics: [binary-tree, breadth-first-search, tree]
+langs: [java, js, py, cpp]
+tc: O(n)
+sc: O(n)
 leetid: 103
-difficulty: "medium"
-date: 2025-06-18T01:15:27.902779
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: binary-tree-zigzag-level-order-traversal
 ---
 
 Given the `root` of a binary tree, 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Valid Number"
-topics: "string"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Valid Number
+topics: [string]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 65
-difficulty: "hard"
-date: 2025-06-18T01:15:27.881527
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: valid-number
 ---
 
 A valid number can be split up into these components (in order):

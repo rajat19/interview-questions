@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Search in Rotated Sorted Array"
-topics: "array two-pointers"
-langs: "java go cpp py"
-tc: "O(n)"
-sc: "O(n)"
+title: Search in Rotated Sorted Array
+topics: [array, two-pointers]
+langs: [java, go, cpp, py, c]
+tc: O(n)
+sc: O(n)
 leetid: 33
-difficulty: "medium"
-date: 2025-06-18T01:15:27.884684
+gfg: search-an-element-in-a-sorted-and-pivoted-array
+companies: [facebook]
+difficulty: medium
+hackerrank: 
+interviewbit: 
+leetcode: search-in-rotated-sorted-array
 ---
 
 There is an integer array `nums` sorted in ascending order (with distinct values).

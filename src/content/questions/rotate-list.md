@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Rotate List"
-topics: "linked-list"
-langs: "java cpp c"
-tc: "O(n)"
-sc: "O(1)"
+title: Rotate List
+topics: [linked-list]
+langs: [java, cpp, c]
+tc: O(n)
+sc: O(1)
 leetid: 61
-difficulty: "medium"
-date: 2025-06-18T01:15:27.914873
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: rotate-list
 ---
 
 Given the head of a linked list, rotate the list to the right by k places.

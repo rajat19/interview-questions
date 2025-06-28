@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Predict the Winner"
-topics: "array dynamic-programming recursion"
-langs: "java cpp"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n)"
+title: Predict the Winner
+topics: [array, dynamic-programming, recursion]
+langs: [java, cpp]
+tc: O(n<sup>2</sup>)
+sc: O(n)
 leetid: 486
-difficulty: "medium"
-date: 2025-06-18T01:15:27.893772
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: predict-the-winner
 ---
 
 You are given an integer array `nums`. Two players are playing a game with this array: player 1 and player 2.

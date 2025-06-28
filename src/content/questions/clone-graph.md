@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Clone Graph"
-topics: "depth-first-search graph hash-table"
-langs: "java cpp py"
-tc: "O(n)"
-sc: "O(n)"
+title: Clone Graph
+topics: [depth-first-search, graph, hash-table]
+langs: [java, cpp, py]
+tc: O(n)
+sc: O(n)
 leetid: 133
-difficulty: "medium"
-date: 2025-06-18T01:15:27.899606
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: clone-graph
 ---
 
 Given a reference of a node in a connected undirected graph.

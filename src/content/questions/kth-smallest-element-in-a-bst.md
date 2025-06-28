@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Kth Smallest Element in a BST"
-topics: "binary-tree binary-search-tree depth-first-search tree"
-langs: "java py cpp"
-tc: "O(h+k)"
-sc: "O(h)"
+title: Kth Smallest Element in a BST
+topics: [binary-tree, binary-search-tree, depth-first-search, tree]
+langs: [java, py, cpp]
+tc: O(h+k)
+sc: O(h)
 leetid: 230
-difficulty: "medium"
-date: 2025-06-18T01:15:27.907722
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: kth-smallest-element-in-a-bst
 ---
 
 Given the root of a binary search tree, and an integer k, return the k<sup>th</sup> smallest value (1-indexed) of all the values of the nodes in the tree.

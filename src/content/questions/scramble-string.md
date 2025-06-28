@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Scramble String"
-topics: "dynamic-programming string"
-langs: "java"
-tc: "O(2<sup>n</sup>)"
-sc: "O(m+n)"
+title: Scramble String
+topics: [dynamic-programming, string]
+langs: [java]
+tc: O(2<sup>n</sup>)
+sc: O(m+n)
 leetid: 87
-difficulty: "hard"
-date: 2025-06-18T01:15:27.863981
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: scramble-string
 ---
 
 We can scramble a string `s` to get a string `t` using the following algorithm:

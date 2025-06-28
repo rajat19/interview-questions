@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Perfect Squares"
-topics: "dynamic-programming"
-langs: "java"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n)"
+title: Perfect Squares
+topics: [dynamic-programming]
+langs: [java]
+tc: O(n<sup>2</sup>)
+sc: O(n)
 leetid: 279
-difficulty: "medium"
-date: 2025-06-18T01:15:27.906215
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: perfect-squares
 ---
 
 Given an integer `n`, return the _least number of perfect square numbers that sum to_ `n`.

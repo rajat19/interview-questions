@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Palindrome Partitioning II"
-topics: "dynamic-programming string"
-langs: "java cpp"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n<sup>2</sup>)"
+title: Palindrome Partitioning II
+topics: [dynamic-programming, string]
+langs: [java, cpp]
+tc: O(n<sup>2</sup>)
+sc: O(n<sup>2</sup>)
 leetid: 132
-difficulty: "hard"
-date: 2025-06-18T01:15:27.868832
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: palindrome-partitioning-ii
 ---
 
 Given a string s, partition s such that every substring of the partition is a palindrome.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Recover Binary Search Tree"
-topics: "binary-search-tree binary-tree depth-first-search tree"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Recover Binary Search Tree
+topics: [binary-search-tree, binary-tree, depth-first-search, tree]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 99
-difficulty: "medium"
-date: 2025-06-18T01:15:27.909141
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: recover-binary-search-tree
 ---
 
 You are given the root of a binary search tree (BST), 

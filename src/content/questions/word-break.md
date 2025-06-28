@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Word Break"
-topics: "string dynamic-programming"
-langs: "java cpp py"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n)"
+title: Word Break
+topics: [string, dynamic-programming]
+langs: [java, cpp, py]
+tc: O(n<sup>2</sup>)
+sc: O(n)
 leetid: 139
-difficulty: "medium"
-date: 2025-06-18T01:15:27.921090
+gfg: word-break-problem-dp-32
+companies: [facebook]
+difficulty: medium
+hackerrank: 
+interviewbit: word-break
+leetcode: word-break
 ---
 
 Given a string s and a dictionary of strings `wordDict`, return true if s can be segmented into a space-separated sequence of one or more dictionary words.

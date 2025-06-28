@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Decode Ways"
-topics: "dynamic-programming string"
-langs: "java py cpp"
-tc: "O(n)"
-sc: "O(n)"
+title: Decode Ways
+topics: [dynamic-programming, string]
+langs: [java, py, cpp]
+tc: O(n)
+sc: O(n)
 leetid: 91
-difficulty: "medium"
-date: 2025-06-18T01:15:27.886639
+interviewbit: ways-to-decode
+difficulty: medium
+companies: [facebook, amazon, uber]
+gfg: 
+hackerrank: 
+leetcode: decode-ways
 ---
 
 A message containing letters from A-Z can be encoded into numbers using the following mapping:

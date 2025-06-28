@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Zigzag Conversion"
-topics: "string"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Zigzag Conversion
+topics: [string]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 6
-difficulty: "medium"
-date: 2025-06-18T01:15:27.913902
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: zigzag-conversion
 ---
 
 The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)

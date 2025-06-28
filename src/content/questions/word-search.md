@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Word Search"
-topics: "array backtracking string"
-langs: "java py cpp"
-tc: "O(nmw)"
-sc: "O(n)"
+title: Word Search
+topics: [array, backtracking, string]
+langs: [java, py, cpp]
+tc: O(nmw)
+sc: O(n)
 leetid: 79
-companies: "adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.897311
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, microsoft, oracle, twitter]
+difficulty: medium
+gfg: word-ladder-length-of-shortest-chain-to-reach-a-target-word
+hackerrank: 
+interviewbit: 
+leetcode: word-search
 ---
 
 Given an `m x n` grid of characters `board` and a string `word`, 
@@ -22,7 +24,7 @@ The same letter cell may not be used more than once.
 
 ## Test Cases
 
-![Word Search]({{ site.github.url }}/assets/img/code/word2.jpeg)
+![Word Search](../../assets/img/code/word2.jpeg)
 
 **Input:**
 ```

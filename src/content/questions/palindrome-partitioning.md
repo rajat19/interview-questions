@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Palindrome Partitioning"
-topics: "backtracking dynamic-programming string"
-langs: "java py cpp"
-tc: "O(n2<sup>n</sup>)"
-sc: "O(n<sup>2</sup>)"
+title: Palindrome Partitioning
+topics: [backtracking, dynamic-programming, string]
+langs: [java, py, cpp]
+tc: O(n2<sup>n</sup>)
+sc: O(n<sup>2</sup>)
 leetid: 131
-companies: "adobe amazon apple bloomberg facebook goldman_sachs google microsoft oracle twitter"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.882080
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, microsoft, oracle, twitter]
+difficulty: hard
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: palindrome-partitioning
 ---
 
 Given a string `s`, partition `s` such that every substring of the partition is a **palindrome**. 
@@ -23,7 +25,7 @@ A given string `s` starting at index `start` and ending at index `end` is a pali
 1. The characters at `start` and `end` indexes are equal. 
 2. The substring starting at index `start+1` and ending at index `end−1` is a palindrome.
 
-![Palindrome]({{ site.github.url }}/assets/img/code/palindrome_dp.png)
+![Palindrome](../../assets/img/code/palindrome_dp.png)
 
 Let `N` be the length of the string. 
 To determine if a substring starting at index `start` and ending at index `end` is a palindrome or not, 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Insert Delete GetRandom O1"
-topics: "array hash-table"
-langs: "java"
-tc: "O(1)"
-sc: "O(n)"
+title: Insert Delete GetRandom O1
+topics: [array, hash-table]
+langs: [java]
+tc: O(1)
+sc: O(n)
 leetid: 380
-difficulty: "medium"
-date: 2025-06-18T01:15:27.924271
+difficulty: medium
+companies: [facebook]
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: insert-delete-getrandom-o1
 ---
 
 Implement the RandomizedSet class:

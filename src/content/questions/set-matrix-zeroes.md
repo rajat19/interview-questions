@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Set Matrix Zeroes"
-topics: "array hash-table matrix"
-langs: "java"
-tc: "O(n<sup>2</sup>)"
-sc: "O(1)"
+title: Set Matrix Zeroes
+topics: [array, hash-table, matrix]
+langs: [java]
+tc: O(n<sup>2</sup>)
+sc: O(1)
 leetid: 73
-companies: "adobe amazon apple bloomberg facebook microsoft oracle"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.905756
+companies: [adobe, amazon, apple, bloomberg, facebook, microsoft, oracle]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: set-matrix-zeroes
 ---
 
 Given an `m x n` integer `matrix`, if an element is `0`, set its entire row and column to `0`'s.

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Consecutive Sequence"
-topics: "array hash-table"
-langs: "java cpp"
-tc: "O(n)"
-sc: "O(n)"
+title: Longest Consecutive Sequence
+topics: [array, hash-table]
+langs: [java, cpp, py]
+tc: O(n)
+sc: O(n)
 leetid: 128
-companies: "amazon apple facebook goldman_sachs google linkedin microsoft salesforce"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.888902
+companies: [amazon, apple, facebook, goldman, google, linkedin, microsoft, salesforce]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-consecutive-sequence
 ---
 
 Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.

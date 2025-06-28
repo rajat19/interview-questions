@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Max Increase to Keep City Skyline"
-topics: "array greedy"
-langs: "java"
-tc: "O(n<sup>2</sup>)"
-sc: "O(n)"
+title: Max Increase to Keep City Skyline
+topics: [array, greedy]
+langs: [java, py]
+tc: O(n<sup>2</sup>)
+sc: O(n)
 leetid: 807
-difficulty: "medium"
-date: 2025-06-18T01:15:27.926499
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: max-increase-to-keep-city-skyline
 ---
 
 There is a city composed of `n x n` blocks, 
@@ -30,7 +33,7 @@ Return the maximum total sum that the height of the buildings can be increased b
 
 **Example 1:** 
 
-![Max Skyline](/assets/img/code/max-skyline.png)
+![Max Skyline](../../assets/img/code/max-skyline.png)
 
 ```
 Input: grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]

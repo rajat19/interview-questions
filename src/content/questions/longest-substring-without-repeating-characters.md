@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Substring Without Repeating Characters"
-topics: "hash-table sliding-window string"
-langs: "java py cpp ts"
-tc: "O(n)"
-sc: "O(26)"
+title: Longest Substring Without Repeating Characters
+topics: [hash-table, sliding-window, string]
+langs: [java, py, cpp, ts]
+tc: O(n)
+sc: O(26)
 leetid: 3
-companies: "facebook"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.896796
+companies: [facebook]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-substring-without-repeating-characters
 ---
 
 Given a string `s`, find the length of the longest substring without repeating characters.

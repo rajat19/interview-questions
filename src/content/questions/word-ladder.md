@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Word Ladder"
-topics: "hash-table string"
-langs: "java cpp"
-tc: "O(m<sup>2</sup>n)"
-sc: "O(m<sup>2</sup>n)"
+title: Word Ladder
+topics: [hash-table, string]
+langs: [java, cpp]
+tc: O(m<sup>2</sup>n)
+sc: O(m<sup>2</sup>n)
 leetid: 127
-difficulty: "hard"
-date: 2025-06-18T01:15:27.863037
+difficulty: hard
+companies: [linkedin, facebook]
+gfg: 
+hackerrank: 
+interviewbit: word-ladder-i
+leetcode: word-ladder
 ---
 
 A transformation sequence from word `beginWord` to word `endWord` using a dictionary `wordList` is a sequence of words 

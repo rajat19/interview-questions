@@ -2,19 +2,17 @@ import { defineCollection, z } from 'astro:content';
 
 const questionSchema = z.object({
   title: z.string(),
-  author: z.string().optional(),
-  description: z.string().optional(),
+  topics: z.array(z.string()),
+  langs: z.array(z.string()),
   difficulty: z.enum(['hard', 'medium']),
-  leetid: z.number().optional(),
-  // TODO: move to array of strings
-  topics: z.string(),
-  // TODO: move to array of strings
-  companies: z.string().optional(),
+  companies: z.array(z.string()).optional().nullable(),
   tc: z.string().optional(),
   sc: z.string().optional(),
-  date: z.date(),
-  // TODO: move to array of strings
-  langs: z.string()
+  leetid: z.number().optional().nullable(),
+  interviewbit: z.string().optional().nullable(),
+  hackerrank: z.string().optional().nullable(),
+  gfg: z.string().optional().nullable(),
+  leetcode: z.string().optional().nullable(),
 });
 
 const questionsCollection = defineCollection({

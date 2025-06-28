@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Generate Parentheses"
-topics: "backtracking dynamic-programming string"
-langs: "java"
-tc: "O(4<sup>n</sup>/n&#8730;n)"
-sc: "O(4<sup>n</sup>/n&#8730;n)"
+title: Generate Parentheses
+topics: [backtracking, dynamic-programming, string]
+langs: [java]
+tc: O(4<sup>n</sup>/n&#8730;n)
+sc: O(4<sup>n</sup>/n&#8730;n)
 leetid: 22
-companies: "adobe amazon apple bloomberg facebook goldman_sachs google microsoft uber"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.887204
+companies: [adobe, amazon, apple, bloomberg, facebook, goldman, google, microsoft, uber]
+gfg: print-all-combinations-of-balanced-parentheses
+difficulty: medium
+hackerrank: 
+interviewbit: 
+leetcode: generate-parentheses
 ---
 
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.

@@ -26,6 +26,10 @@
       "ext": "js"
     },
     {
+      "name": "Typescript",
+      "ext": "ts"
+    },
+    {
       "name": "Kotlin",
       "ext": "kt"
     },

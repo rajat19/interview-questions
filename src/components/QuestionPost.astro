@@ -1,30 +1,38 @@
 ---
-import type { QuestionCardProps } from "./QuestionCard.astro";
 import { getEntry, render } from "astro:content";
-
-interface QuestionPostProps extends QuestionCardProps {
-
-}
+import Codetab from "./Codetab.astro";
+import { getSnippetsForQuestion } from '../utils/snippets';
 
 const { slug } = Astro.props as { slug: string};
 const post = await getEntry("questions", slug);
 const { data } = post;
 const { Content } = await render(post);
+const snippets = getSnippetsForQuestion(slug, data.langs);
 
 ---
 
 <div class="flex flex-col gap-4 p-4 bg-base-200 rounded-lg shadow-md">
     <h1 class="text-2xl font-bold">{data.title}</h1>
     <div class="text-sm opacity-70">
-        {data.topics.split(" ").map((topic) => (
+        {data.topics.map((topic) => (
             <span class="badge badge-sm badge-outline mr-1">{topic}</span>
         ))}
-        {data.langs.split(" ").map((lang) => (
+        <br>
+        {data.langs.map((lang) => (
             <span class="badge badge-sm badge-outline mr-1">{lang}</span>
         ))}
-        {data.companies && data.companies.split(" ").map((company) => (
+        <br>
+        {data.companies && data.companies.map((company) => (
             <span class="badge badge-sm badge-outline mr-1">{company}</span>
         ))}
     </div>
     <Content />
+    <Codetab
+        questionLanguages={data.langs}
+        activeLanguage={data.activeLang}
+        slug={slug}
+        tc={data.tc}
+        sc={data.sc}
+        snippets={snippets}
+    />
 </div>

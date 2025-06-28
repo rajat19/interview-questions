@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Increasing Subsequence"
-topics: "array binary-search dynamic-programming"
-langs: "java py"
-tc: "O(nlogn)"
-sc: "O(n)"
+title: Longest Increasing Subsequence
+topics: [array, binary-search, dynamic-programming]
+langs: [java, py]
+tc: O(nlogn)
+sc: O(n)
 leetid: 300
-companies: "amazon apple bloomberg facebook google microsoft"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.884146
+companies: [amazon, apple, bloomberg, facebook, google, microsoft, adobe]
+gfg: longest-increasing-subsequence-dp-3
+interviewbit: longest-increasing-subsequence
+difficulty: medium
+hackerrank: 
+leetcode: longest-increasing-subsequence
 ---
 
 Given an integer array `nums`, return the length of the longest strictly increasing subsequence.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Super Egg Drop"
-topics: "binary-search dynamic-programming"
-langs: "java py cpp"
-tc: "O(KlogN)"
-sc: "O(NK)"
+title: Super Egg Drop
+topics: [binary-search, dynamic-programming]
+langs: [java, py, cpp]
+tc: O(KlogN)
+sc: O(NK)
 leetid: 887
-difficulty: "hard"
-date: 2025-06-18T01:15:27.872594
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: super-egg-drop
 ---
 
 You are given `K` identical eggs and you have access to a building with `N` floors labeled from `1` to `N`.

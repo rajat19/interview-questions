@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Partition Equal Subset Sum"
-topics: "array dynamic-programming"
-langs: "java py"
-tc: "O(n*sum)"
-sc: "O(sum)"
+title: Partition Equal Subset Sum
+topics: [array, dynamic-programming]
+langs: [java, py]
+tc: O(n*sum)
+sc: O(sum)
 leetid: 416
-difficulty: "medium"
-date: 2025-06-18T01:15:27.913036
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: partition-equal-subset-sum
 ---
 
 Given a non-empty array nums containing only positive integers, 

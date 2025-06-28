@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Minimum Remove to Make Valid Parentheses"
-topics: "stack string"
-langs: "java py cpp"
-tc: "O(n)"
-sc: "O(n)"
+title: Minimum Remove to Make Valid Parentheses
+topics: [stack, string]
+langs: [java, py, cpp]
+tc: O(n)
+sc: O(n)
 leetid: 1249
-difficulty: "medium"
-date: 2025-06-18T01:15:27.896052
+difficulty: medium
+companies: [facebook]
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: minimum-remove-to-make-valid-parentheses
 ---
 
 Given a string s of `'('` , `')'` and lowercase English characters.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Count of Smaller Numbers After Self"
-topics: "array divide-and-conquer sorting"
-langs: "java cpp"
-tc: "O(nlogn)"
-sc: "O(n)"
+title: Count of Smaller Numbers After Self
+topics: [array, divide-and-conquer, sorting]
+langs: [java, cpp]
+tc: O(nlogn)
+sc: O(n)
 leetid: 315
-difficulty: "hard"
-date: 2025-06-18T01:15:27.867019
+gfg: count-smaller-elements-on-right-side
+companies: [facebook]
+difficulty: hard
+hackerrank: 
+interviewbit: 
+leetcode: count-of-smaller-numbers-after-self
 ---
 
 You are given an integer array `nums` and you have to return a new `counts` array. 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Valid Sudoku"
-topics: "array hash-table matrix"
-langs: "java"
-tc: "O(81)"
-sc: "O(81)"
+title: Valid Sudoku
+topics: [array, hash-table, matrix]
+langs: [java]
+tc: O(81)
+sc: O(81)
 leetid: 36
-difficulty: "medium"
-date: 2025-06-18T01:15:27.901044
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: valid-sudoku
 ---
 
 Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be validated according to the following rules:

@@ -1,12 +1,15 @@
 ---
-author: "Rajat Srivastava"
-title: "Minimum sum partition"
-topics: "array dynamic-programming"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.869249
+title: Minimum sum partition
+topics: [array, dynamic-programming]
+langs: [java]
+tc: O(n)
+sc: O(n)
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: 
 ---
 
 Given an integer array arr of size N, 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Maximum Width of Binary Tree"
-topics: "binary-tree depth-first-search tree"
-langs: "java py"
-tc: "O(h)"
-sc: "O(1)"
+title: Maximum Width of Binary Tree
+topics: [binary-tree, depth-first-search, tree]
+langs: [java, py]
+tc: O(h)
+sc: O(1)
 leetid: 662
-difficulty: "medium"
-date: 2025-06-18T01:15:27.894667
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: maximum-width-of-binary-tree
 ---
 
 Given the root of a binary tree, return the **_maximum width_** of the given tree.

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Split Array Largest Sum"
-topics: "array dynamic-programming greedy"
-langs: "java"
-tc: "O(n<sup>2</sup>m)"
-sc: "O(nm)"
+title: Split Array Largest Sum
+topics: [array, dynamic-programming, greedy]
+langs: [java]
+tc: O(n<sup>2</sup>m)
+sc: O(nm)
 leetid: 410
-difficulty: "hard"
-date: 2025-06-18T01:15:27.870774
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: split-array-largest-sum
 ---
 
 Given an array nums which consists of non-negative integers and an integer `m`, 

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Sort Colors"
-topics: "array sorting two-pointers"
-langs: "java cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: Sort Colors
+topics: [array, sorting, two-pointers]
+langs: [java, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 75
-difficulty: "medium"
-date: 2025-06-18T01:15:27.892338
+companies: [facebook]
+gfg: sort-an-array-of-0s-1s-and-2s
+difficulty: medium
+hackerrank: 
+interviewbit: sort-colors
+leetcode: sort-colors
 ---
 
 Given an array `nums` with `n` objects colored red, white, or blue, 

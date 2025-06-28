@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Score of Parentheses"
-topics: "stack string"
-langs: "java py"
-tc: "O(n)"
-sc: "O(n)"
+title: Score of Parentheses
+topics: [stack, string]
+langs: [java, py]
+tc: O(n)
+sc: O(n)
 leetid: 856
-difficulty: "medium"
-date: 2025-06-18T01:15:27.905175
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: score-of-parentheses
 ---
 
 Given a balanced parentheses string `s`, return the score of the string.

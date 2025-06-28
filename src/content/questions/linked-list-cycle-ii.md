@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Linked List Cycle II"
-topics: "linked-list two-pointers"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Linked List Cycle II
+topics: [linked-list, two-pointers]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 142
-difficulty: "medium"
-date: 2025-06-18T01:15:27.890448
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: linked-list-cycle-ii
 ---
 
 Given the `head` of a linked list, return the node where the cycle begins. If there is no cycle, return `null`.

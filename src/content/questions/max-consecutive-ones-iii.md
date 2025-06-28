@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Max Consecutive Ones III"
-topics: "array binary-search sliding-window"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Max Consecutive Ones III
+topics: [array, binary-search, sliding-window]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 1004
-difficulty: "medium"
-date: 2025-06-18T01:15:27.889457
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: max-consecutive-ones-iii
 ---
 
 Given a binary array `nums` and an integer `k`, return the maximum number of consecutive `1`'s in the array if you can flip at most `k` `0`'s.

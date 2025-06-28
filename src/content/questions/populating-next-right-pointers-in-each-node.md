@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Populating Next Right Pointers in Each Node"
-topics: "binary-tree breadth-first-search linked-list tree"
-langs: "java go py"
-tc: "O(h)"
-sc: "O(1)"
+title: Populating Next Right Pointers in Each Node
+topics: [binary-tree, breadth-first-search, linked-list, tree]
+langs: [java, go, py]
+tc: O(h)
+sc: O(1)
 leetid: 116
-difficulty: "medium"
-date: 2025-06-18T01:15:27.918275
+difficulty: medium
+companies: [facebook]
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: populating-next-right-pointers-in-each-node
 ---
 
 You are given a perfect binary tree where all leaves are on the same level, and **every parent has two children**. 
@@ -38,7 +41,7 @@ For next level, move to `level.left`
 ---
 ## Test Cases
 
-![Example]({{ site.github.url }}/assets/img/code/116_sample.png)
+![Example](../../assets/img/code/116_sample.png)
 
 **Example 1:**
 ```

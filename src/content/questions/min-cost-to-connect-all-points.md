@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Min Cost to Connect All Points"
-topics: "array graph"
-langs: "java"
-tc: "O(1)"
-sc: "O(1)"
+title: Min Cost to Connect All Points
+topics: [array, graph]
+langs: [java]
+tc: O(1)
+sc: O(1)
 leetid: 1584
-difficulty: "medium"
-date: 2025-06-18T01:15:27.903218
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: min-cost-to-connect-all-points
 ---
 
 You are given an array points representing integer coordinates of some points on a 2D-plane, where `points[i] = [xi, yi]`.
@@ -25,8 +28,8 @@ Return the minimum cost to make all points connected. All points are connected i
 **Example 1:** 
 
 <div style="background-color: white; width: auto">
-    <img src="{{ site.github.url }}/assets/img/code/min-cost.png" alt="">
-    <img src="{{ site.github.url }}/assets/img/code/min-cost2.png" alt="">
+    <img src="../../assets/img/code/min-cost.png" alt="">
+    <img src="../../assets/img/code/min-cost2.png" alt="">
 </div>
 
 ```

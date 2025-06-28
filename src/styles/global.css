@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: all;
+}
+
+.astro-code,
+.astro-code span {
+    color: var(--color-base-content);
+    background-color: var(--color-base-100) !important;
+    /* Optional, if you also want font styles */
+    /*font-style: var(--color-) !important;*/
+    /*font-weight: var(--shiki-dark-font-weight) !important;*/
+    /*text-decoration: var(--shiki-dark-text-decoration) !important;*/
+}

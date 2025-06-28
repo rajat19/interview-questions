@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Permutation Sequence"
-topics: "recursion"
-langs: "java"
-tc: "O(n)"
-sc: "O(n)"
+title: Permutation Sequence
+topics: [recursion]
+langs: [java]
+tc: O(n)
+sc: O(n)
 leetid: 60
-difficulty: "hard"
-date: 2025-06-18T01:15:27.868366
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: permutation-sequence
 ---
 
 The set `[1, 2, 3, ..., n]` contains a total of `n!` unique permutations.

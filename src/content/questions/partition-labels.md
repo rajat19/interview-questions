@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Partition Labels"
-topics: "hash-table greedy string"
-langs: "java py"
-tc: "O(n)"
-sc: "O(1)"
+title: Partition Labels
+topics: [hash-table, greedy, string]
+langs: [java, py]
+tc: O(n)
+sc: O(1)
 leetid: 763
-difficulty: "medium"
-date: 2025-06-18T01:15:27.887742
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: partition-labels
 ---
 
 You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.

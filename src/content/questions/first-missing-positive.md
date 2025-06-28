@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "First Missing Positive"
-topics: "array hash-table"
-langs: "java py c cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: First Missing Positive
+topics: [array, hash-table]
+langs: [java, py, c, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 41
-companies: "adobe amazon apple facebook google microsoft"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.878554
+companies: [adobe, amazon, apple, facebook, google, microsoft]
+difficulty: hard
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: first-missing-positive
 ---
 
 Given an unsorted integer array `nums`, return the smallest missing positive integer.

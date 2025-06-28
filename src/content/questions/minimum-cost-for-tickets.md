@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Minimum Cost for Tickets"
-topics: "array dynamic-programming"
-langs: "java"
-tc: "O(N)"
-sc: "O(N)"
+title: Minimum Cost for Tickets
+topics: [array, dynamic-programming]
+langs: [java]
+tc: O(N)
+sc: O(N)
 leetid: 983
-difficulty: "medium"
-date: 2025-06-18T01:15:27.907204
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: minimum-cost-for-tickets
 ---
 
 You have planned some train traveling one year in advance. The days of the year in which you will travel are given as an integer array days. Each day is an integer from `1` to `365`.

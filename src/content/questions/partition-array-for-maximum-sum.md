@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Partition Array for Maximum Sum"
-topics: "array dynamic-programming"
-langs: "java"
-tc: "O(nk)"
-sc: "O(n)"
+title: Partition Array for Maximum Sum
+topics: [array, dynamic-programming]
+langs: [java]
+tc: O(nk)
+sc: O(n)
 leetid: 1043
-difficulty: "hard"
-date: 2025-06-18T01:15:27.864506
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: partition-array-for-maximum-sum
 ---
 
 Given an integer array `arr`, partition the array into (contiguous) subarrays of length **at most** `k`. 

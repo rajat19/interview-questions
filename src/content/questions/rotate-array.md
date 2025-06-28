@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Rotate Array"
-topics: "array two-pointers"
-langs: "java cpp py"
-tc: "O(logn)"
-sc: "O(1)"
+title: Rotate Array
+topics: [array, two-pointers]
+langs: [java, cpp, py]
+tc: O(logn)
+sc: O(1)
 leetid: 189
-difficulty: "medium"
-date: 2025-06-18T01:15:27.908188
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: rotate-array
 ---
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.

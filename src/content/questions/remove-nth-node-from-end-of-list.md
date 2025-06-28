@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Remove Nth Node From End of List"
-topics: "linked-list"
-langs: "java cpp py"
-tc: "O(n)"
-sc: "O(1)"
+title: Remove Nth Node From End of List
+topics: [linked-list]
+langs: [java, cpp, py]
+tc: O(n)
+sc: O(1)
 leetid: 19
-difficulty: "medium"
-date: 2025-06-18T01:15:27.899166
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: remove-nth-node-from-end-of-list
 ---
 
 Given the `head` of a linked list, remove the `n`th node from the end of the list and return its `head`.

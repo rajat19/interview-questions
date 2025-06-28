@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "String to Integer Atoi"
-topics: "string"
-langs: "java cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: String to Integer Atoi
+topics: [string]
+langs: [java, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 8
-companies: "facebook"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.900593
+companies: [facebook]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: string-to-integer-atoi
 ---
 
 Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).

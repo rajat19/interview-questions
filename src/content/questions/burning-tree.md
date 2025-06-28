@@ -1,12 +1,15 @@
 ---
-author: "Rajat Srivastava"
-title: "Burning Tree"
-topics: "binary-tree breadth-first-search queue tree"
-langs: "java"
-tc: "O(n)"
-sc: "O(2<sup>h</sup>)"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.873188
+title: Burning Tree
+topics: [binary-tree, breadth-first-search, queue, tree]
+langs: [java]
+tc: O(n)
+sc: O(2<sup>h</sup>)
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: 
 ---
 
 Given a binary tree and target node. By giving the fire to the target node and fire starts to spread in a complete tree. 
@@ -21,7 +24,7 @@ Rules for burning the nodes :
 
 ## Test Cases
 
-![Burn Tree]({{ site.github.url }}/assets/img/code/binarytree.jpeg)
+![Burn Tree](../../assets/img/code/binarytree.jpeg)
 
 **Input:**
 

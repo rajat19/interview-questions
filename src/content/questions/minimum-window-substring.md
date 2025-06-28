@@ -1,14 +1,17 @@
 ---
-author: "Rajat Srivastava"
-title: "Minimum Window Substring"
-category: "hard"
-topics: "hash-table sliding-window string"
-langs: "java cpp py c"
-tc: "O(n+m)"
-sc: "O(n+m)"
+title: Minimum Window Substring
+category: hard
+topics: [hash-table, sliding-window, string]
+langs: [java, cpp, py, c, kt]
+tc: O(n+m)
+sc: O(n+m)
 leetid: 76
-difficulty: "hard"
-date: 2025-06-18T01:15:27.878019
+gfg: find-the-smallest-window-in-a-string-containing-all-characters-of-another-string
+companies: [facebook]
+difficulty: hard
+hackerrank: 
+interviewbit: 
+leetcode: minimum-window-substring
 ---
 
 Given two strings `s` and `t` of lengths `m` and `n` respectively, 

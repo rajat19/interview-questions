@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Reconstruct Itinerary"
-topics: "string"
-langs: "java"
-tc: "O(1)"
-sc: "O(V<sup>2</sup>)"
+title: Reconstruct Itinerary
+topics: [string]
+langs: [java]
+tc: O(1)
+sc: O(V<sup>2</sup>)
 leetid: 332
-difficulty: "hard"
-date: 2025-06-18T01:15:27.865387
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: reconstruct-itinerary
 ---
 
 You are given a list of airline tickets where `tickets[i] = [from[i], to[i]]` represent the departure and the arrival airports of one flight. 

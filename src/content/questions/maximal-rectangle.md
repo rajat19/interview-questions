@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Maximal Rectangle"
-topics: "array dynamic-programming matrix stack"
-langs: "java cpp"
-tc: "O(nm)"
-sc: "O(m)"
+title: Maximal Rectangle
+topics: [array, dynamic-programming, matrix, stack]
+langs: [java, cpp]
+tc: O(nm)
+sc: O(m)
 leetid: 85
-difficulty: "hard"
-date: 2025-06-18T01:15:27.861761
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: maximal-rectangle
 ---
 
 Given a `rows x cols` binary matrix filled with `0`'s and `1`'s, find the largest rectangle containing only `1`'s and return its area.

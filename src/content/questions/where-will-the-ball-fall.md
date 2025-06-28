@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Where Will the Ball Fall"
-topics: "array depth-first-search dynamic-programming"
-langs: "java cpp"
-tc: "O(nm)"
-sc: "O(m)"
+title: Where Will the Ball Fall
+topics: [array, depth-first-search, dynamic-programming]
+langs: [java, cpp]
+tc: O(nm)
+sc: O(m)
 leetid: 1706
-difficulty: "medium"
-date: 2025-06-18T01:15:27.918755
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: where-will-the-ball-fall
 ---
 
 You have a 2-D grid of size `m x n` representing a box, and you have `n` balls. The box is open on the top and bottom sides.
@@ -27,7 +30,7 @@ or `-1` if the ball gets stuck in the box.
 
 ## Test Cases
 
-![Ball](/assets/img/code/ball.jpeg)
+![Ball](../../assets/img/code/ball.jpeg)
 
 **Example 1:** 
 ```

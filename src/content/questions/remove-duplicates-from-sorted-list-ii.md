@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Remove Duplicates from Sorted List II"
-topics: "linked-list"
-langs: "java cpp"
-tc: "O(n)"
-sc: "O(1)"
+title: Remove Duplicates from Sorted List II
+topics: [linked-list]
+langs: [java, cpp]
+tc: O(n)
+sc: O(1)
 leetid: 82
-difficulty: "medium"
-date: 2025-06-18T01:15:27.913475
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: remove-duplicates-from-sorted-list-ii
 ---
 
 Given the `head` of a sorted linked list, delete all nodes that have duplicate numbers, 

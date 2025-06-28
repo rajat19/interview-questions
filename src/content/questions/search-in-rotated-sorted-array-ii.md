@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Search in Rotated Sorted Array II"
-topics: "array binary-search"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Search in Rotated Sorted Array II
+topics: [array, binary-search]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 81
-difficulty: "medium"
-date: 2025-06-18T01:15:27.910562
+gfg: search-an-element-in-a-sorted-and-pivoted-array
+companies: [facebook]
+difficulty: medium
+hackerrank: 
+interviewbit: 
+leetcode: search-in-rotated-sorted-array-ii
 ---
 
 There is an integer array `nums` sorted in non-decreasing order (not necessarily with distinct values).

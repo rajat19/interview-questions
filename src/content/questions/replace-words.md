@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Replace Words"
-topics: "array hash-table string trie"
-langs: "java py"
-tc: "O(nm)"
-sc: "O(d)"
+title: Replace Words
+topics: [array, hash-table, string, trie]
+langs: [java, py]
+tc: O(nm)
+sc: O(d)
 leetid: 648
-companies: None
-difficulty: "medium"
-date: 2025-06-18T01:15:27.916399
+companies: 
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: replace-words
 ---
 In English, we have a concept called **root**, which can be followed by some other word to form another longer word - let's call this word **derivative**. For example, when the **root** `"help"` is followed by the word `"ful"`, we can form a derivative `"helpful"`.
 Given a `dictionary` consisting of many **roots** and a `sentence` consisting of words separated by spaces, replace all the derivatives in the sentence with the **root** forming it. If a derivative can be replaced by more than one **root**, replace it with the **root** that has **the shortest length**.

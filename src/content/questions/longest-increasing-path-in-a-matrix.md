@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Increasing Path in a Matrix"
-topics: "depth-first-search dynamic-programming graph"
-langs: "java cpp"
-tc: "O(4<sup>mn</sup>)"
-sc: "O(mn)"
+title: Longest Increasing Path in a Matrix
+topics: [depth-first-search, dynamic-programming, graph]
+langs: [java, cpp]
+tc: O(4<sup>mn</sup>)
+sc: O(mn)
 leetid: 329
-difficulty: "hard"
-date: 2025-06-18T01:15:27.879095
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-increasing-path-in-a-matrix
 ---
 
 Given an `m` x `n` integers `matrix`, return the length of the longest increasing path in `matrix`.

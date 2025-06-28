@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Combination Sum"
-topics: "array backtracking"
-langs: "java cpp py"
-tc: "O(2<sup>n</sup>)"
-sc: "O(n)"
+title: Combination Sum
+topics: [array, backtracking]
+langs: [java, cpp, py]
+tc: O(2<sup>n</sup>)
+sc: O(n)
 leetid: 32
-companies: "adobe airbnb amazon apple facebook goldman_sachs linkedin microsoft salesforce"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.925373
+companies: [adobe, airbnb, amazon, apple, facebook, goldman, linkedin, microsoft, salesforce]
+difficulty: medium
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: combination-sum
 ---
 
 Given an array of distinct integers `candidates` and a target integer `target`, 

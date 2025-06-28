@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Count and Say"
-topics: "string"
-langs: "java"
-tc: "O(n)"
-sc: "O(1)"
+title: Count and Say
+topics: [string]
+langs: [java]
+tc: O(n)
+sc: O(1)
 leetid: 38
-difficulty: "medium"
-date: 2025-06-18T01:15:27.903644
+gfg: look-and-say-sequence
+companies: [facebook]
+difficulty: medium
+hackerrank: 
+interviewbit: 
+leetcode: count-and-say
 ---
 
 The **count-and-say** sequence is a sequence of digit strings defined by the recursive formula:

@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Restore IP Addresses"
-topics: "backtracking string"
-langs: "java py"
-tc: "O(n<sup>3</sup>)"
-sc: "O(1)"
+title: Restore IP Addresses
+topics: [backtracking, string]
+langs: [java, py]
+tc: O(n<sup>3</sup>)
+sc: O(1)
 leetid: 93
-difficulty: "medium"
-date: 2025-06-18T01:15:27.888302
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: restore-ip-addresses
 ---
 
 A valid IP address consists of exactly four integers separated by single dots. 

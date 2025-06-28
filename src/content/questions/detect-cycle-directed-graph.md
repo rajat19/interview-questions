@@ -1,12 +1,15 @@
 ---
-author: "Rajat Srivastava"
-title: "Detect Cycle Directed Graph"
-topics: "graph"
-langs: "java"
-tc: "O(V+E)"
-sc: "O(V)"
-difficulty: "medium"
-date: 2025-06-18T01:15:27.920115
+title: Detect Cycle Directed Graph
+topics: [graph]
+langs: [java]
+tc: O(V+E)
+sc: O(V)
+gfg: detect-cycle-in-a-graph
+difficulty: medium
+companies: 
+hackerrank: 
+interviewbit: 
+leetcode: 
 ---
 
 Given a Directed Graph with V vertices (Numbered from 0 to V-1) and E edges, check whether it contains any cycle or not.

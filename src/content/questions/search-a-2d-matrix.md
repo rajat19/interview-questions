@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Search a 2D Matrix"
-topics: "array binary-search matrix"
-langs: "java cpp c py go"
-tc: "O(mn)"
-sc: "O(1)"
+title: Search a 2D Matrix
+topics: [array, binary-search, matrix]
+langs: [java, cpp, c, py, go]
+tc: O(mn)
+sc: O(1)
 leetid: 74
-difficulty: "medium"
-date: 2025-06-18T01:15:27.922128
+difficulty: medium
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: search-a-2d-matrix
 ---
 
 Write an efficient algorithm that searches for a value target in an `m` x `n` integer `matrix`. This matrix has the following properties:

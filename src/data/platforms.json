@@ -1,25 +1,26 @@
 [
   {
     "name": "Leetcode",
-    "url": "https://leetcode.com",
-    "identifier": "leetid",
-    "img": "leet.png"
+    "base": "https://leetcode.com",
+    "suffix": "/",
+    "identifier": "leetcode"
   },
   {
-    "name": "Geeks For Geeks",
-    "url": "https://geeksforgeeks.com",
-    "identifier": "gfg",
-    "img": "gfg.png"
-  },
-  {
-    "name": "Facebook Interview Preparation",
-    "identifier": "fb-prep",
-    "img": "fb-prep.png"
+    "name": "GeeksForGeeks",
+    "base": "https://geeksforgeeks.com/dsa",
+    "suffix": "/",
+    "identifier": "gfg"
   },
   {
     "name": "InterviewBit",
-    "url": "https://interviewbit.com",
-    "identifier": "ib",
-    "img": "ib.png"
+    "base": "https://www.interviewbit.com/problems/",
+    "suffix": "/",
+    "identifier": "interviewbit"
+  },
+  {
+    "name": "Hackerrank",
+    "base": "https://www.hackerrank.com/challenges/",
+    "suffix": "/problem",
+    "identifier": "hackerrank"
   }
 ]

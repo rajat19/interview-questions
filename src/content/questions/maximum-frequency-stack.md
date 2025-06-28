@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Maximum Frequency Stack"
-topics: "hash-table heap queue"
-langs: "java"
-tc: "O(logn)"
-sc: "O(n)"
+title: Maximum Frequency Stack
+topics: [hash-table, heap, queue]
+langs: [java]
+tc: O(logn)
+sc: O(n)
 leetid: 895
-difficulty: "hard"
-date: 2025-06-18T01:15:27.863520
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: maximum-frequency-stack
 ---
 
 Design a stack-like data structure to push elements to the stack and pop the most frequent element from the stack.

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Best Time to Buy and Sell Stock III"
-topics: "array dynamic-programming"
-langs: "java cpp py"
-tc: "O(n)"
-sc: "O(1)"
+title: Best Time to Buy and Sell Stock III
+topics: [array, dynamic-programming]
+langs: [java, cpp, py, c]
+tc: O(n)
+sc: O(1)
 leetid: 123
-companies: "facebook"
-difficulty: "hard"
-date: 2025-06-18T01:15:27.871264
+companies: [facebook, amazon]
+interviewbit: best-time-to-buy-and-sell-stocks-iii
+difficulty: hard
+gfg: 
+hackerrank: 
+leetcode: best-time-to-buy-and-sell-stock-iii
 ---
 
 You are given an array prices where `prices[i]` is the price of a given stock on the i<sup>th</sup> day.

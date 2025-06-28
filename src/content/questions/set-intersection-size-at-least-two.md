@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Set Intersection Size At Least Two"
-topics: "array greedy sorting"
-langs: "java"
-tc: "O(nlogn)"
-sc: "O(1)"
+title: Set Intersection Size At Least Two
+topics: [array, greedy, sorting]
+langs: [java]
+tc: O(nlogn)
+sc: O(1)
 leetid: 757
-difficulty: "hard"
-date: 2025-06-18T01:15:27.869723
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: set-intersection-size-at-least-two
 ---
 
 An integer interval `[a, b]` (for integers `a < b`) is a set of all consecutive integers from `a` to `b`, including `a` and `b`.

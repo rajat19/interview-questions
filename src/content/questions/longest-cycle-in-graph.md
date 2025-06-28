@@ -1,13 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Longest Cycle in Graph"
-topics: "depth-first-search graph topological-sort"
-langs: "java"
-tc: "O(nm)"
-sc: "O(nm)"
+title: Longest Cycle in Graph
+topics: [depth-first-search, graph, topological-sort]
+langs: [java]
+tc: O(nm)
+sc: O(nm)
 leetid: 2360
-difficulty: "hard"
-date: 2025-06-18T01:15:27.874515
+difficulty: hard
+companies: 
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: longest-cycle-in-graph
 ---
 
 You are given a directed graph of n nodes numbered from `0` to `n - 1`, where each node has at most one outgoing edge.
@@ -24,7 +27,7 @@ A cycle is a path that starts and ends at the same node.
 
 **Example 1:** 
 
-![Screenshot](/assets/img/code/longest-cycle.png)
+![Screenshot](../../assets/img/code/longest-cycle.png)
 ```
 Input: edges = [3,3,4,2,3]
 Output: 3

@@ -1,14 +1,16 @@
 ---
-author: "Rajat Srivastava"
-title: "Cherry Pickup II"
-topics: "array dynamic-programming matrix"
-langs: "java"
-tc: "O(mn<sup>2</sup>)"
-sc: "O(mn<sup>2</sup>)"
+title: Cherry Pickup II
+topics: [array, dynamic-programming, matrix]
+langs: [java]
+tc: O(mn<sup>2</sup>)
+sc: O(mn<sup>2</sup>)
 leetid: 1559
-companies: None
-difficulty: "hard"
-date: 2025-06-18T01:15:27.866557
+companies: 
+difficulty: hard
+gfg: 
+hackerrank: 
+interviewbit: 
+leetcode: cherry-pickup-ii
 ---
 You are given a `rows x cols` matrix `grid` representing a field of cherries where `grid[i][j]` represents the number of cherries that you can collect from the `(i, j)` cell.
 You have two robots that can collect cherries for you:
