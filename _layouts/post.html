@@ -2,7 +2,9 @@
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <h1 class="post-title p-name" >{{ page.title | escape }}</h1>
+
+        <h3>Topics</h3>
         {% assign topics = page.topics %}
         <div class="post-pills-row">
             {% for topic in topics %}
@@ -11,6 +13,10 @@
             </a>
             {% endfor %}
         </div>
+
+        {% if page.companies %}
+        <h3>Companies</h3>
+        {% endif %}
         {% assign companies = page.companies %}
         <div class="post-pills-row">
             {% for company in companies %}
@@ -21,6 +27,8 @@
             </a>
             {% endfor %}
         </div>
+
+        <h3>Platforms</h3>
         <div class="post-pills-row">
             {% for platform in site.data.platforms %}
             {% assign identifier = page[platform.identifier] %}

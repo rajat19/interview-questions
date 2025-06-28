@@ -7,10 +7,10 @@ langs: [java, cpp]
 tc: O(log n)
 sc: O(1)
 leetid: 162
-gfg: 
+gfg: find-a-peak-in-a-given-array
 interviewbit: 
 hackerrank: 
-companies: 
+companies: [facebook]
 leetcode: find-peak-element
 ---
 A peak element is an element that is strictly greater than its neighbors.

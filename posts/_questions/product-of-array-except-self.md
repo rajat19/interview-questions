@@ -2,7 +2,7 @@
 layout: post
 title: Product of Array Except Self
 topics: [array, prefix-sum]
-langs: [java, cpp, py]
+langs: [java, cpp, py, c]
 tc: O(n)
 sc: O(1)
 leetid: 238

@@ -6,7 +6,7 @@ topics: [array, math, binary-search, prefix-sum, randomized]
 langs: [java]
 tc: O(log n)
 sc: O(n)
-companies: facebook
+companies: [facebook]
 leetid: 912
 leetcode: random-pick-with-weight
 gfg: 
