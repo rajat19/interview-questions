@@ -6,7 +6,48 @@
  .post-header {
     margin-bottom: $spacing-unit;
 }
-  
+
+.post-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bookmark-icon {
+    font-size: 1.5rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.bookmark-icon:hover {
+    color: gold;
+}
+
+.bookmark-icon.bookmarked {
+    color: gold;
+}
+
+.bookmark-icon.animate {
+    animation: pulse 0.2s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.bookmark-icon.disabled {
+    pointer-events: auto;
+    cursor: not-allowed;
+    opacity: 0.4;
+    color: grey !important;
+}
+
 .post-title,
 .post-content h1 {
     @include relative-font-size(1.725);
