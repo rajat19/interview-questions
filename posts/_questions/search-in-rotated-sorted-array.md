@@ -10,7 +10,7 @@ gfg: search-an-element-in-a-sorted-and-pivoted-array
 companies: [facebook]
 difficulty: medium
 hackerrank: 
-interviewbit: 
+interviewbit: rotated-sorted-array-search
 leetcode: search-in-rotated-sorted-array
 ---
 

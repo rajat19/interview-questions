@@ -6,11 +6,11 @@ topics: [stack, tree, design, binary-search-tree, binary-tree, iterator]
 langs: [java, py, cpp]
 tc: O(n)
 sc: O(n)
-companies: [facebook, google, linkedin]
+companies: [facebook, google, linkedin, apple, amazon]
 leetid: 173
 leetcode: binary-search-tree-iterator
 gfg: 
-interviewbit: 
+interviewbit: bst-iterator
 hackerrank: 
 ---
 Implement the `BSTIterator` class that represents an iterator over the **<a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)" target="_blank">in-order traversal</a>** of a binary search tree (BST):

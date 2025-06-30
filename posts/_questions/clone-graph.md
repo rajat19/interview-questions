@@ -7,10 +7,10 @@ tc: O(n)
 sc: O(n)
 leetid: 133
 difficulty: medium
-companies: 
+companies: [google, facebook, amazon]
 gfg: 
 hackerrank: 
-interviewbit: 
+interviewbit: clone-graph
 leetcode: clone-graph
 ---
 

@@ -9,7 +9,7 @@ leetid: 269
 companies: [airbnb, amazon, apple, bloomberg, facebook, google, microsoft, oracle, pinterest, snapchat, twitter, uber, vmware]
 interviewbit:
 difficulty: hard
-gfg: 
+gfg: given-sorted-dictionary-find-precedence-characters
 hackerrank: 
 leetcode: alien-dictionary
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Populating Next Right Pointers in Each Node
 topics: [binary-tree, breadth-first-search, linked-list, tree]
-langs: [java, go, py]
+langs: [java, go, py, cpp]
 tc: O(h)
 sc: O(1)
 leetid: 116

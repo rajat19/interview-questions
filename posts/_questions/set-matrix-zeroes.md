@@ -10,7 +10,7 @@ companies: [adobe, amazon, apple, bloomberg, facebook, microsoft, oracle]
 difficulty: medium
 gfg: 
 hackerrank: 
-interviewbit: 
+interviewbit: set-matrix-zeros
 leetcode: set-matrix-zeroes
 ---
 

@@ -10,7 +10,7 @@ companies: [adobe, airbnb, amazon, apple, facebook, goldman, linkedin, microsoft
 difficulty: medium
 gfg: 
 hackerrank: 
-interviewbit: 
+interviewbit: combination-sum
 leetcode: combination-sum
 ---
 

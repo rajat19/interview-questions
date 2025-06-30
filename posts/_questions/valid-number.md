@@ -2,12 +2,12 @@
 layout: post
 title: Valid Number
 topics: [string]
-langs: [java]
+langs: [java, cpp, py]
 tc: O(n)
 sc: O(1)
 leetid: 65
 difficulty: hard
-companies: 
+companies: [facebook]
 gfg: 
 hackerrank: 
 interviewbit: 

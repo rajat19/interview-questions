@@ -8,9 +8,9 @@ sc: O(1)
 leetid: 42
 gfg: trapping-rain-water
 difficulty: hard
-companies: 
+companies: [facebook, google, amazon, adobe]
 hackerrank: 
-interviewbit: 
+interviewbit: container-with-most-water
 leetcode: trapping-rain-water
 ---
 

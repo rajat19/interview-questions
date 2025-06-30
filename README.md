@@ -9,11 +9,17 @@ A collection of top interview questions asked in DSA rounds of companies. The pr
 
 The project contains solutions of the questions in multiple languages, the questions are also tagged with topics and companies.
 
+See list of supported languages and platforms, check
+1. [languages](_data/languages.yml)
+2. [platforms](_data/platforms.yml)
+
+Folks can also login using google (supported through Firebase) and bookmark questions and view their bookmarked questions.
+
 Website: [interview-questions](https://rajat19.github.io/interview-questions/)
 
-![Screenshot](assets/img/global/ss.png)
+![Screenshot](assets/img/global/ss3.png)
 
-![Screenshot](assets/img/global/ss2.png)
+![Recording](assets/img/global/recording.gif)
 
 Questions are present inside [posts](/posts) folder, with their working solutions available in [code](_includes/code) folder
 
@@ -78,10 +84,3 @@ To start the project
    ```shell 
    bundle exec jekyll serve
    ```
-
-### TODO:
-1. Add solutions in most major languages
-2. Add `main` method in solutions so that we can test them out
-3. Run solutions using [test.sh](/test.sh)
-4. Add company tags
-5. Add GFG, Leetcode, Interviewbit etc. links for preparation and testing out code

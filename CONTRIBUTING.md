@@ -24,50 +24,53 @@ is open to whoever wants to implement it.
 ### Add Solutions
 Add your solution in any language. Please add the language in `langs` front matter for your post
 
-### Add Foobar Questions
+### Add Questions
 You can add any question you want available on leetcode. Check [Sample](posts/_sample/hello-world.md) on how to add a question with its solutions
 
 ## Get Started!
 ------------
-Ready to contribute? Here's how to set up `foobar` for local.
+Ready to contribute? Here's how to set up repo for local.
 
-1. Fork the `foobar` repo on GitHub.
+1. Fork the `interview-questions` repo on GitHub.
 2. Clone your fork locally::
-```bash
-    $ git clone git@github.com:rajat19/interview-questions.git
-```
+    ```bash
+        $ git clone git@github.com:rajat19/interview-questions.git
+    ```
 3. Create a branch for local development::
-```bash
-    $ git checkout -b name-of-your-bugfix-or-feature
-```
-
-4. Commit your changes, quoting github issue in the commit message, if applicable and push your branch to GitHub::
-```bash
-    $ git add .
-    $ git commit -m "Fix #XX - My awesome fix"
-    $ git push origin name-of-your-bugfix-or-feature
-```
-
+    ```bash
+        $ git checkout -b name-of-your-bugfix-or-feature
+    ```
+4. Commit your changes, quoting GitHub issue in the commit message, if applicable and push your branch to GitHub::
+    ```bash
+        $ git add .
+        $ git commit -m "Fix #XX - My awesome fix"
+        $ git push origin name-of-your-bugfix-or-feature
+    ```
 5. Submit a pull request through the GitHub website.
 
 ## Things to keep in mind!
 ---
 Some things to keep in mind while adding questions/solutions-
-1. Questions and test cases are added in `markdown` files which have .md extensions. These are added in [posts](posts) folder under their difficulty tab
+1. Questions and test cases are added in `markdown` files which have .md extensions. These are added in [_questions](posts/_questions) folder
 Have the following front matter for your post
-```markdown
----
-layout: post
-author: <AUTHOR_NAME>
-title: <QUESTION_NAME>
-topics: <QUESTION_TYPE>
-langs: <SUPPORTED_LANGUAGES>
-leetcode: <LEETCODE_LINK>
-tc: <TIME_COMPLEXITY>
-sc: <SPACE_COMPLEXITY
-leetid: <LEETCODE_ID>
----
-```
+    ```markdown
+    ---
+    layout: post
+    author: <AUTHOR_NAME>
+    title: <QUESTION_NAME>
+    topics: [...QUESTION_TYPE]
+    langs: [...SUPPORTED_LANGUAGES]
+    companies: [...COMPANIES]
+    tc: <TIME_COMPLEXITY>
+    sc: <SPACE_COMPLEXITY>
+    difficulty: <easy | medium | hard>
+    leetid: <LEETCODE_ID>
+    leetcode: <LEETCODE_SLUG>
+    gfg: <LEETCODE_SLUG>
+    hackerrank: <LEETCODE_SLUG>
+    interviewbit: <LEETCODE_SLUG>
+    ---
+    ```
 2. The solutions are added in [_includes/code](_includes/code) folder. Add a folder with question name ex- `got-interesting`. Add your solutions in this folder only.
 3. By default, the langs required are defined in `enabled_languages` in [_config.yml](_config.yml). 
-Update langs for your solution, only that would be read in `code` folder
+4. Update langs for your solution, only that would be read in `code` folder

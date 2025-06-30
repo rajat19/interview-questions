@@ -6,11 +6,11 @@ langs: [java, py, go, cpp]
 tc: O(n)
 sc: O(n)
 leetid: 84
-companies: [facebook]
+companies: [facebook, google, amazon]
 gfg: largest-rectangular-area-in-a-histogram-using-segment-tree
 difficulty: hard
 hackerrank: 
-interviewbit: 
+interviewbit: largest-rectangle-in-histogram
 leetcode: largest-rectangle-in-histogram
 ---
 

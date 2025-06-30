@@ -20,6 +20,6 @@
   img: hackerrank.svg
 - name: Youtube
   base: https://www.youtube.com/results?search_query=
-  suffix: /
-  identifier: leetcode
+  suffix: " dsa"
+  identifier: title
   img: youtube.svg

@@ -10,7 +10,7 @@ gfg: look-and-say-sequence
 companies: [facebook]
 difficulty: medium
 hackerrank: 
-interviewbit: 
+interviewbit: count-and-say
 leetcode: count-and-say
 ---
 
