@@ -1,33 +1,66 @@
-- adobe
-- airbnb
-- amazon
-- apple
-- atlassian
-- bloomberg
-- booking
-- doordash
-- ebay
-- expedia
-- facebook
-- goldman
-- google
-- indeed
-- intuit
-- linkedin
-- lyft
-- microsoft
-- netflix
-- nvidia
-- openai
-- oracle
-- paypal
-- pinterest
-- salesforce
-- sap
-- snapchat
-- tesla
-- twitter
-- uber
-- vmware
-- walmart
-- yelp
+- name: Adobe
+  identifier: adobe
+- name: Airbnb
+  identifier: airbnb
+- name: Amazon
+  identifier: amazon
+- name: Apple
+  identifier: apple
+- name: Atlassian
+  identifier: atlassian
+- name: Bloomberg
+  identifier: bloomberg
+- name: Booking.com
+  identifier: booking
+- name: DoorDash
+  identifier: doordash
+- name: eBay
+  identifier: ebay
+- name: Expedia
+  identifier: expedia
+- name: Facebook
+  identifier: facebook
+- name: Goldman Sachs
+  identifier: goldman
+- name: Google
+  identifier: google
+- name: Indeed
+  identifier: indeed
+- name: Intuit
+  identifier: intuit
+- name: LinkedIn
+  identifier: linkedin
+- name: Lyft
+  identifier: lyft
+- name: Microsoft
+  identifier: microsoft
+- name: Netflix
+  identifier: netflix
+- name: Nvidia
+  identifier: nvidia
+- name: OpenAI
+  identifier: openai
+- name: Oracle
+  identifier: oracle
+- name: PayPal
+  identifier: paypal
+- name: Pinterest
+  identifier: pinterest
+- name: Salesforce
+  identifier: salesforce
+- name: SAP
+  identifier: sap
+- name: Snapchat
+  identifier: snapchat
+- name: Tesla
+  identifier: tesla
+- name: Twitter
+  identifier: twitter
+- name: Uber
+  identifier: uber
+- name: VMWare
+  identifier: vmware
+- name: Walmart
+  identifier: walmart
+- name: Yelp
+  identifier: yelp

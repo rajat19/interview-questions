@@ -23,19 +23,25 @@
             {% endfor %}
         </div>
 
-        {% if page.companies %}
+        {% assign page_companies = page.companies %}
+        {% if page_companies %}
         <h3>Companies</h3>
-        {% endif %}
-        {% assign companies = page.companies %}
         <div class="post-pills-row">
-            {% for company in companies %}
-            <a class="pill" id="post-company-{{company}}" onclick="showCompany('{{company}}')">
-                <img src="{{ site.github.url }}/assets/img/company/{{ company }}.svg" alt="{{ company }}"
-                     width="25" height="25">
-                {{company | replace: "-", " " | capitalize}}
+            {% for company in site.data.companies %}
+            {% if page_companies contains company.identifier %}
+            <a class="pill" id="post-company-{{company.identifier}}" onclick="showCompany('{{company.identifier}}')">
+                <img
+                    src="{{site.github.url}}/assets/img/company/{{ company.identifier }}.svg"
+                    alt="{{ company.name }}"
+                    width="25"
+                    height="25"
+                />
+                {{ company.name }}
             </a>
+            {% endif %}
             {% endfor %}
         </div>
+        {% endif %}
 
         <h3>Platforms</h3>
         <div class="post-pills-row">
@@ -43,8 +49,13 @@
             {% assign identifier = page[platform.identifier] %}
             {% if identifier %}
                 <a target="_blank" href="{{ platform.base }}{{ identifier }}{{ platform.suffix }}" class="pill">
-                <img src="{{site.github.url}}/assets/img/platform/{{platform.img}}" alt="{{ platform.name }}" width="25" height="25">
-                {{ platform.name }}
+                    <img
+                        src="{{site.github.url}}/assets/img/platform/{{ platform.img }}"
+                        alt="{{ platform.name }}"
+                        width="25"
+                        height="25"
+                    >
+                    {{ platform.name }}
                 </a>
             {% endif %}
             {% endfor %}

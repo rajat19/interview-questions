@@ -14,7 +14,7 @@ layout: default
             <select name="company-dropdown" id="company-dropdown" class="pill">
                 <option value="" disabled selected>-- select a company --</option>
                 {% for company in site.data.companies %}
-                <option value="{{company}}">{{ company | replace: "-", " " | capitalize }}</option>
+                <option value="{{company.identifier}}">{{ company.name }}</option>
                 {% endfor %}
             </select>
             <select name="difficulty-dropdown" id="difficulty-dropdown" class="pill">
