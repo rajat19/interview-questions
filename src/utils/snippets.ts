@@ -7,7 +7,7 @@ import path from 'path';
  * @param {string[]} languages - An array of programming languages to read snippets for.
  * @returns {Record<string, string>} An object where keys are language names and values are the code snippets.
  */
-export function getSnippetsForQuestion(slug: string, languages: string[]) {
+export function getSnippetsForQuestion(slug: string, languages: string[]): Record<string, string> {
     const snippets: Record<string, string> = {};
     for (const language of languages) {
         try {

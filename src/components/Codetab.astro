@@ -44,9 +44,9 @@ const defaultActive = questionLanguages[0] || languagesData.default;
             </label>
             <div
                 id={`${slug}-${btnClass}-${language.name}`}
-                class={`tab-content bg-base-100 border-base-300 p-2 ${language.ext === defaultActive ? "active" : ""}`}
+                class={`code-tab tab-content bg-base-100 border-base-300 p-2 ${language.ext === defaultActive ? "active" : ""}`}
             >
-                <Code wrap="true" code={snippets[language.ext]} lang={language.ext} theme="gruvbox-light-hard" />
+                <Code code={snippets[language.ext]} lang={language.ext} theme="gruvbox-light-hard" />
             </div>
     ))}
 </div>

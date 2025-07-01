@@ -3,9 +3,14 @@
     themes: all;
 }
 
-.astro-code,
-.astro-code span {
-    color: var(--color-base-content);
+.h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.code-tab .astro-code, .code-tab .astro-code span {
     background-color: var(--color-base-100) !important;
     /* Optional, if you also want font styles */
     /*font-style: var(--color-) !important;*/
