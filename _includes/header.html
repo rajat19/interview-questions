@@ -1,49 +1,53 @@
-<header class="site-header">
+<header class="fixed top-0 left-0 w-full h-[60px] flex items-center bg-header border-b-2 border-theme px-5">
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-    <nav class="site-nav">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger">
-        <span class="menu-icon">
-          <svg viewBox="0 0 18 15" width="18px" height="15px">
-            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-          </svg>
-        </span>
-      </label>
+  <!-- Site title -->
+  <a class="text-xl font-semibold text-white hover:no-underline" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-      <div class="trigger" style="display: flex; flex-direction: row-reverse; align-items: center;">
+  <!-- Navigation -->
+  <nav class="absolute top-[9px] right-4 md:static md:flex-1 md:text-right">
+    <input type="checkbox" id="nav-trigger" class="hidden peer" />
+    <label for="nav-trigger" class="float-right md:hidden cursor-pointer w-9 h-9 pt-[10px] text-center">
+      <i class="fa-solid fa-bars text-theme"></i>
+    </label>
+
+    <!-- Navigation links -->
+    <div class="hidden peer-checked:block md:block clear-both">
+      <div class="md:h-full">
         {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.title -%}
         {% if my_page.url == page.url %}
-        {% assign className = "page-link active" %}
+        {% assign className = "active" %}
         {% else %}
-        {% assign className = "page-link" %}
+        {% assign className = "" %}
         {% endif %}
-        <a class="{{ className }} post-link" href="{{ my_page.url | relative_url }}">
+        <a class="block py-[5px] px-[10px] md:inline-flex md:items-center md:h-full hover:no-underline {{ className }} {% if className == 'active' %}bg-theme text-header{% endif %}" href="{{ my_page.url | relative_url }}">
           {{ my_page.title | escape }}
         </a>
         {%- endif -%}
         {%- endfor -%}
 
-        <a class="pill" id="login-btn" style="display: none;">
-          <img src="{{ site.github.url }}/assets/img/company/google.svg" alt="Google login icon" width="20" height="20">
+        <!-- Login button -->
+        <a class="hidden px-4 py-2 bg-[#223237] rounded-lg text-white flex items-center gap-2 hover:bg-[#0f0f0f] transition-colors" id="login-btn">
+          <img src="{{ site.github.url }}/assets/img/company/google.svg" alt="Google login icon" class="w-5 h-5">
           Sign in with Google
         </a>
-        <span id="user-info" style="display: none;">
-          <img id="user-photo" src="" alt="User photo" width="20" height="20">
-          <span id="user-name"></span>
-          <a class="pill" id="logout-btn" onclick="firebase.auth().signOut()">Sign Out</a>
+
+        <!-- User info -->
+        <span id="user-info" class="hidden items-center gap-2">
+          <img id="user-photo" src="" alt="User photo" class="w-5 h-5 rounded-full">
+          <span id="user-name" class="text-white"></span>
+          <a class="px-3 py-1 bg-[#223237] rounded-lg text-white text-sm hover:bg-[#0f0f0f] transition-colors cursor-pointer" id="logout-btn" onclick="firebase.auth().signOut()">Sign Out</a>
         </span>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-
-  <div class="site-icon">
-    <img src="{{ site.github.url }}/{{ site.iconURL }}" />
+  <!-- Site icon - positioned in the center -->
+  <div class="absolute left-1/2 top-full -mt-[47px] w-20 h-20 p-[5px] bg-white rounded-[40%] hidden md:block">
+    <img src="{{ site.github.url }}/{{ site.iconURL }}" class="w-full h-full" />
   </div>
-
 </header>

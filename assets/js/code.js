@@ -1,37 +1,45 @@
 const openCode = (evt, codeName) => {
   const { currentTarget } = evt;
 
-  if (currentTarget.classList.contains("active")) {
-    currentTarget.classList.remove("active");
-    document.getElementById(codeName).classList.remove('active');
+  if (currentTarget.classList.contains("bg-theme")) {
+    currentTarget.classList.remove("bg-theme");
+    document.getElementById(codeName).classList.remove('block');
+    document.getElementById(codeName).classList.add('hidden');
     return;
   }
 
   document.querySelectorAll(".code-tab-content, .code-tab-link").forEach((element) => {
-    element.classList.remove('active');
+    if (element.classList.contains('code-tab-content')) {
+      element.classList.remove('block');
+      element.classList.add('hidden');
+    } else {
+      element.classList.remove('bg-theme');
+    }
   });
 
-  document.getElementById(codeName).classList.add('active');
-  currentTarget.classList.add('active');
+  document.getElementById(codeName).classList.remove('hidden');
+  document.getElementById(codeName).classList.add('block');
+  currentTarget.classList.add('bg-theme');
 };
 
 const clearPostData = () => {
   const mobileDiv = document.querySelector('.post-data-only-mobile');
   document.getElementById('post-data').innerHTML = '';
-  mobileDiv.classList.remove('active');
+  mobileDiv.classList.remove('block');
+  mobileDiv.classList.add('hidden');
   mobileDiv.innerHTML = '';
 };
 
 const showFilter = (filterType, filterValue) => {
   clearPostData();
   document.querySelectorAll('.post-link').forEach((postLink) => {
-    postLink.classList.remove('active');
+    postLink.classList.remove('bg-[#1e1e1e]');
   });
 
   document.querySelectorAll('.home-box li').forEach((li) => {
-    li.style.display = 'block';
+    li.classList.remove('hidden');
     if (!li.classList.contains(`${filterType}-${filterValue}`)) {
-      li.style.display = 'none';
+      li.classList.add('hidden');
     }
   });
 
@@ -49,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     postLink.addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelectorAll('.post-link').forEach((link) => {
-        link.classList.remove('active');
+        link.classList.remove('bg-[#1e1e1e]');
       });
 
       const width = window.innerWidth;
@@ -68,9 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => console.error('Error fetching data:', error));
       } else {
         const sibling = postLink.nextElementSibling;
-        if (sibling.classList.contains('active')) {
+        if (sibling.classList.contains('block')) {
           sibling.innerHTML = '';
-          sibling.classList.remove('active');
+          sibling.classList.remove('block');
+          sibling.classList.add('hidden');
           return;
         }
 
@@ -80,12 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(data => {
               sibling.innerHTML = data;
-              sibling.classList.add('active');
+              sibling.classList.remove('hidden');
+              sibling.classList.add('block');
               sibling.scrollTop;
             })
             .catch(error => console.error('Error fetching data:', error));
       }
-      postLink.classList.add('active');
+      postLink.classList.add('bg-[#1e1e1e]');
     });
   });
 
@@ -107,12 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('search-box').addEventListener('keyup', (event) => {
     clearPostData();
     document.querySelectorAll('.post-link').forEach((link) => {
-      link.classList.remove('active');
+      link.classList.remove('bg-[#1e1e1e]');
     });
 
     const value = event.target.value.toLowerCase();
     document.querySelectorAll(".home-box li").forEach((li) => {
-      li.style.display = li.textContent.toLowerCase().includes(value) ? 'block' : 'none';
+      li.classList.remove('hidden');
+      if (!li.textContent.toLowerCase().includes(value)) {
+        li.classList.add('hidden');
+      }
     });
 
     document.querySelector('.home-post-list').scrollTop;

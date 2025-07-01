@@ -2,62 +2,69 @@
 layout: default
 ---
 
-<div class="wrapper home-wrapper">
-    <div class="home">
-        <div class="home-search">
-            <select name="topic-dropdown" id="topic-dropdown" class="pill">
-                <option value="" disabled selected>-- select a topic --</option>
-                {% for topic in site.data.topics %}
-                <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
-                {% endfor %}
-            </select>
-            <select name="company-dropdown" id="company-dropdown" class="pill">
-                <option value="" disabled selected>-- select a company --</option>
-                {% for company in site.data.companies %}
-                <option value="{{company.identifier}}">{{ company.name }}</option>
-                {% endfor %}
-            </select>
-            <select name="difficulty-dropdown" id="difficulty-dropdown" class="pill">
-                <option value="" disabled selected>-- select difficulty --</option>
-                {% for difficulty in site.data.difficulties %}
-                <option value="{{difficulty}}">{{ difficulty | replace: "-", " " | capitalize }}</option>
-                {% endfor %}
-            </select>
-            <input class="post-search" id="search-box" type="text" placeholder="Search Question...">
-        </div>
-        <div class="home-post-list">
-            {% for collection in site.collections %}
-            {% assign items = site[collection.label] | sort: collection.sort_by %}
-            {% if items.size > 0 %}
-            <!-- <h2 class="post-list-heading"> Category - {{ collection.title }} </h2> -->
-            <ul class="box home-box" id="post-list-{{ collection.label }}">
-                {% for post in items %}
-                {% capture topic-classes %}{% for topic in post.topics %}topic-{{topic}} {% endfor %}{% endcapture %}
-                {% capture company-classes %}{% for company in post.companies %}company-{{company}} {% endfor %}{% endcapture %}
-                <li class="{{topic-classes}} {{company-classes}} difficulty-{{post.difficulty}} problem">
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        <h3>
-                            {{ post.title | escape }}
-                        </h3>
-                        {% if post.tc or post.sc %}
-                        <span class="home-complexity">
-                            {% if post.tc %}
-                            <span class="">Time: {{ post.tc }}</span>
-                            {% endif %}
-                            {% if post.sc %}
-                            <span class="">Space: {{ post.sc }}</span>
-                            {% endif %}
-                        </span>
-                        {% endif %}
-                    </a>
-                    <div class="post-data-only-mobile" id="post-data-mobile-{{ post.title | slugify }}"></div>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
+<div class="flex flex-col md:flex-row">
+    <!-- Left column: Question list -->
+    <div class="w-full md:w-1/2 h-[87vh] px-4 md:px-8">
+        <!-- Search and filters -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          <select name="topic-dropdown" id="topic-dropdown" class="m-1 p-2.5 bg-[#223237] rounded-lg shadow-lg text-white cursor-pointer transition-colors hover:bg-[#0f0f0f]">
+            <option value="" disabled selected>-- select a topic --</option>
+            {% for topic in site.data.topics %}
+            <option value="{{topic}}">{{ topic | replace: "-", " " | capitalize }}</option>
             {% endfor %}
+          </select>
+
+          <select name="company-dropdown" id="company-dropdown" class="m-1 p-2.5 bg-[#223237] rounded-lg shadow-lg text-white cursor-pointer transition-colors hover:bg-[#0f0f0f]">
+            <option value="" disabled selected>-- select a company --</option>
+            {% for company in site.data.companies %}
+            <option value="{{company.identifier}}">{{ company.name }}</option>
+            {% endfor %}
+          </select>
+
+          <select name="difficulty-dropdown" id="difficulty-dropdown" class="m-1 p-2.5 bg-[#223237] rounded-lg shadow-lg text-white cursor-pointer transition-colors hover:bg-[#0f0f0f]">
+            <option value="" disabled selected>-- select difficulty --</option>
+            {% for difficulty in site.data.difficulties %}
+            <option value="{{difficulty}}">{{ difficulty | replace: "-", " " | capitalize }}</option>
+            {% endfor %}
+          </select>
+
+          <input class="w-full md:w-[40vw] rounded-lg p-2" id="search-box" type="text" placeholder="Search Question...">
+        </div>
+
+        <!-- Question list -->
+        <div class="h-[82vh] overflow-y-auto">
+          {% for collection in site.collections %}
+          {% assign items = site[collection.label] | sort: collection.sort_by %}
+          {% if items.size > 0 %}
+          <ul class="bg-content rounded-xl shadow-xl" id="post-list-{{ collection.label }}">
+            {% for post in items %}
+            {% capture topic-classes %}{% for topic in post.topics %}topic-{{topic}} {% endfor %}{% endcapture %}
+            {% capture company-classes %}{% for company in post.companies %}company-{{company}} {% endfor %}{% endcapture %}
+            <li class="{{topic-classes}} {{company-classes}} difficulty-{{post.difficulty}} problem border-b border-[#1e1e1e] last:border-b-0">
+              <a class="flex items-center transition-colors hover:bg-[#1e1e1e] hover:no-underline post-link" href="{{ post.url | relative_url }}">
+                <h3 class="m-4 w-3/4 text-white">
+                  {{ post.title | escape }}
+                </h3>
+
+                {% if post.tc or post.sc %}
+                <div class="hidden md:block w-1/4 border-l-4 border-[#0077b6] p-2.5 text-white">
+                  {% if post.tc %}
+                  <span class="block">Time: {{ post.tc }}</span>
+                  {% endif %}
+                  {% if post.sc %}
+                  <span class="block">Space: {{ post.sc }}</span>
+                  {% endif %}
+                </div>
+                {% endif %}
+              </a>
+              <div class="hidden px-4 py-2 md:hidden post-data-only-mobile" id="post-data-mobile-{{ post.title | slugify }}"></div>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="wrapper home-wrapper" id="post-data"></div>
+    <div class="w-full md:w-1/2 h-[87vh] overflow-y-auto float-left px-4 md:px-8 hidden md:block" id="post-data"></div>
+</div>

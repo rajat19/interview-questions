@@ -1,71 +1,56 @@
----
----
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <h1 class="post-title p-name" >
-            {{ page.title | escape }}
-            <span
-                id="bookmark-{{ page.slug }}"
-                class="fa-regular fa-bookmark bookmark-icon"
-                data-slug="{{ page.slug }}"
-                data-title="{{ page.title }}"
-                title="Bookmark this post"
-            ></span>
-        </h1>
-
-        <h3>Topics</h3>
-        {% assign topics = page.topics %}
-        <div class="post-pills-row">
-            {% for topic in topics %}
-            <a class="pill" id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')">
-                {{ topic | replace: "-", " " | capitalize }}
-            </a>
-            {% endfor %}
+<article class="p-8 bg-content rounded-[20px] shadow-xl my-6 md:my-6 md:p-8">
+    <header class="mb-8">
+        <div class="flex items-center justify-between text-2xl md:text-4xl font-bold leading-tight">
+            <h1 class="text-white">{{ page.title | escape }}</h1>
+            <i class="fa-regular fa-bookmark text-white text-2xl ml-3 cursor-pointer hover:text-yellow-400 transition-colors" id="bookmark-{{ page.url | slugify }}"></i>
         </div>
 
-        {% assign page_companies = page.companies %}
-        {% if page_companies %}
-        <h3>Companies</h3>
-        <div class="post-pills-row">
-            {% for company in site.data.companies %}
-            {% if page_companies contains company.identifier %}
-            <a class="pill" id="post-company-{{company.identifier}}" onclick="showCompany('{{company.identifier}}')">
-                <img
-                    src="{{site.github.url}}/assets/img/company/{{ company.identifier }}.svg"
-                    alt="{{ company.name }}"
-                    width="25"
-                    height="25"
-                />
-                {{ company.name }}
-            </a>
+        {% if page.topics %}
+        <h3>Topics</h3>
+        <div class="flex flex-wrap mt-2">
+            {% if page.topics %}
+                {% for topic in page.topics %}
+                <a id="post-topic-{{topic}}" onclick="showTopic('{{topic}}')" class="m-[5px] py-[10px] px-[10px] bg-[#223237] rounded-[10px] shadow-xl text-white hover:bg-[#0f0f0f] transition-colors hover:no-underline cursor-pointer">
+                    {{ topic | replace: "-", " " | capitalize }}
+                </a>
+                {% endfor %}
             {% endif %}
+        </div>
+        {% endif %}
+
+        {% if page.companies %}
+        <h3>Companies</h3>
+        <div class="flex flex-wrap mt-2">
+            {% if page.companies %}
+            {% for company in page.companies %}
+            <a id="post-company-{{company.identifier}}" onclick="showCompany('{{company.identifier}}')" class="m-[5px] py-[10px] px-[10px] bg-[#223237] rounded-[10px] shadow-xl text-white hover:bg-[#0f0f0f] transition-colors hover:no-underline cursor-pointer">
+                {{ company | replace: "-", " " | capitalize }}
+            </a>
             {% endfor %}
+            {% endif %}
         </div>
         {% endif %}
 
         <h3>Platforms</h3>
-        <div class="post-pills-row">
+        <div class="flex flex-wrap mt-2">
             {% for platform in site.data.platforms %}
             {% assign identifier = page[platform.identifier] %}
             {% if identifier %}
-                <a target="_blank" href="{{ platform.base }}{{ identifier }}{{ platform.suffix }}" class="pill">
-                    <img
-                        src="{{site.github.url}}/assets/img/platform/{{ platform.img }}"
-                        alt="{{ platform.name }}"
-                        width="25"
-                        height="25"
-                    >
-                    {{ platform.name }}
-                </a>
+            <a href="{{ platform.base }}{{ identifier }}{{ platform.suffix }}" target="_blank" rel="noopener" class="flex item-center gap-2 m-[5px] cursor-pointer py-[10px] px-[10px] bg-[#223237] rounded-[10px] shadow-xl text-white hover:bg-[#0f0f0f] transition-colors hover:no-underline">
+                <img
+                    src="{{site.github.url}}/assets/img/platform/{{ platform.img }}"
+                    alt="{{ platform.name }}"
+                    class="w-[25px] h-[25px]"
+                >
+                <span>{{ platform.name }}</span>
+            </a>
             {% endif %}
             {% endfor %}
         </div>
     </header>
 
-    <div class="post-content e-content" itemprop="articleBody">
+    <div class="post-content text-white">
         {{ content }}
-        {% include codetab.html btnClass="solution" %}
+        {% include codetab.html %}
     </div>
-    <br><br>
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
