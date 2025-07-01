@@ -3,7 +3,7 @@ layout: post
 title: Find Peak Element
 difficulty: medium
 topics: [array, binary-search]
-langs: [java, cpp]
+langs: [java, cpp, py]
 tc: O(log n)
 sc: O(1)
 leetid: 162

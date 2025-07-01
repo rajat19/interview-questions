@@ -7,11 +7,12 @@ tc: O(1)
 sc: O(1)
 leetid: 295
 difficulty: hard
-companies: 
+companies: [facebook]
 gfg: 
 hackerrank: 
 interviewbit: 
 leetcode: find-median-from-data-stream
+metacareers: 547645422524434
 ---
 
 The median is the middle value in an ordered integer list. 

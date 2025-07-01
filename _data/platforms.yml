@@ -23,3 +23,8 @@
   suffix: " dsa"
   identifier: title
   img: youtube.svg
+- name: Metacareers
+  base: https://www.metacareers.com/profile/coding_practice_question/?problem_id=
+  suffix:
+  identifier: metacareers
+  img: meta.svg

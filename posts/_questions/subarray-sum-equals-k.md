@@ -12,6 +12,7 @@ gfg:
 hackerrank: 
 interviewbit: 
 leetcode: subarray-sum-equals-k
+metacareers: 840934449713537
 ---
 
 Given an array of integers nums and an integer `k`, return the total number of continuous subarray whose sum equals to `k`.
