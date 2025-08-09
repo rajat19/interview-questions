@@ -1,0 +1,28 @@
+{
+  "name": "interview-questions-astro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm migrate && astro dev",
+    "build": "pnpm migrate && astro build",
+    "preview": "astro preview",
+    "migrate": "node scripts/migrate-content.mjs"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.10.0",
+    "firebase": "^10.12.2",
+    "mermaid": "^10.9.1",
+    "yaml": "^2.4.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.18",
+    "daisyui": "^4.12.10",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
+}

@@ -1,0 +1,63 @@
+---
+interface Props {
+  title: string
+  topics: string[]
+  companies: string[]
+  platforms: { name: string; base: string; suffix: string; identifier: string; img: string }[]
+  data: Record<string, any>
+  slug: string
+}
+const { title, topics, companies, platforms, data, slug } = Astro.props as Props
+---
+<header class="mb-4">
+  <h1 class="text-2xl font-bold flex items-center gap-3">
+    {title}
+    <span
+      id={`bookmark-${slug}`}
+      class="fa-regular fa-bookmark bookmark-icon cursor-pointer"
+      data-slug={slug}
+      data-title={title}
+      title="Bookmark this post"
+    />
+  </h1>
+  {topics.length > 0 && (
+    <>
+      <h3 class="mt-4">Topics</h3>
+      <div class="flex gap-2 flex-wrap">
+        {topics.map((topic) => (
+          <a class="badge badge-outline cursor-pointer" on:click={() => (window as any).showTopic?.(topic)}>
+            {topic}
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+  {companies.length > 0 && (
+    <>
+      <h3 class="mt-4">Companies</h3>
+      <div class="flex gap-2 flex-wrap">
+        {companies.map((c) => (
+          <a class="pill flex items-center gap-2 cursor-pointer" on:click={() => (window as any).showCompany?.(c)}>
+            <img src={`/assets/img/company/${c}.svg`} alt={c} width="25" height="25" />
+            <span class="capitalize">{c.replace('-', ' ')}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+  <h3 class="mt-4">Platforms</h3>
+  <div class="flex gap-2 flex-wrap">
+    {platforms.map((p) => {
+      const id = data[p.identifier]
+      if (!id) return null
+      return (
+        <a target="_blank" href={`${p.base}${id}${p.suffix}`} class="pill flex items-center gap-2">
+          <img src={`/assets/img/platform/${p.img}`} width="25" height="25" alt={p.name} />
+          <span>{p.name}</span>
+        </a>
+      )
+    })}
+  </div>
+</header>
+
+

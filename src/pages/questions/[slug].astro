@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro'
+import CodeTabs from '../../components/CodeTabs.astro'
+import PostHeader from '../../components/PostHeader.astro'
+import platforms from '../../data/platforms'
+import { getCollection } from 'astro:content'
+export async function getStaticPaths() {
+  const entries = await getCollection('questions')
+  return entries.map((e) => ({ params: { slug: e.slug } }))
+}
+const { slug } = Astro.params
+const entries = await getCollection('questions', ({ slug: s }) => s === slug)
+if (entries.length === 0) {
+  throw new Error('Not found')
+}
+const entry = entries[0]
+const { Content } = await entry.render()
+const data = entry.data
+---
+<Base title={data.title}>
+  <article class="prose prose-invert max-w-none mx-auto p-4">
+    <PostHeader title={data.title} topics={data.topics} companies={data.companies} data={data} slug={slug!} platforms={platforms as any} />
+    <Content />
+    <CodeTabs slug={slug!} langs={data.langs} />
+    {(data.tc || data.sc) && (
+      <div class="mt-4 text-sm">
+        {data.tc && <div>Time Complexity: {data.tc}</div>}
+        {data.sc && <div>Space Complexity: {data.sc}</div>}
+      </div>
+    )}
+  </article>
+</Base>
+
+

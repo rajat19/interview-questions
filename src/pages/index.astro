@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro'
+import { getCollection } from 'astro:content'
+const questions = await getCollection('questions')
+
+// derive facets
+const topics = Array.from(new Set(questions.flatMap(q => q.data.topics))).sort()
+const companies = Array.from(new Set(questions.flatMap(q => q.data.companies))).sort()
+const difficulties = ['easy','medium','hard']
+---
+<Base>
+  <div class="container mx-auto p-4">
+    <div class="flex gap-2 flex-wrap items-center mb-4">
+      <select id="topic-dropdown" class="select select-bordered">
+        <option value="" selected>-- select a topic --</option>
+        {topics.map(t => <option value={`topic-${t}`}>{t}</option>)}
+      </select>
+      <select id="company-dropdown" class="select select-bordered">
+        <option value="" selected>-- select a company --</option>
+        {companies.map(c => <option value={`company-${c}`}>{c}</option>)}
+      </select>
+      <select id="difficulty-dropdown" class="select select-bordered">
+        <option value="" selected>-- select difficulty --</option>
+        {difficulties.map(d => <option value={`difficulty-${d}`}>{d}</option>)}
+      </select>
+      <input id="search-box" type="text" placeholder="Search Question..." class="input input-bordered flex-1" />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 home-post-list">
+      <ul class="menu bg-base-200 rounded-box p-2 home-box">
+        {questions.map(({ slug, data }) => {
+          const topicClasses = data.topics.map(t => `topic-${t}`).join(' ')
+          const companyClasses = data.companies.map(c => `company-${c}`).join(' ')
+          return (
+            <li class={`${topicClasses} ${companyClasses} difficulty-${data.difficulty} problem`}>
+              <a class="post-link" href={`/questions/${slug}`}">
+                <h3 class="font-semibold">{data.title}</h3>
+                {(data.tc || data.sc) && (
+                  <span class="text-sm opacity-70">
+                    {data.tc && <span>Time: {data.tc}</span>}
+                    {data.sc && <span class="ml-2">Space: {data.sc}</span>}
+                  </span>
+                )}
+              </a>
+              <div class="md:hidden post-data-only-mobile" id={`post-data-mobile-${slug}`}></div>
+            </li>
+          )
+        })}
+      </ul>
+      <div id="post-data" class="hidden md:block p-2"></div>
+    </div>
+  </div>
+
+  <script type="module">import '/src/ts/homeInteractions.ts'</script>
+</Base>
+
+

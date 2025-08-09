@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/rajat19/interview-questions?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/rajat19/interview-questions?style=for-the-badge)
 
-A collection of top interview questions asked in DSA rounds of companies. The project is build over jekyll.
+A collection of top interview questions asked in DSA rounds of companies. The project now uses Astro for a faster static site with interactive UI.
 
 The project contains solutions of the questions in multiple languages, the questions are also tagged with topics and companies.
 
@@ -21,7 +21,7 @@ Website: [interview-questions](https://rajat19.github.io/interview-questions/)
 
 ![Recording](assets/img/global/recording.gif)
 
-Questions are present inside [posts](/posts) folder, with their working solutions available in [code](_includes/code) folder
+Questions are present inside `src/content/questions/`, with their working solutions available in `src/code/<slug>/solution.<ext>`.
 
 ### Sample coding question post [hello-world.md](/hello-world.md)
 
@@ -51,36 +51,24 @@ Print Hello appended by input string
 	(string) "Hello World"
 ```
 
-### Setup:
-The project is build over `jekyll` and `ruby`
+### Setup (Astro + Tailwind + DaisyUI + Firebase)
 
-Ruby setup is complex on macbook so it is recommended to use `rbenv` or `rvm` to manage ruby versions.
-Check GitHub pages supported ruby versions [here](https://pages.github.com/versions/).
-1. Install `rbenv`
+1. Install Node 18+
+2. Install deps
    ```shell
-   brew install rbenv
+   npm install
    ```
-2. Install ruby latest version
+3. Migrate content (from legacy Jekyll folders to Astro structure)
    ```shell
-   rbenv install 3.3.4
+   npm run migrate
    ```
-3. Set the local ruby version for the project
+4. Start dev server
    ```shell
-    rbenv local 3.3.4
-    ```
-4. Add rbenv ruby path to your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`)
-   ```shell
-   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-   echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-   source ~/.bashrc
+   npm run dev
    ```
 
-To start the project
-1. Install bundles using
-   ```shell
-   bundle install
-   ```
-2. Serve the website (using local bundle files)
-   ```shell 
-   bundle exec jekyll serve
-   ```
+Build and preview
+```shell
+npm run build
+npm run preview
+```
